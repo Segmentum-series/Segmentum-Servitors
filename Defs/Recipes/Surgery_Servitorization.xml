@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>InstallServitorChip</defName>
+		<label>install servitor chip</label>
+		<description>Conduct servitorization procedure. Involves invasive neurosurgery, implantation of a control chip, and the irreversible suppression of higher brain functions. The subject is stripped of identity and autonomy, reduced to conditioned obedience.</description>
+		<descriptionHyperlinks>
+			<ThingDef>servitorChip</ThingDef>
+			<HediffDef>ServitorizationHediff</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Conduction servitorization.</jobString>
+		<anesthetize>true</anesthetize>
+		<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>1</deathOnFailedSurgeryChance>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>servitorChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>servitorChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ServitorizationHediff</addsHediff>
+	</RecipeDef>
+</Defs>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>servitorChip</defName>
+		<label>servitor chip</label>
+		<description>A neural implant used in sevitorization procedures. It supresses higher brain functions as part of extensive psychoconditioning and invasive cybernetic integration. In serrvice to the Omnissiah, we shall find the absolution.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallServitorChip</RecipeDef>
+			<HediffDef>ServitorizationHediff</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Health/ServitorImplant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>1</Steel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+	</ThingDef>
+</Defs>
