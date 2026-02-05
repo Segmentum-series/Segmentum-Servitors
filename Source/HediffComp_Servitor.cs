@@ -81,15 +81,6 @@ namespace ServitorMod
             Pawn pawn = Pawn;
             if (pawn == null || pawn.Dead) return;
 
-            // No need for food
-            if (pawn.needs?.food != null)
-            {
-                pawn.needs.food.CurLevelPercentage = Mathf.Max(
-                pawn.needs.food.CurLevelPercentage,
-               0.3f
-                );
-            }
-
             // No need for sleep
             if (pawn.needs?.rest != null)
             {
