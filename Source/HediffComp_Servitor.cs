@@ -63,10 +63,10 @@ namespace ServitorMod
             }
 
             // Делаем частью колонии
-            if (pawn.IsSlave)
-            {
-                pawn.guest.SetGuestStatus(null);
-            }
+            pawn.SetFaction(Faction.OfPlayer);
+            pawn.guest?.SetGuestStatus(null);
+            pawn.guest?.ClearLastRecruiter();
+
 
             // Снимаем наркоз сразу после операции
             var anesthetic = pawn.health.hediffSet
