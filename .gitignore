@@ -1,0 +1,23 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+*.sln.iml
+
+# Build artifacts
+bin/
+obj/
+[Bb]uild/
+[Bb]uilds/
+
+# OS junk
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# RimWorld specific
+Assemblies/*.pdb
+Assemblies/*.mdb
