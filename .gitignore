@@ -17,7 +17,3 @@ obj/
 Thumbs.db
 .DS_Store
 desktop.ini
-
-# RimWorld specific
-Assemblies/*.pdb
-Assemblies/*.mdb

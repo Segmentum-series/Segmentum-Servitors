@@ -13,6 +13,7 @@
 		<stages>
 			<li>
 				<disabledWorkTags> Firefighting, Intellectual, Social, Artistic, Caring, Animals, Hunting </disabledWorkTags>
+				<hungerRateFactor>0.25</hungerRateFactor>
 				<statOffsets>
 					<Beauty>-0.5</Beauty>
 					<GlobalLearningFactor>-1</GlobalLearningFactor>

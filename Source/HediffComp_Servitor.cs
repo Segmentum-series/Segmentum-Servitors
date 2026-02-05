@@ -27,13 +27,12 @@ namespace ServitorMod
             ApplyConstantEffects();
         }
 
-        //Разово применить
         private void ApplyOneTimeEffects()
         {
             Pawn pawn = Pawn;
             if (pawn == null || pawn.Dead) return;
 
-            //Меняем имя
+            //Change name
             if (pawn.Name is NameTriple name)
             {
                 pawn.Name = new NameTriple(
@@ -43,32 +42,30 @@ namespace ServitorMod
                 );
             }
 
-            //Меняем внешность
+            //Change appearance
             pawn.story.skinColorOverride = new Color(0.75f, 0.75f, 0.72f);
             pawn.story.hairDef = HairDefOf.Bald;
 
-            //Убераем черты характера
+            //Remove traits
             pawn.story.traits.allTraits.Clear();
 
-            //Перенавзначаем работы
+            //Reassign work
             pawn.workSettings?.DisableAll();
             pawn.workSettings?.SetPriority(WorkTypeDefOf.Mining, 3);
             pawn.workSettings?.SetPriority(WorkTypeDefOf.Cleaning, 3);
             pawn.workSettings?.SetPriority(WorkTypeDefOf.Hauling, 3);
 
-            // Убираем пашшены
+            //Remove passions
             foreach (var skill in pawn.skills.skills)
             {
                 skill.passion = Passion.None;
             }
 
-            // Делаем частью колонии
+            //Join faction
             pawn.SetFaction(Faction.OfPlayer);
             pawn.guest?.SetGuestStatus(null);
-            pawn.guest?.ClearLastRecruiter();
 
-
-            // Снимаем наркоз сразу после операции
+            //Remove anesthetic
             var anesthetic = pawn.health.hediffSet
                 .GetFirstHediffOfDef(HediffDefOf.Anesthetic);
 
@@ -84,16 +81,7 @@ namespace ServitorMod
             Pawn pawn = Pawn;
             if (pawn == null || pawn.Dead) return;
 
-            // Почти не нуждается в еде
-            if (pawn.needs?.food != null)
-            {
-                pawn.needs.food.CurLevelPercentage = Mathf.Max(
-                pawn.needs.food.CurLevelPercentage,
-               0.3f
-                );
-            }
-
-            // Почти не нуждается во сне
+            // No need for sleep
             if (pawn.needs?.rest != null)
             {
                 pawn.needs.rest.CurLevelPercentage = Mathf.Max(
@@ -102,7 +90,7 @@ namespace ServitorMod
                 );
             }
 
-            // Почти не нуждается в радости
+            // No need for joy
             if (pawn.needs?.joy != null)
             {
                 pawn.needs.joy.CurLevelPercentage = Mathf.Max(
@@ -111,7 +99,7 @@ namespace ServitorMod
                 );
             }
 
-            // Нет вдохновлений
+            // No positive mental states
             if (pawn.MentalState != null)
             {
                 pawn.mindState.mentalStateHandler.Reset();
