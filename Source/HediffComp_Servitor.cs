@@ -61,6 +61,11 @@ namespace ServitorMod
                 skill.passion = Passion.None;
             }
 
+            //Add traits
+            TraitDef servitor = TraitDef.Named("Servitor");
+            pawn.story.traits.GainTrait(new Trait(servitor));
+            pawn.story.traits.GainTrait(new Trait(TraitDefOf.Asexual));
+
             //Join faction
             pawn.SetFaction(Faction.OfPlayer);
             pawn.guest?.SetGuestStatus(null);

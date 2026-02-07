@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TraitDef>
+		<defName>Servitor</defName>
+
+		<commonality>0</commonality>
+
+		<degreeDatas>
+			<li>
+				<label>servitor</label>
+				<description>
+					{PAWN_nameDef} has been reduced to a lobotomized cybernetic thrall, leaving only conditioned obedience.
+				</description>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+</Defs>
