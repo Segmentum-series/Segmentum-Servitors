@@ -12,6 +12,15 @@
 		<isBad>true</isBad>
 		<stages>
 			<li>
+				<disablesNeeds>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+					<li>Rest</li>
+					<li>Comfort</li>
+					<li>Beauty</li>
+					<li>Joy</li>
+					<li>Mood</li>
+				</disablesNeeds>
 				<disabledWorkTags> Firefighting, Intellectual, Social, Artistic, Caring, Animals, Hunting </disabledWorkTags>
 				<hungerRateFactor>0.25</hungerRateFactor>
 				<statOffsets>
