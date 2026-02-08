@@ -1,0 +1,17 @@
+<Defs>
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_Servitors_MiningArm</defName>
+  <label>Mining Servitor Arm</label>
+ <description>A brutal but effective form of the mining drill, this replaces the entire arm with a drill, with small secondary mechadendrites to do any small fine work required.</description>
+  <statBases>
+    <MarketValue>2800</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+      <Seg_Ceramite>25</Seg_Ceramite>
+		</costList>
+</ThingDef>
+</Defs>
