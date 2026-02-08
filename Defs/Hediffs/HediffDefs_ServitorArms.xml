@@ -82,4 +82,69 @@
     </li>
   </stages>
 </HediffDef>
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_Servitors_IndustrialArm_Hediff</defName>
+  <label>Industrial Servitor Arm</label>
+  <labelNoun>an industrial servitor arm</labelNoun>
+  <description>An installed replacement for an arm, the industrial version of the servitor arm has a clamp, a built in fusion welder and more robust mechadendrites to allow for better construction and crafting.</description>
+  <spawnThingOnRemoved>Seg_Servitors_IndustrialArm</spawnThingOnRemoved>
+  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <comps>
+        <li Class="Seg.HediffCompProperties_SkillOffset">
+            <skills>
+                <li>
+                    <skill>Construction</skill>
+                    <offset>4</offset>
+                </li>
+                <li>
+                    <skill>Crafting</skill>
+                    <offset>4</offset>
+                </li>
+                
+                <li>
+                    <skill>Plants</skill>
+                    <offset>-6</offset>
+                </li>
+                <li>
+                    <skill>Artistic</skill>
+                    <offset>-6</offset>
+                </li>
+                 <li>
+                    <skill>Medicine</skill>
+                    <offset>-6</offset>
+                </li>
+            </skills>
+        </li>
+    </comps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        
+        <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+        <SmeltingSpeed>0.20</SmeltingSpeed>
+        <PlantsSkillOffset>-6</PlantsSkillOffset>
+        <ConstructionSkillOffset>4</ConstructionSkillOffset>
+        <CraftingSkillOffset>4</CraftingSkillOffset>
+        <ArtisticSkillOffset>-6</ArtisticSkillOffset>
+        <MedicineSkillOffset>-6</MedicineSkillOffset>
+
+      </statOffsets>
+      <painOffset>0.03</painOffset>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+    </li>
+  </stages>
+</HediffDef>
 </Defs>
