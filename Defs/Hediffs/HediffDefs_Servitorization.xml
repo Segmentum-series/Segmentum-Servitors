@@ -4,7 +4,7 @@
 		<defName>ServitorizationHediff</defName>
 		<label>servitorization</label>
 		<labelNoun>a servitorization</labelNoun>
-		<description>Once a thinking and feeling bieng, the subject has undergone irreversible servitorization. Higher brain hunctions fave been permanently supressed, leaving only conditioned responses and mechanical obedience. The body remains functional. The person does not.</description>
+		<description>Once a thinking and feeling being, this subject has undergone irreversible servitorization. Higher brain functions have been permanently suppressed, leaving only conditioned responses and mechanical obedience. The body remains functional. The person does not.</description>
 		<descriptionHyperlinks>
 			<ThingDef>servitorChip</ThingDef>
 			<RecipeDef>InstallServitorChip</RecipeDef>

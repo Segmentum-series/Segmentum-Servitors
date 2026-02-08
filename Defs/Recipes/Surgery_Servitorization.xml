@@ -8,7 +8,7 @@
 			<ThingDef>servitorChip</ThingDef>
 			<HediffDef>ServitorizationHediff</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Conduction servitorization.</jobString>
+		<jobString>Conducting servitorization.</jobString>
 		<anesthetize>true</anesthetize>
 		<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>1</deathOnFailedSurgeryChance>

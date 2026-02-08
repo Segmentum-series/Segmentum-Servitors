@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>servitorChip</defName>
 		<label>servitor chip</label>
-		<description>A neural implant used in sevitorization procedures. It supresses higher brain functions as part of extensive psychoconditioning and invasive cybernetic integration. In serrvice to the Omnissiah, we shall find the absolution.</description>
+		<description>A neural implant used in servitorization procedures. It suppresses higher brain functions as part of extensive psychoconditioning and invasive cybernetic integration. In service to the Omnissiah, we shall find absolution.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallServitorChip</RecipeDef>
 			<HediffDef>ServitorizationHediff</HediffDef>
