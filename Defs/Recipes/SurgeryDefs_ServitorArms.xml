@@ -25,6 +25,31 @@
   <addsHediff>Seg_Servitors_MiningArm_Hediff</addsHediff>
 </RecipeDef>
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_Servitors_AgriArm</defName>
+  <label>install Agricultural Servitor arm</label>
+  <description>Installs an augmetic replacement arm designed for the specific role of the agricultural servitors. Comfort is not a concern for the cybernetic slaves of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Agricultural Servitor Arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_Servitors_AgriArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_Servitors_AgriArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Arm</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_Servitors_AgriArm_Hediff</addsHediff>
+</RecipeDef>
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_Servitors_IndustrialArm</defName>
   <label>install Industrial Servitor arm</label>
   <description>Installs an augmetic replacement arm designed for the specific role of the industrial servitors. Comfort is not a concern for the cybernetic slaves of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>

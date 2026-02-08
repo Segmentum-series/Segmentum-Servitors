@@ -147,4 +147,68 @@
     </li>
   </stages>
 </HediffDef>
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_Servitors_AgriArm_Hediff</defName>
+  <label>Agricultural Servitor Arm</label>
+  <labelNoun>an agricultural servitor arm</labelNoun>
+  <description>An installed replacement for an arm, the agricultural version of the servitor arm has a built in seed planter and fertilizer spreader to make farming easier. the fingers are replaced with a many tiny mechasytches that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
+  <spawnThingOnRemoved>Seg_Servitors_AgriArm</spawnThingOnRemoved>
+  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <comps>
+        <li Class="Seg.HediffCompProperties_SkillOffset">
+            <skills>
+                <li>
+                    <skill>Mining</skill>
+                    <offset>-4</offset>
+                </li>
+                <li>
+                    <skill>Animals</skill>
+                    <offset>5</offset>
+                </li>
+                
+                <li>
+                    <skill>Plants</skill>
+                    <offset>3</offset>
+                </li>
+                <li>
+                    <skill>Artistic</skill>
+                    <offset>-4</offset>
+                </li>
+                 <li>
+                    <skill>Medicine</skill>
+                    <offset>-4</offset>
+                </li>
+                <li>
+                    <skill>Melee</skill>
+                    <offset>5</offset>
+                </li>
+            </skills>
+        </li>
+    </comps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        
+        <PlantWorkSpeed>0.50</PlantWorkSpeed>
+        <PlantHarvestYield>-0.1</PlantHarvestYield>
+        <MiningSkillOffset>-4</MiningSkillOffset>
+        <AnimalsSkillOffset>5</AnimalsSkillOffset>  
+        <PlantsSkillOffset>3</PlantsSkillOffset>
+        <ArtisticSkillOffset>-4</ArtisticSkillOffset>
+        <MedicineSkillOffset>-4</MedicineSkillOffset>
+        <MeleeSkillOffset>5</MeleeSkillOffset>
+
+      </statOffsets>
+      <painOffset>0.03</painOffset>
+    </li>
+  </stages>
+</HediffDef>
 </Defs>
