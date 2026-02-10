@@ -1,8 +1,8 @@
 <Defs>
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_Servitors_MiningArm</defName>
-  <label>Mining Servitor Arm</label>
- <description>A brutal but effective form of the mining drill, this replaces the entire arm with a drill, with small secondary mechadendrites to do any small fine work required.</description>
+  <label>servitor mining arm</label>
+ <description>An augmetic replacement arm designed for mining servitors. The arm is composed of industrial micro-las emitters, several drill bits, scoops, and filters to sieve rare minerals from less valuable rock.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
@@ -16,8 +16,8 @@
 </ThingDef>
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_Servitors_IndustrialArm</defName>
-  <label>Industrial Servitor Arm</label>
- <description>A, by the Imperium's standard, midly more refined arm, with a built in fusion welder and more robust mechadendrites to do the important work of repiring damaged buildings and tanks while under enemy fire or other places too precarious for a humman to go.</description>
+  <label>servitor industrial arm</label>
+ <description>An augmetic replacement arm designed for manufactorum and construction servitors. The industrial version of the servitor arm has a clamp, a built in fusion welder and robust secondary manipulators to allow for better construction and crafting.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
@@ -31,8 +31,8 @@
 </ThingDef>
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_Servitors_AgriArm</defName>
-  <label>Agricultural Servitor Arm</label>
- <description>A servitor arm designed for agricultural work, with a built in seed planter and fertilizer spreader to make farming easier. the fingers are replaced with a many tiny mechasytches that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
+  <label>servitor agri-arm</label>
+ <description>An augmetic replacement arm designed for agricultural servitors. The servitor agri-arm has a built in seed planter and fertilizer spreader to make farming easier. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>

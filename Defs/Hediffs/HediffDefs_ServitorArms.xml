@@ -1,9 +1,9 @@
 <Defs>
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_Servitors_MiningArm_Hediff</defName>
-  <label>Mining Servitor Arm</label>
-  <labelNoun>a mining servitor arm</labelNoun>
-  <description>An installed augmetic replacement arm designed for the specific role of the mining servitors. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <label>servitor mining arm</label>
+  <labelNoun>a servitor mining arm</labelNoun>
+  <description>An installed augmetic replacement arm designed for mining servitors. The arm is composed of industrial micro-las emitters, several drill bits, scoops, and filters to sieve rare minerals from less valuable rock.</description>
   <spawnThingOnRemoved>Seg_Servitors_MiningArm</spawnThingOnRemoved>
   <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
   <addedPartProps>
@@ -84,9 +84,9 @@
 </HediffDef>
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_Servitors_IndustrialArm_Hediff</defName>
-  <label>Industrial Servitor Arm</label>
-  <labelNoun>an industrial servitor arm</labelNoun>
-  <description>An installed replacement for an arm, the industrial version of the servitor arm has a clamp, a built in fusion welder and more robust mechadendrites to allow for better construction and crafting.</description>
+  <label>servitor industrial arm</label>
+  <labelNoun>a servitor industrial arm</labelNoun>
+  <description>An installed augmetic replacement arm designed for manufactorum and construction servitors. The industrial version of the servitor arm has a clamp, a built in fusion welder and robust secondary manipulators to allow for better construction and crafting.</description>
   <spawnThingOnRemoved>Seg_Servitors_IndustrialArm</spawnThingOnRemoved>
   <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
   <addedPartProps>
@@ -149,9 +149,9 @@
 </HediffDef>
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_Servitors_AgriArm_Hediff</defName>
-  <label>Agricultural Servitor Arm</label>
+  <label>servitor agri-arm</label>
   <labelNoun>an agricultural servitor arm</labelNoun>
-  <description>An installed replacement for an arm, the agricultural version of the servitor arm has a built in seed planter and fertilizer spreader to make farming easier. the fingers are replaced with a many tiny mechasytches that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
+  <description>An installed augmetic replacement arm. The servitor agri-arm has a built in seed planter and fertilizer spreader to make farming easier. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
   <spawnThingOnRemoved>Seg_Servitors_AgriArm</spawnThingOnRemoved>
   <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
   <addedPartProps>
