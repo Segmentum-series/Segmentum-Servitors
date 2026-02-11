@@ -74,4 +74,29 @@
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_Servitors_IndustrialArm_Hediff</addsHediff>
 </RecipeDef>
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_Servitors_PlasArm</defName>
+  <label>install servitor plasma-arm</label>
+  <description>Installs an augmetic replacement arm designed for plasma-equipped servitors. The servitor plasma-arm has a built-in plasma cannon for defense and combat. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
+  <jobString>Installing servitor plasma-arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_Servitors_PlasArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_Servitors_PlasArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Arm</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_Servitors_PlasArm_Hediff</addsHediff>
+</RecipeDef>
 </Defs>
