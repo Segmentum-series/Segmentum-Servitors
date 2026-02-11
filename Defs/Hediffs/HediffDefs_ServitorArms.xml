@@ -227,7 +227,7 @@
       <soundCast>Seg_COTO_PlasmaSound</soundCast>
       <muzzleFlashScale>9</muzzleFlashScale>
       <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-      <warmupTime>1</warmupTime>
+      <warmupTime>4</warmupTime>
       <burstShotCount>3</burstShotCount>
       <accuracyTouch>0.9</accuracyTouch>
       <accuracyShort>0.8</accuracyShort>
