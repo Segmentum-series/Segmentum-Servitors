@@ -219,7 +219,7 @@
     <writeCombatLog>True</writeCombatLog>
     <iconPath>Things/Item/Health/UI/Icons/Seg_COTO_Plasma</iconPath>
     <showPsycastEffects>False</showPsycastEffects>
-    <cooldownTicksRange>90~180</cooldownTicksRange> <!-- 1.5 to 3 seconds -->
+    <cooldownTicksRange>180~240</cooldownTicksRange> 
     <verbProperties>
       <verbClass>Verb_AbilityShoot</verbClass>
       <defaultProjectile>SEG_COTO_Bullet_Plasma</defaultProjectile>
@@ -227,7 +227,7 @@
       <soundCast>Seg_COTO_PlasmaSound</soundCast>
       <muzzleFlashScale>9</muzzleFlashScale>
       <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-      <warmupTime>0</warmupTime>
+      <warmupTime>1</warmupTime>
       <burstShotCount>3</burstShotCount>
       <accuracyTouch>0.9</accuracyTouch>
       <accuracyShort>0.8</accuracyShort>
