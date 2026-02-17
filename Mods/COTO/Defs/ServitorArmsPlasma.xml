@@ -79,7 +79,7 @@
             </skills>
         </li>
     <li Class="Seg.HediffCompProperties_GivesAbility">
-        <ability>Seg_Servitors_PlasmaShot</ability>
+        <vanillaAbility>Seg_Servitors_PlasmaShot</vanillaAbility>
     </li>
 </comps>
   <stages>
