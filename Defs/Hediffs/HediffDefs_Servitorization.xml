@@ -24,13 +24,17 @@
 				<disabledWorkTags> Firefighting, Intellectual, Social, Artistic, Caring, Animals, Hunting </disabledWorkTags>
 				<hungerRateFactor>0.25</hungerRateFactor>
 				<statOffsets>
-					<Beauty>-0.5</Beauty>
+					<Beauty>-1</Beauty>
 					<GlobalLearningFactor>-1</GlobalLearningFactor>
 					<MentalBreakThreshold>-0.80</MentalBreakThreshold>
 					<PsychicSensitivity>-0.95</PsychicSensitivity>
 					<ShootingAccuracyPawn>-0.5</ShootingAccuracyPawn>
 					<SocialImpact>-1</SocialImpact>
 				</statOffsets>
+
+				<statFactors>
+					<MarketValue>0.2</MarketValue>
+				</statFactors>
 			
 				<capMods>
 					<li>
@@ -40,7 +44,7 @@
 					<li>
 						<capacity>Talking</capacity>
 						<offset>-1.0</offset>
-					</li>
+					</li>				
 				</capMods>
 			</li>
 		</stages>

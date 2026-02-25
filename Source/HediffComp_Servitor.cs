@@ -45,6 +45,7 @@ namespace ServitorMod
             //Change appearance
             pawn.story.skinColorOverride = new Color(0.75f, 0.75f, 0.72f);
             pawn.story.hairDef = HairDefOf.Bald;
+            pawn.style.beardDef = BeardDefOf.NoBeard;
 
             //Remove traits
             pawn.story.traits.allTraits.Clear();
@@ -65,10 +66,6 @@ namespace ServitorMod
             TraitDef servitor = TraitDef.Named("Servitor");
             pawn.story.traits.GainTrait(new Trait(servitor));
             pawn.story.traits.GainTrait(new Trait(TraitDefOf.Asexual));
-
-            //Join faction
-            pawn.SetFaction(Faction.OfPlayer);
-            pawn.guest?.SetGuestStatus(null);
 
             //Remove anesthetic
             var anesthetic = pawn.health.hediffSet
