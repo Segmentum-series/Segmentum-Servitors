@@ -3,6 +3,7 @@
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>InstallServitorChip</defName>
 		<label>install servitor chip</label>
+		<workerClass>ServitorMod.RecipeWorker_Servitor</workerClass>
 		<description>Conduct servitorization procedure. Involves invasive neurosurgery, implantation of a control chip, and the irreversible suppression of higher brain functions. The subject is stripped of identity and autonomy, reduced to conditioned obedience.</description>
 		<descriptionHyperlinks>
 			<ThingDef>servitorChip</ThingDef>
