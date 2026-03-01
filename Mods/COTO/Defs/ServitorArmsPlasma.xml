@@ -29,7 +29,7 @@
   <defName>Seg_Servitors_PlasArm_Hediff</defName>
   <label>servitor plasma-arm</label>
   <labelNoun>a plasma-equipped servitor arm</labelNoun>
-  <description>An installed augmetic replacement arm. The servitor plasma-arm has a built-in plasma cannon for defense and combat. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
+  <description>A weapon attachment which has replaced the limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
   <spawnThingOnRemoved>Seg_Servitors_PlasArm</spawnThingOnRemoved>
   <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
   <addedPartProps>
@@ -102,7 +102,7 @@
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_Servitors_PlasArm</defName>
   <label>servitor plasma-arm</label>
- <description>An augmetic replacement arm designed for plasma-equipped servitors. The servitor plasma-arm has a built-in plasma cannon for defense and combat. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
+ <description>A weapon attachment which replaces the existing limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
@@ -118,7 +118,7 @@
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_Servitors_PlasArm</defName>
   <label>install servitor plasma-arm</label>
-  <description>Installs an augmetic replacement arm designed for plasma-equipped servitors. The servitor plasma-arm has a built-in plasma cannon for defense and combat. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
+  <description>Replaces the existing limb with a weapon attachment. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat</description>
   <jobString>Installing servitor plasma-arm.</jobString>
   <ingredients>
     <li>
