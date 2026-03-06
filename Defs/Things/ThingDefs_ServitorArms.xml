@@ -10,7 +10,7 @@
   
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>8</ComponentSpacer>
+			<ComponentSpacer>3</ComponentSpacer>
       <Seg_Ceramite>25</Seg_Ceramite>
 		</costList>
 </ThingDef>
@@ -25,7 +25,7 @@
   
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>8</ComponentSpacer>
+			<ComponentSpacer>3</ComponentSpacer>
       <Seg_Ceramite>25</Seg_Ceramite>
 		</costList>
 </ThingDef>
@@ -40,7 +40,7 @@
   
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>8</ComponentSpacer>
+			<ComponentSpacer>3</ComponentSpacer>
       <Seg_Ceramite>25</Seg_Ceramite>
 		</costList>
 </ThingDef>
