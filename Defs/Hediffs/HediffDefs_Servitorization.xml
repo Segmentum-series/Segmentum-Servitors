@@ -123,5 +123,66 @@
 			<li Class="ServitorMod.HediffCompProperties_Servitor"/>
 		</comps>
 	</HediffDef>
+
+	<!-- Servitor-Medicae -->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>MedicaeServitorHediff</defName>
+		<label>medicae servitorization</label>
+		<labelNoun>a medicae servitorization</labelNoun>
+		<description>The subject has been transformed into a Medicae Servitor — a biological surgical assistant designed to perform medical procedures with tireless precision. Higher cognition and emotional capacity have been suppressed, leaving only medical protocols and conditioned obedience.</description>
+		<descriptionHyperlinks>
+			<ThingDef>medicaeChip</ThingDef>
+			<RecipeDef>InstallMedicaeChip</RecipeDef>
+		</descriptionHyperlinks>
+		<isBad>true</isBad>
+		<stages>
+			<li>
+				<disablesNeeds>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+					<li>Rest</li>
+					<li>Comfort</li>
+					<li>Beauty</li>
+					<li>Joy</li>
+					<li>Mood</li>
+				</disablesNeeds>
+				<disabledWorkTags>
+					<li>Firefighting</li>
+					<li>Social</li>
+					<li>Artistic</li>
+					<li>Animals</li>
+					<li>Hunting</li>
+					<li>Cooking</li>
+					<li>PlantWork</li>
+					<li>Mining</li>
+				</disabledWorkTags>
+				<hungerRateFactor>0.25</hungerRateFactor>
+				<statOffsets>
+					<Beauty>-1</Beauty>
+					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+					<MentalBreakThreshold>-0.80</MentalBreakThreshold>
+					<PsychicSensitivity>-0.95</PsychicSensitivity>
+					<SocialImpact>-1</SocialImpact>
+					<MedicalTendQuality>0.25</MedicalTendQuality>
+				</statOffsets>
+				<statFactors>
+					<MarketValue>0.4</MarketValue>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.6</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-1.0</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="ServitorMod.HediffCompProperties_Servitor"/>
+		</comps>
+	</HediffDef>
 	
 </Defs>

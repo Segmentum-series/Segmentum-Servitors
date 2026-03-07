@@ -90,5 +90,50 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>LexomatServitorHediff</addsHediff>
 	</RecipeDef>
-		
+
+	<!-- Servitor-Medicae -->
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>InstallMedicaeChip</defName>
+		<label>install medicae servitor chip</label>
+		<workerClass>ServitorMod.RecipeWorker_Servitor</workerClass>
+		<description>Conduct medicae servitorization procedure. The subject is transformed into a surgical assistant servitor capable of performing medical procedures with mechanical precision.</description>
+		<descriptionHyperlinks>
+			<ThingDef>medicaeChip</ThingDef>
+			<HediffDef>MedicaeServitorHediff</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing medicae servitor implant.</jobString>
+		<anesthetize>true</anesthetize>
+		<surgerySuccessChanceFactor>0.8</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>1</deathOnFailedSurgeryChance>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>medicaeChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>medicaeChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MedicaeServitorHediff</addsHediff>
+	</RecipeDef>
+	
 </Defs>

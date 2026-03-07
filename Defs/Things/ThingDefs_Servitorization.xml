@@ -20,7 +20,7 @@
 		<costList>
 			<Plasteel>15</Plasteel>
 			<Steel>1</Steel>
-			<ComponentSpacer>4</ComponentSpacer>
+			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 	</ThingDef>
 
@@ -44,6 +44,29 @@
 			<Plasteel>15</Plasteel>
 			<Steel>1</Steel>
 			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	
+	<!--Servitor-Medicae-->
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>medicaeChip</defName>
+		<label>medicae servitor chip</label>
+		<description>A specialized servitor brain implant used to create Medicae Servitors. The subject undergoes extensive neurosurgical conditioning, turning them into a biological surgical assistant capable of performing medical procedures with mechanical precision. In service to the Omnissiah, we shall find absolution.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallMedicaeChip</RecipeDef>
+			<HediffDef>MedicaeServitorHediff</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Health/ServitorImplant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>1</Steel>
+			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 	</ThingDef>
 	

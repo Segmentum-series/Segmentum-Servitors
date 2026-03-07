@@ -62,6 +62,9 @@ namespace ServitorMod
                 skill.passion = Passion.None;
             }
 
+            //Apply skills
+            ApplyServitorSkills(pawn);
+
             //Add traits
             TraitDef servitor = TraitDef.Named("Servitor");
             pawn.story.traits.GainTrait(new Trait(servitor));
@@ -69,13 +72,40 @@ namespace ServitorMod
 
             //Remove anesthetic
             var anesthetic = pawn.health.hediffSet
-                .GetFirstHediffOfDef(HediffDefOf.Anesthetic);
+            .GetFirstHediffOfDef(HediffDefOf.Anesthetic);
 
             if (anesthetic != null)
             {
                 pawn.health.RemoveHediff(anesthetic);
             }
 
+        }
+
+        private void ApplyServitorSkills(Pawn pawn)
+        {
+            string type = parent.def.defName;
+
+            if (type == "LexomatServitorHediff")
+            {
+                SetSkillFloor(pawn, SkillDefOf.Intellectual, 10);
+            }
+
+            if (type == "MedicaeServitorHediff")
+            {
+                SetSkillFloor(pawn, SkillDefOf.Medicine, 5);
+                SetSkillFloor(pawn, SkillDefOf.Crafting, 5);
+                SetSkillFloor(pawn, SkillDefOf.Intellectual, 5);
+            }
+        }
+
+        private void SetSkillFloor(Pawn pawn, SkillDef skill, int level)
+        {
+            SkillRecord record = pawn.skills.GetSkill(skill);
+
+            if (record.Level < level)
+            {
+                record.Level = level;
+            }
         }
 
         private void ApplyConstantEffects()
