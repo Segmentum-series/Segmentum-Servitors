@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	
+	<!--Servitor-->>
 	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>servitorChip</defName>
 		<label>servitor chip</label>
@@ -21,4 +23,28 @@
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 	</ThingDef>
+
+	<!--Servitor-Lexomat-->>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>lexomatChip</defName>
+		<label>lexomat chip</label>
+		<description>A specialized servitor brain implant designed to produce Lexomats — biological cogitators dedicated to pure calculation and analysis. Higher emotional and social cognition is permanently suppressed while analytical and memory centers are reinforced through invasive cybernetic implantation. In service to the Omnissiah, we shall find absolution.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallLexomatChip</RecipeDef>
+			<HediffDef>LexomatServitorHediff</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Health/ServitorImplant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>1</Steel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	
 </Defs>

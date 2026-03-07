@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+	<!-- Servitor -->
 	<HediffDef ParentName = "ImplantHediffBase">
 		<defName>ServitorizationHediff</defName>
 		<label>servitorization</label>
@@ -21,7 +23,15 @@
 					<li>Joy</li>
 					<li>Mood</li>
 				</disablesNeeds>
-				<disabledWorkTags> Firefighting, Intellectual, Social, Artistic, Caring, Animals, Hunting </disabledWorkTags>
+				<disabledWorkTags>
+					<li>Firefighting</li>
+					<li>Intellectual</li>
+					<li>Social</li>
+					<li>Artistic</li>
+					<li>Caring</li>
+					<li>Animals</li>
+					<li>Hunting</li>
+				</disabledWorkTags>
 				<hungerRateFactor>0.25</hungerRateFactor>
 				<statOffsets>
 					<Beauty>-1</Beauty>
@@ -31,11 +41,9 @@
 					<ShootingAccuracyPawn>-0.5</ShootingAccuracyPawn>
 					<SocialImpact>-1</SocialImpact>
 				</statOffsets>
-
 				<statFactors>
 					<MarketValue>0.2</MarketValue>
 				</statFactors>
-			
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -52,4 +60,68 @@
 			<li Class="ServitorMod.HediffCompProperties_Servitor"/>
 		</comps>
 	</HediffDef>
+	
+	<!-- Servitor-Lexomat -->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>LexomatServitorHediff</defName>
+		<label>lexomat servitorization</label>
+		<labelNoun>a lexomat servitorization</labelNoun>
+		<description>The subject has been transformed into a Lexomat — a biological computation servitor optimized for analysis, calculation, and research. Emotional, social, and motor functions are heavily suppressed. Only analytical cognition remains intact.</description>
+		<descriptionHyperlinks>
+			<ThingDef>lexomatChip</ThingDef>
+			<RecipeDef>InstallLexomatChip</RecipeDef>
+		</descriptionHyperlinks>
+		<isBad>true</isBad>
+		<stages>
+			<li>
+				<disablesNeeds>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+					<li>Rest</li>
+					<li>Comfort</li>
+					<li>Beauty</li>
+					<li>Joy</li>
+					<li>Mood</li>
+				</disablesNeeds>
+				<disabledWorkTags>
+					<li>Firefighting</li>
+					<li>Social</li>
+					<li>Artistic</li>
+					<li>Caring</li>
+					<li>Animals</li>
+					<li>Hunting</li>
+					<li>Cooking</li>
+					<li>PlantWork</li>
+					<li>Crafting</li>
+					<li>Mining</li>
+				</disabledWorkTags>
+				<hungerRateFactor>0.25</hungerRateFactor>
+				<statOffsets>
+					<Beauty>-1</Beauty>
+					<GlobalLearningFactor>0.5</GlobalLearningFactor>
+					<MentalBreakThreshold>-0.80</MentalBreakThreshold>
+					<PsychicSensitivity>-0.95</PsychicSensitivity>
+					<ShootingAccuracyPawn>-0.8</ShootingAccuracyPawn>
+					<SocialImpact>-1</SocialImpact>
+				</statOffsets>
+				<statFactors>
+					<MarketValue>1.2</MarketValue>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.6</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-1.0</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="ServitorMod.HediffCompProperties_Servitor"/>
+		</comps>
+	</HediffDef>
+	
 </Defs>

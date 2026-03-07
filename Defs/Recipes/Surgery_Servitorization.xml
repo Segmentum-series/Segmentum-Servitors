@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	
+	<!-- Servitor -->
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>InstallServitorChip</defName>
 		<label>install servitor chip</label>
@@ -43,4 +45,50 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>ServitorizationHediff</addsHediff>
 	</RecipeDef>
+
+	<!-- Servitoir-Lexomat -->>
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>InstallLexomatChip</defName>
+		<label>install lexomat chip</label>
+		<workerClass>ServitorMod.RecipeWorker_Servitor</workerClass>
+		<description>Conduct lexomat servitorization procedure. The subject is transformed into a biological computation engine capable of performing complex intellectual tasks while most voluntary behavior and social function are suppressed.</description>
+		<descriptionHyperlinks>
+			<ThingDef>lexomatChip</ThingDef>
+			<HediffDef>LexomatServitorHediff</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing lexomat implant.</jobString>
+		<anesthetize>true</anesthetize>
+		<surgerySuccessChanceFactor>0.7</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>1</deathOnFailedSurgeryChance>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>lexomatChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>lexomatChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>LexomatServitorHediff</addsHediff>
+	</RecipeDef>
+		
 </Defs>
