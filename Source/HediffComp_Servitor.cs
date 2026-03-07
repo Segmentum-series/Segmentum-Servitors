@@ -42,6 +42,9 @@ namespace ServitorMod
                 );
             }
 
+            pawn.story.Childhood = DefDatabase<BackstoryDef>.GetNamed("ServitorForgotten");
+            pawn.story.Adulthood = DefDatabase<BackstoryDef>.GetNamed("ServitorConverted");
+
             //Change appearance
             pawn.story.skinColorOverride = new Color(0.75f, 0.75f, 0.72f);
             pawn.story.hairDef = HairDefOf.Bald;
@@ -52,9 +55,6 @@ namespace ServitorMod
 
             //Reassign work
             pawn.workSettings?.DisableAll();
-            pawn.workSettings?.SetPriority(WorkTypeDefOf.Mining, 3);
-            pawn.workSettings?.SetPriority(WorkTypeDefOf.Cleaning, 3);
-            pawn.workSettings?.SetPriority(WorkTypeDefOf.Hauling, 3);
 
             //Remove passions
             foreach (var skill in pawn.skills.skills)

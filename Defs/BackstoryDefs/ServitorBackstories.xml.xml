@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Child -->
+	<BackstoryDef>
+		<defName>ServitorForgotten</defName>
+		<title>forgotten</title>
+		<titleShort>forgotten</titleShort>
+		<description>
+			The past exists only as fractured impressions. Faint echoes of voices, the outline of unfamiliar faces, the sensation of places that cannot be named. These memories surface rarely and fade just as quickly, like distorted signals lost in static. The past no longer matters. Glory to the Omnissiah.
+		</description>
+
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Offworld</li>
+		</spawnCategories>
+
+	</BackstoryDef>
+
+	<!-- Adult -->
+	<BackstoryDef>
+		<defName>ServitorConverted</defName>
+		<title>servitor</title>
+		<titleShort>servitor</titleShort>
+
+		<description>
+			Through extensive surgical alteration, neural conditioning, and the implantation of sacred machinery, this individual has been remade into a servitor. Independent thought and emotion have been stripped away, replaced with rigid obedience protocols and narrowly defined task functions. The flesh is weak, but steel endures.
+		</description>
+
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+
+		<slot>Adulthood</slot>
+
+		<spawnCategories>
+			<li>Offworld</li>
+		</spawnCategories>
+
+	</BackstoryDef>
+
+</Defs>

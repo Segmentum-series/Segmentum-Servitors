@@ -159,11 +159,12 @@
 				<hungerRateFactor>0.25</hungerRateFactor>
 				<statOffsets>
 					<Beauty>-1</Beauty>
-					<GlobalLearningFactor>0.25</GlobalLearningFactor>
 					<MentalBreakThreshold>-0.80</MentalBreakThreshold>
 					<PsychicSensitivity>-0.95</PsychicSensitivity>
+					<ShootingAccuracyPawn>-0.8</ShootingAccuracyPawn>
 					<SocialImpact>-1</SocialImpact>
 					<MedicalTendQuality>0.25</MedicalTendQuality>
+					<ResearchSpeed>-0.5</ResearchSpeed>
 				</statOffsets>
 				<statFactors>
 					<MarketValue>0.4</MarketValue>
