@@ -1,0 +1,154 @@
+<Defs>
+<!--Heddifs-->
+<AbilityDef>
+    <defName>Seg_Servitors_BolterShot</defName>
+    <label>Servitor Bolter shot</label>
+    <description>Fire a burst of low-accuracy mass reactive bolts.</description>
+    <writeCombatLog>True</writeCombatLog>
+    <iconPath>Things/Projectiles/BEWH_BolterRound</iconPath>
+    <showPsycastEffects>False</showPsycastEffects>
+    <cooldownTicksRange>180~240</cooldownTicksRange> 
+    <verbProperties>
+      <verbClass>Verb_AbilityShoot</verbClass>
+      <defaultProjectile>BEWH_BolterRoundInferno</defaultProjectile>
+      <range>24.9</range>
+      <soundCast>BEWH_SFX_BolterShot</soundCast>
+      <muzzleFlashScale>9</muzzleFlashScale>
+      <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+      <warmupTime>4</warmupTime>
+      <burstShotCount>3</burstShotCount>
+      <accuracyTouch>0.9</accuracyTouch>
+      <accuracyShort>0.8</accuracyShort>
+      <accuracyMedium>0.6</accuracyMedium>
+      <accuracyLong>0.5</accuracyLong>
+      <ai_IsWeapon>true</ai_IsWeapon>
+    </verbProperties>
+    <!--<comps>
+      <li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+          <li>BEWH_BolterRound</li>
+          <li>BEWH_BolterRoundMetalStorm</li>
+          <li>BEWH_BolterRoundInferno</li>
+          <li>BEWH_BolterRoundKraken</li>
+          <li>BEWH_BolterRoundTempest</li>
+        </availableProjectiles>
+      </li>
+      </comps>-->
+  </AbilityDef>
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_Servitors_BolterArm_Hediff</defName>
+  <label>servitor bolter-arm</label>
+  <labelNoun>a bolter-equipped servitor arm</labelNoun>
+  <description>A weapon attachment which has replaced the limb. The servitor bolter-arm consists of a large bolter for combat but greatly impairs any functions other than combat.</description>
+  <spawnThingOnRemoved>Seg_Servitors_BolterArm</spawnThingOnRemoved>
+  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <comps>
+        <li Class="Seg.HediffCompProperties_SkillOffset">
+            <skills>
+                <li>
+                    <skill>Mining</skill>
+                    <offset>-12</offset>
+                </li>
+                <li>
+                    <skill>Animals</skill>
+                    <offset>-12</offset>
+                </li>
+                
+                <li>
+                    <skill>Plants</skill>
+                    <offset>-12</offset>
+                </li>
+                <li>
+                    <skill>Artistic</skill>
+                    <offset>-12</offset>
+                </li>
+                 <li>
+                    <skill>Medicine</skill>
+                    <offset>-12</offset>
+                </li>
+                <li>
+                    <skill>Melee</skill>
+                    <offset>-12</offset>
+                </li>
+                  <li>
+                      <skill>Shooting</skill>
+                      <offset>8</offset>
+                  </li>
+                  <li>
+                      <skill>Cooking</skill>
+                      <offset>-12</offset>
+                  </li>
+
+
+
+            </skills>
+        </li>
+    <li Class="Seg.HediffCompProperties_GivesAbility">
+        <vanillaAbility>Seg_Servitors_BolterShot</vanillaAbility>
+    </li>
+</comps>
+  <stages>
+    <li>
+      <statOffsets>
+        <ShootingSkillOffset>8</ShootingSkillOffset>
+        <MiningSkillOffset>-12</MiningSkillOffset>
+        <AnimalsSkillOffset>-12</AnimalsSkillOffset>
+        <PlantsSkillOffset>-12</PlantsSkillOffset>
+        <ArtisticSkillOffset>-12</ArtisticSkillOffset>
+        <MedicineSkillOffset>-12</MedicineSkillOffset>
+        <MeleeSkillOffset>-12</MeleeSkillOffset>
+
+      </statOffsets>
+      <painOffset>0.03</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+<!--ThingDefs-->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_Servitors_BolterArm</defName>
+  <label>servitor bolter-arm</label>
+ <description>A weapon attachment which replaces the existing limb. The servitor bolter-arm consists of a large bolter for combat but greatly impairs any functions other than combat.</description>
+  <statBases>
+    <MarketValue>2800</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+      <Seg_Ceramite>25</Seg_Ceramite>
+		</costList>
+</ThingDef>
+<!--RecipeDefs-->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_Servitors_BolterArm</defName>
+  <label>install servitor bolter-arm</label>
+  <description>Replaces the existing limb with a weapon attachment. The servitor bolter-arm consists of a large bolter for combat but greatly impairs any functions other than combat</description>
+  <jobString>Installing servitor bolter-arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_Servitors_BolterArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_Servitors_BolterArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Arm</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_Servitors_BolterArm_Hediff</addsHediff>
+</RecipeDef>
+</Defs>
