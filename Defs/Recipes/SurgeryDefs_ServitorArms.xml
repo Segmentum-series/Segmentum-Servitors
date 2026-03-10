@@ -74,5 +74,29 @@
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_Servitors_IndustrialArm_Hediff</addsHediff>
 </RecipeDef>
-
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_Servitors_MeltaArm</defName>
+  <label>install servitor multi-melta-arm</label>
+  <description>Replaces the existing limb with a weapon attachment. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat</description>
+  <jobString>Installing servitor melta-arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_Servitors_MeltaArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_Servitors_MeltaArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Arm</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_Servitors_MeltaArm_Hediff</addsHediff>
+</RecipeDef>
 </Defs>

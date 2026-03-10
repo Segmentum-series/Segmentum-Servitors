@@ -212,6 +212,107 @@
   </stages>
 </HediffDef>
 
+<AbilityDef>
+    <defName>Seg_Servitors_MeltaBeam</defName>
+    <label>Servitor Melta beam</label>
+    <description>Fire a beam of highly destructive fusion energy.</description>
+    <writeCombatLog>True</writeCombatLog>
+    <iconPath>Things/Item/Health/UI/Icons/Seg_Servitors_MultimeltaIconGW</iconPath>
+    <showPsycastEffects>False</showPsycastEffects>
+    <cooldownTicksRange>240~360</cooldownTicksRange> 
+    <verbProperties>
+      <verbClass>Verb_AbilityShoot</verbClass>
+      <defaultProjectile>Seg_MeltaBeam</defaultProjectile>
+      <range>14.9</range>
+      <soundCast>BEWH_SFX_BolterShot</soundCast>
+      <muzzleFlashScale>9</muzzleFlashScale>
+      <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+      <warmupTime>5</warmupTime>
+      <burstShotCount>1</burstShotCount>
+      <accuracyTouch>0.9</accuracyTouch>
+      <accuracyShort>0.8</accuracyShort>
+      <accuracyMedium>0.6</accuracyMedium>
+      <accuracyLong>0.5</accuracyLong>
+      <ai_IsWeapon>true</ai_IsWeapon>
+      <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_Servitors_MeltaArm_Hediff</defName>
+  <label>servitor melta-arm</label>
+  <labelNoun>a melta-equipped servitor arm</labelNoun>
+  <description>A weapon attachment which has replaced the limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.</description>
+  <spawnThingOnRemoved>Seg_Servitors_MeltaArm</spawnThingOnRemoved>
+  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <comps>
+        <li Class="Seg.HediffCompProperties_SkillOffset">
+            <skills>
+                <li>
+                    <skill>Mining</skill>
+                    <offset>-12</offset>
+                </li>
+                <li>
+                    <skill>Animals</skill>
+                    <offset>-12</offset>
+                </li>
+                
+                <li>
+                    <skill>Plants</skill>
+                    <offset>-12</offset>
+                </li>
+                <li>
+                    <skill>Artistic</skill>
+                    <offset>-12</offset>
+                </li>
+                 <li>
+                    <skill>Medicine</skill>
+                    <offset>-12</offset>
+                </li>
+                <li>
+                    <skill>Melee</skill>
+                    <offset>-12</offset>
+                </li>
+                  <li>
+                      <skill>Shooting</skill>
+                      <offset>8</offset>
+                  </li>
+                  <li>
+                      <skill>Cooking</skill>
+                      <offset>-12</offset>
+                  </li>
+
+
+
+            </skills>
+        </li>
+    <li Class="Seg.HediffCompProperties_GivesAbility">
+        <vanillaAbility>Seg_Servitors_MeltaBeam</vanillaAbility>
+    </li>
+</comps>
+  <stages>
+    <li>
+      <statOffsets>
+        <ShootingSkillOffset>8</ShootingSkillOffset>
+        <MiningSkillOffset>-12</MiningSkillOffset>
+        <AnimalsSkillOffset>-12</AnimalsSkillOffset>
+        <PlantsSkillOffset>-12</PlantsSkillOffset>
+        <ArtisticSkillOffset>-12</ArtisticSkillOffset>
+        <MedicineSkillOffset>-12</MedicineSkillOffset>
+        <MeleeSkillOffset>-12</MeleeSkillOffset>
+
+      </statOffsets>
+      <painOffset>0.03</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
  
 
 </Defs>

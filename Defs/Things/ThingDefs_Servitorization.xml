@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<!--Servitor-->>
+	<!--Servitor-->
 	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>servitorChip</defName>
 		<label>servitor chip</label>
@@ -24,7 +24,7 @@
 		</costList>
 	</ThingDef>
 
-	<!--Servitor-Lexomat-->>
+	<!--Servitor-Lexomat-->
 	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>lexomatChip</defName>
 		<label>lexomat chip</label>
