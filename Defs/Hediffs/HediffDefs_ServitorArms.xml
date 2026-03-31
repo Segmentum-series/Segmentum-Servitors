@@ -254,9 +254,9 @@
     <renderNodeProperties>
       <li Class="PawnRenderNodeProperties_Spastic">
         <texPaths>
-          <li>Pawn/Wounds/Melta/Seg_SERV_GunArmMelta_Male_south</li>
-          <li>Pawn/Wounds/Melta/Seg_SERV_GunArmMelta_Male_north</li>
-          <li>Pawn/Wounds/Melta/Seg_SERV_GunArmMelta_Male_east</li>
+          <li>Pawn/Wounds/Melta/Seg_SERV_GunArmMeltaA</li>
+          <li>Pawn/Wounds/Melta/Seg_SERV_GunArmMeltaB</li>
+          <li>Pawn/Wounds/Melta/Seg_SERV_GunArmMeltaC</li>
         </texPaths>
         <parentTagDef>Body</parentTagDef>
         <overrideMeshSize>1</overrideMeshSize>
