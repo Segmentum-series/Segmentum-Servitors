@@ -10,6 +10,12 @@
 			<RecipeDef>InstallServitorChip</RecipeDef>
 			<HediffDef>ServitorizationHediff</HediffDef>
 		</descriptionHyperlinks>
+		  <tradeTags Inherit="False">
+			<li>Seg_Servitors_Chips</li>
+		</tradeTags>
+    <techHediffsTags Inherit="False">
+			<li>Seg_Servitors_Chips</li>
+		</techHediffsTags>
 		<graphicData>
 			<texPath>Things/Item/Health/ServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -33,6 +39,12 @@
 			<RecipeDef>InstallLexomatChip</RecipeDef>
 			<HediffDef>LexomatServitorHediff</HediffDef>
 		</descriptionHyperlinks>
+		<tradeTags Inherit="False">
+			<li>Seg_Servitors_Chips</li>
+		</tradeTags>
+    <techHediffsTags Inherit="False">
+			<li>Seg_Servitors_Chips</li>
+		</techHediffsTags>
 		<graphicData>
 			<texPath>Things/Item/Health/ServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -51,11 +63,18 @@
 	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>medicaeChip</defName>
 		<label>medicae servitor chip</label>
+		<tradeTags Inherit="False"></tradeTags>
 		<description>A specialized servitor brain implant used to create Medicae Servitors. The subject undergoes extensive neurosurgical conditioning, turning them into a biological surgical assistant capable of performing medical procedures with mechanical precision. In service to the Omnissiah, we shall find absolution.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallMedicaeChip</RecipeDef>
 			<HediffDef>MedicaeServitorHediff</HediffDef>
 		</descriptionHyperlinks>
+		<tradeTags Inherit="False">
+			<li>Seg_Servitors_Chips</li>
+		</tradeTags>
+    <techHediffsTags Inherit="False">
+			<li>Seg_Servitors_Chips</li>
+		</techHediffsTags>
 		<graphicData>
 			<texPath>Things/Item/Health/ServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

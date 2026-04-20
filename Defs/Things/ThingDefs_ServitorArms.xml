@@ -7,7 +7,12 @@
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
-  
+    <tradeTags Inherit="False">
+			<li>Seg_Servitors_Arms</li>
+		</tradeTags>
+    <techHediffsTags Inherit="False">
+			<li>Seg_Servitors_Arms</li>
+		</techHediffsTags>
 		<costList>
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>3</ComponentSpacer>
@@ -22,7 +27,12 @@
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
-  
+    <tradeTags Inherit="False">
+			<li>Seg_Servitors_Arms</li>
+		</tradeTags>
+    <techHediffsTags Inherit="False">
+			<li>Seg_Servitors_Arms</li>
+		</techHediffsTags>
 		<costList>
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>3</ComponentSpacer>
@@ -37,7 +47,13 @@
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
-  
+    <tradeTags Inherit="False">
+			<li>Seg_Servitors_Arms</li>
+		</tradeTags>
+    <techHediffsTags Inherit="False">
+			<li>Seg_Servitors_Arms</li>
+		</techHediffsTags>
+
 		<costList>
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>3</ComponentSpacer>
@@ -52,6 +68,13 @@
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
+  <tradeTags Inherit="False">
+			<li>Seg_Servitors_Arms</li>
+		</tradeTags>
+    <techHediffsTags Inherit="False">
+			<li>Seg_Servitors_Arms</li>
+		</techHediffsTags>
+
   
 		<costList>
 			<Plasteel>20</Plasteel>
