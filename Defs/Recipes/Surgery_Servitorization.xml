@@ -3,13 +3,13 @@
 	
 	<!-- Servitor -->
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
-		<defName>InstallServitorChip</defName>
+		<defName>InstallSeg_Servitors_ServitorChip</defName>
 		<label>install servitor chip</label>
 		<workerClass>ServitorMod.RecipeWorker_Servitor</workerClass>
 		<description>Conduct servitorization procedure. Involves invasive neurosurgery, implantation of a control chip, and the irreversible suppression of higher brain functions. The subject is stripped of identity and autonomy, reduced to conditioned obedience.</description>
 		<descriptionHyperlinks>
-			<ThingDef>servitorChip</ThingDef>
-			<HediffDef>ServitorizationHediff</HediffDef>
+			<ThingDef>Seg_Servitors_ServitorChip</ThingDef>
+			<HediffDef>Seg_Servitors_ServitorizationHediff</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Conducting servitorization.</jobString>
 		<anesthetize>true</anesthetize>
@@ -19,7 +19,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>servitorChip</li>
+						<li>Seg_Servitors_ServitorChip</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -37,24 +37,24 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>servitorChip</li>
+				<li>Seg_Servitors_ServitorChip</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>ServitorizationHediff</addsHediff>
+		<addsHediff>Seg_Servitors_ServitorizationHediff</addsHediff>
 	</RecipeDef>
 
 	<!-- Servitoir-Lexomat -->>
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
-		<defName>InstallLexomatChip</defName>
+		<defName>InstallSeg_Servitors_LexomatChip</defName>
 		<label>install lexomat chip</label>
 		<workerClass>ServitorMod.RecipeWorker_Servitor</workerClass>
 		<description>Conduct lexomat servitorization procedure. The subject is transformed into a biological computation engine capable of performing complex intellectual tasks while most voluntary behavior and social function are suppressed.</description>
 		<descriptionHyperlinks>
-			<ThingDef>lexomatChip</ThingDef>
-			<HediffDef>LexomatServitorHediff</HediffDef>
+			<ThingDef>Seg_Servitors_LexomatChip</ThingDef>
+			<HediffDef>Seg_Servitors_LexomatServitorHediff</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing lexomat implant.</jobString>
 		<anesthetize>true</anesthetize>
@@ -82,24 +82,24 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>lexomatChip</li>
+				<li>Seg_Servitors_LexomatChip</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>LexomatServitorHediff</addsHediff>
+		<addsHediff>Seg_Servitors_LexomatServitorHediff</addsHediff>
 	</RecipeDef>
 
 	<!-- Servitor-Medicae -->
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
-		<defName>InstallMedicaeChip</defName>
+		<defName>InstallSeg_Servitors_MedicaeChip</defName>
 		<label>install medicae servitor chip</label>
 		<workerClass>ServitorMod.RecipeWorker_Servitor</workerClass>
 		<description>Conduct medicae servitorization procedure. The subject is transformed into a surgical assistant servitor capable of performing medical procedures with mechanical precision.</description>
 		<descriptionHyperlinks>
-			<ThingDef>medicaeChip</ThingDef>
-			<HediffDef>MedicaeServitorHediff</HediffDef>
+			<ThingDef>Seg_Servitors_MedicaeChip</ThingDef>
+			<HediffDef>Seg_Servitors_MedicaeServitorHediff</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing medicae servitor implant.</jobString>
 		<anesthetize>true</anesthetize>
@@ -109,7 +109,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>medicaeChip</li>
+						<li>Seg_Servitors_MedicaeChip</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -127,13 +127,13 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>medicaeChip</li>
+				<li>Seg_Servitors_MedicaeChip</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>MedicaeServitorHediff</addsHediff>
+		<addsHediff>Seg_Servitors_MedicaeServitorHediff</addsHediff>
 	</RecipeDef>
 	
 </Defs>

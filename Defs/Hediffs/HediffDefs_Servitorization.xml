@@ -3,13 +3,13 @@
 
 	<!-- Servitor -->
 	<HediffDef ParentName = "ImplantHediffBase">
-		<defName>ServitorizationHediff</defName>
+		<defName>Seg_Servitors_ServitorizationHediff</defName>
 		<label>servitorization</label>
 		<labelNoun>a servitorization</labelNoun>
 		<description>Once a thinking and feeling being, this subject has undergone irreversible servitorization. Higher brain functions have been permanently suppressed, leaving only conditioned responses and mechanical obedience. The body remains functional. The person does not.</description>
 		<descriptionHyperlinks>
-			<ThingDef>servitorChip</ThingDef>
-			<RecipeDef>InstallServitorChip</RecipeDef>
+			<ThingDef>Seg_Servitors_ServitorChip</ThingDef>
+			<RecipeDef>InstallSeg_Servitors_ServitorChip</RecipeDef>
 		</descriptionHyperlinks>
 		<isBad>true</isBad>
 		<stages>
@@ -63,13 +63,13 @@
 	
 	<!-- Servitor-Lexomat -->
 	<HediffDef ParentName="ImplantHediffBase">
-		<defName>LexomatServitorHediff</defName>
+		<defName>Seg_Servitors_LexomatServitorHediff</defName>
 		<label>lexomat servitorization</label>
 		<labelNoun>a lexomat servitorization</labelNoun>
-		<description>The subject has been transformed into a Lexomat — a biological computation servitor optimized for analysis, calculation, and research. Emotional, social, and motor functions are heavily suppressed. Only analytical cognition remains intact.</description>
+		<description>The subject has been transformed into a lexomat — a biological computation servitor optimized for analysis, calculation, and research. Emotional, social, and motor functions are heavily suppressed. Only analytical cognition remains intact.</description>
 		<descriptionHyperlinks>
-			<ThingDef>lexomatChip</ThingDef>
-			<RecipeDef>InstallLexomatChip</RecipeDef>
+			<ThingDef>Seg_Servitors_LexomatChip</ThingDef>
+			<RecipeDef>InstallSeg_Servitors_LexomatChip</RecipeDef>
 		</descriptionHyperlinks>
 		<isBad>true</isBad>
 		<stages>
@@ -126,13 +126,13 @@
 
 	<!-- Servitor-Medicae -->
 	<HediffDef ParentName="ImplantHediffBase">
-		<defName>MedicaeServitorHediff</defName>
+		<defName>Seg_Servitors_MedicaeServitorHediff</defName>
 		<label>medicae servitorization</label>
 		<labelNoun>a medicae servitorization</labelNoun>
-		<description>The subject has been transformed into a Medicae Servitor — a biological surgical assistant designed to perform medical procedures with tireless precision. Higher cognition and emotional capacity have been suppressed, leaving only medical protocols and conditioned obedience.</description>
+		<description>The subject has been transformed into a medicae servitor — a biological surgical assistant designed to perform medical procedures with tireless precision. Higher cognition and emotional capacity have been suppressed, leaving only medical protocols and conditioned obedience.</description>
 		<descriptionHyperlinks>
-			<ThingDef>medicaeChip</ThingDef>
-			<RecipeDef>InstallMedicaeChip</RecipeDef>
+			<ThingDef>Seg_Servitors_MedicaeChip</ThingDef>
+			<RecipeDef>InstallSeg_Servitors_MedicaeChip</RecipeDef>
 		</descriptionHyperlinks>
 		<isBad>true</isBad>
 		<stages>

@@ -62,7 +62,7 @@
 </ThingDef>
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_Servitors_MeltaArm</defName>
-  <label>servitor Multi melta-arm</label>
+  <label>servitor melta-arm</label>
  <description>A weapon attachment which replaces the existing limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.</description>
   <statBases>
     <MarketValue>2800</MarketValue>

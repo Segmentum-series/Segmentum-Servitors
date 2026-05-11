@@ -3,12 +3,12 @@
 	
 	<!--Servitor-->
 	<ThingDef ParentName="BodyPartBionicBase">
-		<defName>servitorChip</defName>
+		<defName>Seg_Servitors_ServitorChip</defName>
 		<label>servitor chip</label>
 		<description>A neural implant used in servitorization procedures. It suppresses higher brain functions as part of extensive psychoconditioning and invasive cybernetic integration. In service to the Omnissiah, we shall find absolution.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>InstallServitorChip</RecipeDef>
-			<HediffDef>ServitorizationHediff</HediffDef>
+			<RecipeDef>InstallSeg_Servitors_ServitorChip</RecipeDef>
+			<HediffDef>Seg_Servitors_ServitorizationHediff</HediffDef>
 		</descriptionHyperlinks>
 		  <tradeTags Inherit="False">
 			<li>Seg_Servitors_Chips</li>
@@ -17,7 +17,7 @@
 			<li>Seg_Servitors_Chips</li>
 		</techHediffsTags>
 		<graphicData>
-			<texPath>Things/Item/Health/ServitorImplant</texPath>
+			<texPath>Things/Item/Health/Seg_Servitors_ServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingSetMakerTags>
@@ -32,12 +32,12 @@
 
 	<!--Servitor-Lexomat-->
 	<ThingDef ParentName="BodyPartBionicBase">
-		<defName>lexomatChip</defName>
+		<defName>Seg_Servitors_LexomatChip</defName>
 		<label>lexomat chip</label>
 		<description>A specialized servitor brain implant designed to produce Lexomats — biological cogitators dedicated to pure calculation and analysis. Higher emotional and social cognition is permanently suppressed while analytical and memory centers are reinforced through invasive cybernetic implantation. In service to the Omnissiah, we shall find absolution.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>InstallLexomatChip</RecipeDef>
-			<HediffDef>LexomatServitorHediff</HediffDef>
+			<RecipeDef>InstallSeg_Servitors_LexomatChip</RecipeDef>
+			<HediffDef>Seg_Servitors_LexomatServitorHediff</HediffDef>
 		</descriptionHyperlinks>
 		<tradeTags Inherit="False">
 			<li>Seg_Servitors_Chips</li>
@@ -46,7 +46,7 @@
 			<li>Seg_Servitors_Chips</li>
 		</techHediffsTags>
 		<graphicData>
-			<texPath>Things/Item/Health/ServitorImplant</texPath>
+			<texPath>Things/Item/Health/Seg_Servitors_CogitatorServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingSetMakerTags>
@@ -61,13 +61,13 @@
 	
 	<!--Servitor-Medicae-->
 	<ThingDef ParentName="BodyPartBionicBase">
-		<defName>medicaeChip</defName>
+		<defName>Seg_Servitors_MedicaeChip</defName>
 		<label>medicae servitor chip</label>
 		<tradeTags Inherit="False"></tradeTags>
 		<description>A specialized servitor brain implant used to create Medicae Servitors. The subject undergoes extensive neurosurgical conditioning, turning them into a biological surgical assistant capable of performing medical procedures with mechanical precision. In service to the Omnissiah, we shall find absolution.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>InstallMedicaeChip</RecipeDef>
-			<HediffDef>MedicaeServitorHediff</HediffDef>
+			<RecipeDef>InstallSeg_Servitors_MedicaeChip</RecipeDef>
+			<HediffDef>Seg_Servitors_MedicaeServitorHediff</HediffDef>
 		</descriptionHyperlinks>
 		<tradeTags Inherit="False">
 			<li>Seg_Servitors_Chips</li>
@@ -76,7 +76,7 @@
 			<li>Seg_Servitors_Chips</li>
 		</techHediffsTags>
 		<graphicData>
-			<texPath>Things/Item/Health/ServitorImplant</texPath>
+			<texPath>Things/Item/Health/Seg_Servitors_ServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingSetMakerTags>

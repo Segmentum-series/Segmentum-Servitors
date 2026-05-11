@@ -3,7 +3,7 @@
 
 	<!-- Child -->
 	<BackstoryDef>
-		<defName>ServitorForgotten</defName>
+		<defName>Seg_Servitors_Forgotten</defName>
 		<title>forgotten</title>
 		<titleShort>forgotten</titleShort>
 		<description>The past exists only as fractured impressions. Faint echoes of voices, the outline of unfamiliar faces, the sensation of places that cannot be named. These memories surface rarely and fade just as quickly, like distorted signals lost in static. The past no longer matters. Glory to the Omnissiah.</description>
@@ -14,14 +14,14 @@
 		<slot>Childhood</slot>
 
 		<spawnCategories>
-			<li>Offworld</li>
+			<li>SegServitors</li>
 		</spawnCategories>
 
 	</BackstoryDef>
 
 	<!-- Adult -->
 	<BackstoryDef>
-		<defName>ServitorConverted</defName>
+		<defName>Seg_Servitors_Converted</defName>
 		<title>servitor</title>
 		<titleShort>servitor</titleShort>
 
@@ -33,7 +33,7 @@
 		<slot>Adulthood</slot>
 
 		<spawnCategories>
-			<li>Offworld</li>
+			<li>SegServitors</li>
 		</spawnCategories>
 
 	</BackstoryDef>
