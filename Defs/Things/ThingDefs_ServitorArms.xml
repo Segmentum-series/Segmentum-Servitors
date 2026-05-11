@@ -1,86 +1,104 @@
 <Defs>
-<ThingDef ParentName="BodyPartBionicBase">
-  <defName>Seg_Servitors_MiningArm</defName>
-  <label>servitor mining arm</label>
- <description>An augmetic replacement arm designed for mining servitors. The arm is composed of industrial micro-las emitters, several drill bits, scoops, and filters to sieve rare minerals from less valuable rock.</description>
-  <statBases>
-    <MarketValue>2800</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-    <tradeTags Inherit="False">
-			<li>Seg_Servitors_Arms</li>
-		</tradeTags>
-    <techHediffsTags Inherit="False">
-			<li>Seg_Servitors_Arms</li>
-		</techHediffsTags>
-		<costList>
-			<Plasteel>20</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
-      <Seg_Ceramite>25</Seg_Ceramite>
-		</costList>
-</ThingDef>
-<ThingDef ParentName="BodyPartBionicBase">
-  <defName>Seg_Servitors_IndustrialArm</defName>
-  <label>servitor industrial arm</label>
- <description>An augmetic replacement arm designed for manufactorum and construction servitors. The industrial version of the servitor arm has a clamp, a built in fusion welder and robust secondary manipulators to allow for better construction and crafting.</description>
-  <statBases>
-    <MarketValue>2800</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-    <tradeTags Inherit="False">
-			<li>Seg_Servitors_Arms</li>
-		</tradeTags>
-    <techHediffsTags Inherit="False">
-			<li>Seg_Servitors_Arms</li>
-		</techHediffsTags>
-		<costList>
-			<Plasteel>20</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
-      <Seg_Ceramite>25</Seg_Ceramite>
-		</costList>
-</ThingDef>
-<ThingDef ParentName="BodyPartBionicBase">
-  <defName>Seg_Servitors_AgriArm</defName>
-  <label>servitor agri-arm</label>
- <description>An augmetic replacement arm designed for agricultural servitors. The servitor agri-arm has a built in seed planter and fertilizer spreader to make farming easier. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
-  <statBases>
-    <MarketValue>2800</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-    <tradeTags Inherit="False">
-			<li>Seg_Servitors_Arms</li>
-		</tradeTags>
-    <techHediffsTags Inherit="False">
-			<li>Seg_Servitors_Arms</li>
-		</techHediffsTags>
 
-		<costList>
-			<Plasteel>20</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
-      <Seg_Ceramite>25</Seg_Ceramite>
-		</costList>
+<ThingDef ParentName="Seg_Servitors_ServitorBase">
+	<defName>Seg_Servitors_MiningArm</defName>
+	<label>servitor mining arm</label>
+	<description>An augmetic replacement arm designed for mining servitors. The arm is composed of industrial micro-las emitters, several drill bits, scoops, and filters to sieve rare minerals from less valuable rock.</description>
+	<statBases>
+		<MarketValue>2800</MarketValue>
+		<Mass>0.3</Mass>
+	</statBases>
+	<tradeTags Inherit="False">
+		<li>Seg_Servitors_Arms</li>
+	</tradeTags>
+    <techHediffsTags Inherit="False">
+		<li>Seg_Servitors_Arms</li>
+	</techHediffsTags>
+	<costList>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>6</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+		<Seg_Ceramite>25</Seg_Ceramite>
+	</costList>
+    <recipeMaker>
+      <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</researchPrerequisites>
+	</recipeMaker>
 </ThingDef>
-<ThingDef ParentName="BodyPartBionicBase">
-  <defName>Seg_Servitors_MeltaArm</defName>
-  <label>servitor melta-arm</label>
- <description>A weapon attachment which replaces the existing limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.</description>
+
+<ThingDef ParentName="Seg_Servitors_ServitorBase">
+	<defName>Seg_Servitors_IndustrialArm</defName>
+	<label>servitor industrial arm</label>
+	<description>An augmetic replacement arm designed for manufactorum and construction servitors. The industrial version of the servitor arm has a clamp, a built in fusion welder and robust secondary manipulators to allow for better construction and crafting.</description>
+	<statBases>
+		<MarketValue>2800</MarketValue>
+		<Mass>0.3</Mass>
+	</statBases>
+	<tradeTags Inherit="False">
+		<li>Seg_Servitors_Arms</li>
+	</tradeTags>
+    <techHediffsTags Inherit="False">
+		<li>Seg_Servitors_Arms</li>
+	</techHediffsTags>
+	<costList>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>6</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+		<Seg_Ceramite>25</Seg_Ceramite>
+	</costList>
+    <recipeMaker>
+      <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</researchPrerequisites>
+	</recipeMaker>
+</ThingDef>
+
+<ThingDef ParentName="Seg_Servitors_ServitorBase">
+	<defName>Seg_Servitors_AgriArm</defName>
+	<label>servitor agri-arm</label>
+	<description>An augmetic replacement arm designed for agricultural servitors. The servitor agri-arm has a built in seed planter and fertilizer spreader to make farming easier. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <tradeTags Inherit="False">
-			<li>Seg_Servitors_Arms</li>
-		</tradeTags>
+    <Mass>0.3</Mass>	<statBases>
+		<MarketValue>2800</MarketValue>
+		<Mass>0.3</Mass>
+	</statBases>
+	<tradeTags Inherit="False">
+		<li>Seg_Servitors_Arms</li>
+	</tradeTags>
     <techHediffsTags Inherit="False">
-			<li>Seg_Servitors_Arms</li>
-		</techHediffsTags>
+		<li>Seg_Servitors_Arms</li>
+	</techHediffsTags>
+	<costList>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>6</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+		<Seg_Ceramite>25</Seg_Ceramite>
+	</costList>
+    <recipeMaker>
+      <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</researchPrerequisites>
+	</recipeMaker>
+</ThingDef>
 
-  
-		<costList>
-			<Plasteel>20</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
-      <Seg_Ceramite>25</Seg_Ceramite>
-		</costList>
+<ThingDef ParentName="Seg_Servitors_ServitorBase">
+	<defName>Seg_Servitors_MeltaArm</defName>
+	<label>servitor melta-arm</label>
+	<description>A weapon attachment which replaces the existing limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.</description>
+	<statBases>
+		<MarketValue>3000</MarketValue>
+		<Mass>0.3</Mass>
+	</statBases>
+	<tradeTags Inherit="False">
+		<li>Seg_Servitors_Arms</li>
+	</tradeTags>
+    <techHediffsTags Inherit="False">
+		<li>Seg_Servitors_Arms</li>
+	</techHediffsTags>
+	<costList>
+		<Plasteel>30</Plasteel>
+		<ComponentSpacer>4</ComponentSpacer>
+		<Seg_Ceramite>25</Seg_Ceramite>
+	</costList>
+    <recipeMaker>
+      <researchPrerequisites>Seg_PlasmaInduction</researchPrerequisites>
+	</recipeMaker>
 </ThingDef>
 
 </Defs>

@@ -1,8 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--ServitorBase-->
+  <ThingDef ParentName="BodyPartBionicBase" Abstract="True">
+	<defName>Seg_Servitors_ServitorBase</defName>
+    <techLevel>Spacer</techLevel>
+	<tradeTags Inherit="False">
+		<li>Seg_Servitors_Chips</li>
+	</tradeTags>
+    <techHediffsTags Inherit="False">
+		<li>Seg_Servitors_Chips</li>
+	</techHediffsTags>
+    <statBases>
+      <WorkToMake>17000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>Seg_Servitors_ServitudeImperpituis</researchPrerequisite>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+      <displayPriority>350</displayPriority>
+    </recipeMaker>
+	<thingSetMakerTags>
+		<li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
 	
 	<!--Servitor-->
-	<ThingDef ParentName="BodyPartBionicBase">
+	<ThingDef ParentName="Seg_Servitors_ServitorBase">
 		<defName>Seg_Servitors_ServitorChip</defName>
 		<label>servitor chip</label>
 		<description>A neural implant used in servitorization procedures, designed to create an unthinking and unfeeling servant that can perform ceaseless labour. It suppresses higher brain functions as part of extensive psychoconditioning and invasive cybernetic integration. In service to the Omnissiah, we shall find absolution.</description>
@@ -10,19 +35,10 @@
 			<RecipeDef>InstallSeg_Servitors_ServitorChip</RecipeDef>
 			<HediffDef>Seg_Servitors_ServitorizationHediff</HediffDef>
 		</descriptionHyperlinks>
-		  <tradeTags Inherit="False">
-			<li>Seg_Servitors_Chips</li>
-		</tradeTags>
-    <techHediffsTags Inherit="False">
-			<li>Seg_Servitors_Chips</li>
-		</techHediffsTags>
 		<graphicData>
 			<texPath>Things/Item/Health/Seg_Servitors_ServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
 		<costList>
 			<Plasteel>15</Plasteel>
 			<Steel>1</Steel>
@@ -31,7 +47,7 @@
 	</ThingDef>
 
 	<!--Servitor-Lexomat-->
-	<ThingDef ParentName="BodyPartBionicBase">
+	<ThingDef ParentName="Seg_Servitors_ServitorBase">
 		<defName>Seg_Servitors_LexomatChip</defName>
 		<label>lexomat chip</label>
 		<description>A specialized servitor brain implant designed to produce lexomats — biological cogitators dedicated to pure calculation and analysis. Higher emotional and social cognition is permanently suppressed while analytical and memory centers are reinforced through invasive cybernetic implantation. In service to the Omnissiah, we shall find absolution.</description>
@@ -39,28 +55,19 @@
 			<RecipeDef>InstallSeg_Servitors_LexomatChip</RecipeDef>
 			<HediffDef>Seg_Servitors_LexomatServitorHediff</HediffDef>
 		</descriptionHyperlinks>
-		<tradeTags Inherit="False">
-			<li>Seg_Servitors_Chips</li>
-		</tradeTags>
-    <techHediffsTags Inherit="False">
-			<li>Seg_Servitors_Chips</li>
-		</techHediffsTags>
 		<graphicData>
 			<texPath>Things/Item/Health/Seg_Servitors_CogitatorServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
 		<costList>
 			<Plasteel>15</Plasteel>
 			<Steel>1</Steel>
-			<ComponentSpacer>6</ComponentSpacer>
+			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 	</ThingDef>
 	
 	<!--Servitor-Medicae-->
-	<ThingDef ParentName="BodyPartBionicBase">
+	<ThingDef ParentName="Seg_Servitors_ServitorBase">
 		<defName>Seg_Servitors_MedicaeChip</defName>
 		<label>medicae servitor chip</label>
 		<tradeTags Inherit="False"></tradeTags>
@@ -69,23 +76,14 @@
 			<RecipeDef>InstallSeg_Servitors_MedicaeChip</RecipeDef>
 			<HediffDef>Seg_Servitors_MedicaeServitorHediff</HediffDef>
 		</descriptionHyperlinks>
-		<tradeTags Inherit="False">
-			<li>Seg_Servitors_Chips</li>
-		</tradeTags>
-    <techHediffsTags Inherit="False">
-			<li>Seg_Servitors_Chips</li>
-		</techHediffsTags>
 		<graphicData>
 			<texPath>Things/Item/Health/Seg_Servitors_ServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
 		<costList>
 			<Plasteel>15</Plasteel>
 			<Steel>1</Steel>
-			<ComponentSpacer>4</ComponentSpacer>
+			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 	</ThingDef>
 	
