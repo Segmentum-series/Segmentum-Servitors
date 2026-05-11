@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!-- Segmentum research tree -->
+<!-- Servitude Imperpituis -->
+	<ResearchProjectDef>
+		<defName>Seg_Servitors_ServitudeImperpituis</defName>
+		<label>Servitude Imperpituis</label>
+		<description>Be vested with the rites of the Machine Cult, authorizing the construction of Mechanicus forge altars capable of producing the majority of faction armaments, apparel, and sanctioned equipment.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1.2</researchViewY>
+		<prerequisites>
+			<li>Bionics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<tab>Seg_SegmentumTab</tab>
+		<discoveredLetterTitle>About: Servitorization</discoveredLetterTitle>
+		<discoveredLetterText>Any person can be turned into a mindless cyborg servant by installing a servitor chip in their brain. Different types of chip exist for different purposes, such as lexomats for intellectual tasks, or medicae servitors for medical care. Servitors have no mind of their own and require significantly less nutrition than a standard human, but cannot learn or improve in the way a fully conscious person can. The process is irreversible.</discoveredLetterText>
+	</ResearchProjectDef>
+	
+</Defs>
