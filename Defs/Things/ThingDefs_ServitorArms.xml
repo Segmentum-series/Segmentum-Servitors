@@ -21,7 +21,9 @@
 		<Seg_Ceramite>25</Seg_Ceramite>
 	</costList>
     <recipeMaker>
-      <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</researchPrerequisites>
+      <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">
+	  <li>SpecializedLimbs</li>
+      </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
 
@@ -46,7 +48,9 @@
 		<Seg_Ceramite>25</Seg_Ceramite>
 	</costList>
     <recipeMaker>
-      <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</researchPrerequisites>
+     <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">
+	  <li>SpecializedLimbs</li>
+      </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
 
@@ -54,11 +58,9 @@
 	<defName>Seg_Servitors_AgriArm</defName>
 	<label>servitor agri-arm</label>
 	<description>An augmetic replacement arm designed for agricultural servitors. The servitor agri-arm has a built in seed planter and fertilizer spreader to make farming easier. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
-  <statBases>
+  	<statBases>
     <MarketValue>2800</MarketValue>
-    <Mass>0.3</Mass>	<statBases>
-		<MarketValue>2800</MarketValue>
-		<Mass>0.3</Mass>
+    <Mass>0.3</Mass>
 	</statBases>
 	<tradeTags Inherit="False">
 		<li>Seg_Servitors_Arms</li>
@@ -73,7 +75,9 @@
 		<Seg_Ceramite>25</Seg_Ceramite>
 	</costList>
     <recipeMaker>
-      <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</researchPrerequisites>
+     <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">
+	  <li>SpecializedLimbs</li>
+      </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
 
@@ -97,7 +101,9 @@
 		<Seg_Ceramite>25</Seg_Ceramite>
 	</costList>
     <recipeMaker>
-      <researchPrerequisites>Seg_PlasmaInduction</researchPrerequisites>
+      <researchPrerequisites>
+	  <li>Seg_PlasmaInduction</li>
+      </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
 

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--ServitorBase-->
-  <ThingDef ParentName="BodyPartBionicBase" Abstract="True">
+  <ThingDef ParentName="BodyPartBionicBase" Abstract="True" Name="Seg_Servitors_ServitorBase">
 	<defName>Seg_Servitors_ServitorBase</defName>
     <techLevel>Spacer</techLevel>
 	<tradeTags Inherit="False">
@@ -75,6 +75,26 @@
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSeg_Servitors_MedicaeChip</RecipeDef>
 			<HediffDef>Seg_Servitors_MedicaeServitorHediff</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Health/Seg_Servitors_ServitorImplant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>1</Steel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	<!--Servitor-Combat-->
+	<ThingDef ParentName="Seg_Servitors_ServitorBase">
+		<defName>Seg_Servitors_CombatChip</defName>
+		<label>combat servitor chip</label>
+		<tradeTags Inherit="False"></tradeTags>
+		<description>A specialized servitor brain implant used to create combat servitors. The subject undergoes extensive neurosurgical conditioning, turning them into a biological combatant capable of performing gladiatorial combat with mechanical precision. In service to the Omnissiah, we shall find absolution.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSeg_Servitors_CombatChip</RecipeDef>
+			<HediffDef>Seg_Servitors_CombatServitorHediff</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Health/Seg_Servitors_ServitorImplant</texPath>

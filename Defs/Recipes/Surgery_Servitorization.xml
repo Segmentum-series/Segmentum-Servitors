@@ -46,7 +46,7 @@
 		<addsHediff>Seg_Servitors_ServitorizationHediff</addsHediff>
 	</RecipeDef>
 
-	<!-- Servitoir-Lexomat -->>
+	<!-- Servitoir-Lexomat -->
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>InstallSeg_Servitors_LexomatChip</defName>
 		<label>install lexomat chip</label>
@@ -64,7 +64,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>lexomatChip</li>
+						<li>Seg_Servitors_LexomatChip</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -134,6 +134,51 @@
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>Seg_Servitors_MedicaeServitorHediff</addsHediff>
+	</RecipeDef>
+
+	<!-- Servitor-Combat -->
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>InstallSeg_Servitors_CombatChip</defName>
+		<label>install combat servitor chip</label>
+		<workerClass>ServitorMod.RecipeWorker_Servitor</workerClass>
+		<description>Conduct combat servitorization procedure. The subject is transformed into a combat-ready servitor capable of engaging in tactical operations.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Seg_Servitors_CombatChip</ThingDef>
+			<HediffDef>Seg_Servitors_CombatServitorHediff</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing combat servitor implant.</jobString>
+		<anesthetize>true</anesthetize>
+		<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>1</deathOnFailedSurgeryChance>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Seg_Servitors_CombatChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Seg_Servitors_CombatChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_Servitors_CombatServitorHediff</addsHediff>
 	</RecipeDef>
 	
 </Defs>

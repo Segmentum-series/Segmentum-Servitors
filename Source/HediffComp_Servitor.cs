@@ -42,8 +42,8 @@ namespace ServitorMod
                 );
             }
 
-            pawn.story.Childhood = DefDatabase<BackstoryDef>.GetNamed("ServitorForgotten");
-            pawn.story.Adulthood = DefDatabase<BackstoryDef>.GetNamed("ServitorConverted");
+            pawn.story.Childhood = DefDatabase<BackstoryDef>.GetNamed("Seg_Servitors_Forgotten");
+            pawn.story.Adulthood = DefDatabase<BackstoryDef>.GetNamed("Seg_Servitors_Converted");
 
             //Change appearance
             pawn.story.skinColorOverride = new Color(0.75f, 0.75f, 0.72f);
@@ -66,7 +66,7 @@ namespace ServitorMod
             ApplyServitorSkills(pawn);
 
             //Add traits
-            TraitDef servitor = TraitDef.Named("Servitor");
+            TraitDef servitor = TraitDef.Named("Seg_Servitors_Servitor");
             pawn.story.traits.GainTrait(new Trait(servitor));
             pawn.story.traits.GainTrait(new Trait(TraitDefOf.Asexual));
 
@@ -85,12 +85,12 @@ namespace ServitorMod
         {
             string type = parent.def.defName;
 
-            if (type == "LexomatServitorHediff")
+            if (type == "Seg_Servitors_LexomatServitorHediff")
             {
                 SetSkillFloor(pawn, SkillDefOf.Intellectual, 10);
             }
 
-            if (type == "MedicaeServitorHediff")
+            if (type == "Seg_Servitors_MedicaeServitorHediff")
             {
                 SetSkillFloor(pawn, SkillDefOf.Medicine, 5);
                 SetSkillFloor(pawn, SkillDefOf.Crafting, 5);

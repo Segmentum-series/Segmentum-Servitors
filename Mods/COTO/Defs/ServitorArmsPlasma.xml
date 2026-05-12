@@ -96,7 +96,29 @@
       </statOffsets>
       <painOffset>0.03</painOffset>
     </li>
-  </stages>
+    </stages>
+    <renderNodeProperties>
+        <li>
+            <nodeClass>Seg.PawnRenderNode_Arm</nodeClass>
+            <workerClass>Seg.PawnRenderNodeWorker_Arm</workerClass>
+            <texPath>Pawn/Wounds/Plasma/Seg_SERV_GunArmPlasma</texPath>
+            <drawSize>1</drawSize>
+            <parentTagDef>Body</parentTagDef>
+            <side>Right</side>
+            <drawData>
+                <defaultData>
+                    <layer>998</layer>
+                    <offset>(-.015,-.3,-.1)</offset>
+                </defaultData>
+            </drawData>
+        </li>
+    </renderNodeProperties>
+    <modExtensions>
+        <li Class="Seg.ArmTextureExtension">
+            <isArmTexture>true</isArmTexture>
+        </li>
+</modExtensions>
+    
 </HediffDef>
 
 <!--ThingDefs-->
@@ -115,7 +137,9 @@
 		<Seg_Ceramite>25</Seg_Ceramite>
 	</costList>
     <recipeMaker>
-      <researchPrerequisites>Seg_PlasmaInduction</researchPrerequisites>
+      <researchPrerequisites>
+      <li>Seg_PlasmaInduction</li>
+      </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
 

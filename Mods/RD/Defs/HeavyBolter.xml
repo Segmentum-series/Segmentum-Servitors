@@ -127,7 +127,9 @@
 		<Seg_Ceramite>25</Seg_Ceramite>
 	</costList>
     <recipeMaker>
-      <researchPrerequisites>PrecisionRifling</researchPrerequisites>
+      <researchPrerequisites>
+      <li>PrecisionRifling</li>
+      </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
 

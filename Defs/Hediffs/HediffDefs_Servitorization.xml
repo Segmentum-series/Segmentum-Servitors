@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- Servitor -->
 	<HediffDef ParentName = "ImplantHediffBase">
 		<defName>Seg_Servitors_ServitorizationHediff</defName>
@@ -185,5 +184,82 @@
 			<li Class="ServitorMod.HediffCompProperties_Servitor"/>
 		</comps>
 	</HediffDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Seg_Servitors_CombatServitorHediff</defName>
+		<label>combat servitorization</label>
+		<labelNoun>a combat servitorization</labelNoun>
+		<description>The subject has been transformed into a combat servitor — a biological warrior designed to perform gladiatorial combat with mechanical precision. Higher cognition and emotional capacity have been suppressed, leaving only combat protocols and conditioned obedience.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Seg_Servitors_CombatChip</ThingDef>
+			<RecipeDef>InstallSeg_Servitors_CombatChip</RecipeDef>
+		</descriptionHyperlinks>
+		<isBad>true</isBad>
+		<stages>
+			<li>
+				<disablesNeeds>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+					<li>Rest</li>
+					<li>Comfort</li>
+					<li>Beauty</li>
+					<li>Joy</li>
+					<li>Mood</li>
+				</disablesNeeds>
+				<disabledWorkTags>
+					<li>Firefighting</li>
+					<li>Social</li>
+					<li>Artistic</li>
+					<li>Animals</li>
+					<li>Hunting</li>
+					<li>Cooking</li>
+					<li>PlantWork</li>
+					<li>Mining</li>
+					<li>ManualSkilled</li>
+					<li>Caring</li>
+					<li>Intellectual</li>
+				</disabledWorkTags>
+				<hungerRateFactor>0.25</hungerRateFactor>
+				<statOffsets>
+					<Beauty>-1</Beauty>
+					<MentalBreakThreshold>-0.80</MentalBreakThreshold>
+					<PsychicSensitivity>-0.95</PsychicSensitivity>
+					<ShootingAccuracyPawn>.60</ShootingAccuracyPawn>
+					<SocialImpact>-1</SocialImpact>
+					<MeleeSkillOffset>6</MeleeSkillOffset>	
+					<ShootingSkillOffset>6</ShootingSkillOffset>
+				</statOffsets>
+				<statFactors>
+					<MarketValue>0.4</MarketValue>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-1.0</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="ServitorMod.HediffCompProperties_Servitor"/>
+        	<li Class="Seg.HediffCompProperties_SkillOffset">
+            <skills>
+				<li>
+					<skill>Melee</skill>
+					<offset>6</offset>
+				</li>
+				<li>
+					  <skill>Shooting</skill>
+					  <offset>6</offset>
+				</li>
+			</skills>
+		</li>
+		</comps>
+	</HediffDef>
+	
 	
 </Defs>
