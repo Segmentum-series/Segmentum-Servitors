@@ -1,339 +1,324 @@
 <Defs>
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_Servitors_MiningArm_Hediff</defName>
-  <label>servitor mining arm</label>
-  <labelNoun>a servitor mining arm</labelNoun>
-  <description>An installed augmetic replacement arm designed for mining servitors. The arm is composed of industrial micro-las emitters, several drill bits, scoops, and filters to sieve rare minerals from less valuable rock.</description>
-  <spawnThingOnRemoved>Seg_Servitors_MiningArm</spawnThingOnRemoved>
-  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1</partEfficiency>
-    <betterThanNatural>true</betterThanNatural>
-  </addedPartProps>
-  <comps>
-        <li Class="Seg.HediffCompProperties_SkillOffset">
-            <skills>
-                <li>
-                    <skill>Mining</skill>
-                    <offset>2</offset>
-                </li>
-                <li>
-                    <skill>Melee</skill>
-                    <offset>4</offset>
-                </li>
-                <li>
-                    <skill>Shooting</skill>
-                    <offset>-12</offset>
-                </li>
-                <li>
-                    <skill>Cooking</skill>
-                    <offset>-12</offset>
-                </li>
-                <li>
-                    <skill>Plants</skill>
-                    <offset>-12</offset>
-                </li>
-                <li>
-                    <skill>Animals</skill>
-                    <offset>-12</offset>
-                </li>
-                <li>
-                    <skill>Crafting</skill>
-                    <offset>-12</offset>
-                </li>
-                <li>
-                    <skill>Artistic</skill>
-                    <offset>-12</offset>
-                </li>
-                 <li>
-                    <skill>Medicine</skill>
-                    <offset>-12</offset>
-                </li>
-            </skills>
-        </li>
-    </comps>
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Seg_Servitors_MiningArm_Hediff</defName>
+        <label>servitor mining arm</label>
+        <labelNoun>a servitor mining arm</labelNoun>
+        <description>An installed augmetic replacement arm designed for mining servitors. The arm is composed of industrial micro-las emitters, several drill bits, scoops, and filters to sieve rare minerals from less valuable rock.</description>
+        <spawnThingOnRemoved>Seg_Servitors_MiningArm</spawnThingOnRemoved>
+        <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <DeepDrillingSpeed>.50</DeepDrillingSpeed>
+                    <MiningSpeed>.20</MiningSpeed>
+                    <MiningYield>.50</MiningYield>
+                    <MiningSkillOffset>2</MiningSkillOffset>
+                    <MeleeSkillOffset>4</MeleeSkillOffset>
+                    <CookingSkillOffset>-6</CookingSkillOffset>
+                    <PlantsSkillOffset>-12</PlantsSkillOffset>
+                    <AnimalsSkillOffset>-12</AnimalsSkillOffset>
+                    <CraftingSkillOffset>-12</CraftingSkillOffset>
+                    <ArtisticSkillOffset>-12</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-12</MedicineSkillOffset>
 
+                </statOffsets>
+                <painOffset>0.01</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="Seg.DefModExtension_HediffSkillOffset">
+                <skills>
+                    <li>
+                        <skill>Mining</skill>
+                        <offset>2</offset>
+                    </li>
+                    <li>
+                        <skill>Melee</skill>
+                        <offset>4</offset>
+                    </li>
+                    <li>
+                        <skill>Shooting</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Cooking</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Plants</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Animals</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Crafting</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Artistic</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Medicine</skill>
+                        <offset>-12</offset>
+                    </li>
+                </skills>
+            </li>
+        </modExtensions>
+    </HediffDef>
 
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Seg_Servitors_IndustrialArm_Hediff</defName>
+        <label>servitor industrial arm</label>
+        <labelNoun>a servitor industrial arm</labelNoun>
+        <description>An installed augmetic replacement arm designed for manufactorum and construction servitors. The industrial version of the servitor arm has a clamp, a built in fusion welder and robust secondary manipulators to allow for better construction and crafting.</description>
+        <spawnThingOnRemoved>Seg_Servitors_IndustrialArm</spawnThingOnRemoved>
+        <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
 
-  <stages>
-    <li>
-      <statOffsets>
-        <DeepDrillingSpeed>.50</DeepDrillingSpeed>
-        <MiningSpeed>.20</MiningSpeed>
-        <MiningYield>.50</MiningYield>
-        <MiningSkillOffset>2</MiningSkillOffset>
-        <MeleeSkillOffset>4</MeleeSkillOffset>
-        <CookingSkillOffset>-6</CookingSkillOffset>
-        <PlantsSkillOffset>-12</PlantsSkillOffset>
-        <AnimalsSkillOffset>-12</AnimalsSkillOffset>
-        <CraftingSkillOffset>-12</CraftingSkillOffset>
-        <ArtisticSkillOffset>-12</ArtisticSkillOffset>
-        <MedicineSkillOffset>-12</MedicineSkillOffset>
+                    <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+                    <SmeltingSpeed>0.20</SmeltingSpeed>
+                    <PlantsSkillOffset>-6</PlantsSkillOffset>
+                    <ConstructionSkillOffset>4</ConstructionSkillOffset>
+                    <CraftingSkillOffset>4</CraftingSkillOffset>
+                    <ArtisticSkillOffset>-6</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-6</MedicineSkillOffset>
 
-      </statOffsets>
-      <painOffset>0.01</painOffset>
-        <capMods>
-          <li>
-            <capacity>Manipulation</capacity>
-            <offset>-0.1</offset>
-          </li>
-        </capMods>
-    </li>
-  </stages>
-</HediffDef>
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_Servitors_IndustrialArm_Hediff</defName>
-  <label>servitor industrial arm</label>
-  <labelNoun>a servitor industrial arm</labelNoun>
-  <description>An installed augmetic replacement arm designed for manufactorum and construction servitors. The industrial version of the servitor arm has a clamp, a built in fusion welder and robust secondary manipulators to allow for better construction and crafting.</description>
-  <spawnThingOnRemoved>Seg_Servitors_IndustrialArm</spawnThingOnRemoved>
-  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1</partEfficiency>
-    <betterThanNatural>true</betterThanNatural>
-  </addedPartProps>
-  <comps>
-        <li Class="Seg.HediffCompProperties_SkillOffset">
-            <skills>
-                <li>
-                    <skill>Construction</skill>
-                    <offset>4</offset>
-                </li>
-                <li>
-                    <skill>Crafting</skill>
-                    <offset>4</offset>
-                </li>
-                
-                <li>
-                    <skill>Plants</skill>
-                    <offset>-12</offset>
-                </li>
-                <li>
-                    <skill>Artistic</skill>
-                    <offset>-12</offset>
-                </li>
-                 <li>
-                    <skill>Medicine</skill>
-                    <offset>-12</offset>
-                </li>
-            </skills>
-        </li>
-    </comps>
+                </statOffsets>
+                <painOffset>0.03</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="Seg.DefModExtension_HediffSkillOffset">
+                <skills>
+                    <li>
+                        <skill>Construction</skill>
+                        <offset>4</offset>
+                    </li>
+                    <li>
+                        <skill>Crafting</skill>
+                        <offset>4</offset>
+                    </li>
 
+                    <li>
+                        <skill>Plants</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Artistic</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Medicine</skill>
+                        <offset>-12</offset>
+                    </li>
+                </skills>
+            </li>
+        </modExtensions>
+    </HediffDef>
 
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Seg_Servitors_AgriArm_Hediff</defName>
+        <label>servitor agri-arm</label>
+        <labelNoun>an agricultural servitor arm</labelNoun>
+        <description>An installed augmetic replacement arm. The servitor agri-arm has a built in seed planter and fertilizer spreader to make farming easier. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
+        <spawnThingOnRemoved>Seg_Servitors_AgriArm</spawnThingOnRemoved>
+        <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
 
-  <stages>
-    <li>
-      <statOffsets>
-        
-        <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
-        <SmeltingSpeed>0.20</SmeltingSpeed>
-        <PlantsSkillOffset>-6</PlantsSkillOffset>
-        <ConstructionSkillOffset>4</ConstructionSkillOffset>
-        <CraftingSkillOffset>4</CraftingSkillOffset>
-        <ArtisticSkillOffset>-6</ArtisticSkillOffset>
-        <MedicineSkillOffset>-6</MedicineSkillOffset>
+                    <PlantWorkSpeed>0.50</PlantWorkSpeed>
+                    <PlantHarvestYield>-0.1</PlantHarvestYield>
+                    <MiningSkillOffset>-12</MiningSkillOffset>
+                    <AnimalsSkillOffset>5</AnimalsSkillOffset>
+                    <PlantsSkillOffset>3</PlantsSkillOffset>
+                    <ArtisticSkillOffset>-12</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-12</MedicineSkillOffset>
+                    <MeleeSkillOffset>5</MeleeSkillOffset>
 
-      </statOffsets>
-      <painOffset>0.03</painOffset>
-        <capMods>
-          <li>
-            <capacity>Manipulation</capacity>
-            <offset>0.1</offset>
-          </li>
-        </capMods>
-    </li>
-  </stages>
-</HediffDef>
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_Servitors_AgriArm_Hediff</defName>
-  <label>servitor agri-arm</label>
-  <labelNoun>an agricultural servitor arm</labelNoun>
-  <description>An installed augmetic replacement arm. The servitor agri-arm has a built in seed planter and fertilizer spreader to make farming easier. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
-  <spawnThingOnRemoved>Seg_Servitors_AgriArm</spawnThingOnRemoved>
-  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1</partEfficiency>
-    <betterThanNatural>true</betterThanNatural>
-  </addedPartProps>
-  <comps>
-        <li Class="Seg.HediffCompProperties_SkillOffset">
-            <skills>
-                <li>
-                    <skill>Mining</skill>
-                    <offset>-12</offset>
-                </li>
-                <li>
-                    <skill>Animals</skill>
-                    <offset>5</offset>
-                </li>
-                
-                <li>
-                    <skill>Plants</skill>
-                    <offset>3</offset>
-                </li>
-                <li>
-                    <skill>Artistic</skill>
-                    <offset>-12</offset>
-                </li>
-                 <li>
-                    <skill>Medicine</skill>
-                    <offset>-12</offset>
-                </li>
-                <li>
-                    <skill>Melee</skill>
-                    <offset>5</offset>
-                </li>
-            </skills>
-        </li>
-    </comps>
+                </statOffsets>
+                <painOffset>0.03</painOffset>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="Seg.DefModExtension_HediffSkillOffset">
+                <skills>
+                    <li>
+                        <skill>Mining</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Animals</skill>
+                        <offset>5</offset>
+                    </li>
 
+                    <li>
+                        <skill>Plants</skill>
+                        <offset>3</offset>
+                    </li>
+                    <li>
+                        <skill>Artistic</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Medicine</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Melee</skill>
+                        <offset>5</offset>
+                    </li>
+                </skills>
+            </li>
+        </modExtensions>
+    </HediffDef>
 
+    <AbilityDef>
+        <defName>Seg_Servitors_MeltaBeam</defName>
+        <label>Servitor Melta beam</label>
+        <description>Fire a beam of highly destructive fusion energy.</description>
+        <writeCombatLog>True</writeCombatLog>
+        <iconPath>Things/Item/Health/UI/Icons/Seg_Servitors_MultimeltaIconGW</iconPath>
+        <showPsycastEffects>False</showPsycastEffects>
+        <cooldownTicksRange>240~360</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_AbilityShoot</verbClass>
+            <defaultProjectile>Seg_MeltaBeam</defaultProjectile>
+            <range>14.9</range>
+            <soundCast>BEWH_SFX_BolterShot</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+            <warmupTime>5</warmupTime>
+            <burstShotCount>1</burstShotCount>
+            <accuracyTouch>0.9</accuracyTouch>
+            <accuracyShort>0.8</accuracyShort>
+            <accuracyMedium>0.6</accuracyMedium>
+            <accuracyLong>0.5</accuracyLong>
+            <ai_IsWeapon>true</ai_IsWeapon>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Seg_Servitors_MeltaArm_Hediff</defName>
+        <label>servitor melta-arm</label>
+        <labelNoun>a melta-equipped servitor arm</labelNoun>
+        <description>A weapon attachment which has replaced the limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.</description>
+        <spawnThingOnRemoved>Seg_Servitors_MeltaArm</spawnThingOnRemoved>
+        <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>Seg.PawnRenderNode_Arm</nodeClass>
+                <workerClass>Seg.PawnRenderNodeWorker_Arm</workerClass>
+                <texPath>Pawn/Wounds/Melta/Seg_SERV_GunArmMelta</texPath>
+                <drawSize>1</drawSize>
+                <parentTagDef>Body</parentTagDef>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <offset>(-.015,-.3,-.1)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <comps>
+            <li Class="Seg.HediffCompProperties_GivesAbility">
+                <vanillaAbility>Seg_Servitors_MeltaBeam</vanillaAbility>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Seg.ArmTextureExtension" />
+            <li Class="Seg.DefModExtension_HediffSkillOffset">
+                <skills>
+                    <li>
+                        <skill>Mining</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Animals</skill>
+                        <offset>-12</offset>
+                    </li>
 
-  <stages>
-    <li>
-      <statOffsets>
-        
-        <PlantWorkSpeed>0.50</PlantWorkSpeed>
-        <PlantHarvestYield>-0.1</PlantHarvestYield>
-        <MiningSkillOffset>-12</MiningSkillOffset>
-        <AnimalsSkillOffset>5</AnimalsSkillOffset>  
-        <PlantsSkillOffset>3</PlantsSkillOffset>
-        <ArtisticSkillOffset>-12</ArtisticSkillOffset>
-        <MedicineSkillOffset>-12</MedicineSkillOffset>
-        <MeleeSkillOffset>5</MeleeSkillOffset>
+                    <li>
+                        <skill>Plants</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Artistic</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Medicine</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Melee</skill>
+                        <offset>-12</offset>
+                    </li>
+                    <li>
+                        <skill>Shooting</skill>
+                        <offset>8</offset>
+                    </li>
+                    <li>
+                        <skill>Cooking</skill>
+                        <offset>-12</offset>
+                    </li>
+                </skills>
+            </li>
+        </modExtensions>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingSkillOffset>8</ShootingSkillOffset>
+                    <MiningSkillOffset>-12</MiningSkillOffset>
+                    <AnimalsSkillOffset>-12</AnimalsSkillOffset>
+                    <PlantsSkillOffset>-12</PlantsSkillOffset>
+                    <ArtisticSkillOffset>-12</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-12</MedicineSkillOffset>
+                    <MeleeSkillOffset>-12</MeleeSkillOffset>
+                </statOffsets>
+                <painOffset>0.03</painOffset>
+            </li>
+        </stages>
+    </HediffDef>
 
-      </statOffsets>
-      <painOffset>0.03</painOffset>
-    </li>
-  </stages>
-</HediffDef>
-
-<AbilityDef>
-    <defName>Seg_Servitors_MeltaBeam</defName>
-    <label>Servitor Melta beam</label>
-    <description>Fire a beam of highly destructive fusion energy.</description>
-    <writeCombatLog>True</writeCombatLog>
-    <iconPath>Things/Item/Health/UI/Icons/Seg_Servitors_MultimeltaIconGW</iconPath>
-    <showPsycastEffects>False</showPsycastEffects>
-    <cooldownTicksRange>240~360</cooldownTicksRange> 
-    <verbProperties>
-      <verbClass>Verb_AbilityShoot</verbClass>
-      <defaultProjectile>Seg_MeltaBeam</defaultProjectile>
-      <range>14.9</range>
-      <soundCast>BEWH_SFX_BolterShot</soundCast>
-      <muzzleFlashScale>9</muzzleFlashScale>
-      <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
-      <warmupTime>5</warmupTime>
-      <burstShotCount>1</burstShotCount>
-      <accuracyTouch>0.9</accuracyTouch>
-      <accuracyShort>0.8</accuracyShort>
-      <accuracyMedium>0.6</accuracyMedium>
-      <accuracyLong>0.5</accuracyLong>
-      <ai_IsWeapon>true</ai_IsWeapon>
-      <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-      </targetParams>
-    </verbProperties>
-  </AbilityDef>
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_Servitors_MeltaArm_Hediff</defName>
-  <label>servitor melta-arm</label>
-  <labelNoun>a melta-equipped servitor arm</labelNoun>
-  <description>A weapon attachment which has replaced the limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.</description>
-  <spawnThingOnRemoved>Seg_Servitors_MeltaArm</spawnThingOnRemoved>
-  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1</partEfficiency>
-    <betterThanNatural>true</betterThanNatural>
-    </addedPartProps>
-   <renderNodeProperties>
-        <li>
-            <nodeClass>Seg.PawnRenderNode_Arm</nodeClass>
-            <workerClass>Seg.PawnRenderNodeWorker_Arm</workerClass>
-            <texPath>Pawn/Wounds/Melta/Seg_SERV_GunArmMelta</texPath>
-            <drawSize>1</drawSize>
-            <parentTagDef>Body</parentTagDef>
-            <side>Right</side>
-            <drawData>
-                <defaultData>
-                    <layer>999</layer>
-                    <offset>(-.015,-.3,-.1)</offset>
-                </defaultData>
-            </drawData>
-        </li>
-    </renderNodeProperties>
-  <comps>
-        <li Class="Seg.HediffCompProperties_SkillOffset">
-            <skills>
-                <li>
-                    <skill>Mining</skill>
-                    <offset>-12</offset>
-                </li>
-                <li>
-                    <skill>Animals</skill>
-                    <offset>-12</offset>
-                </li>
-                
-                <li>
-                    <skill>Plants</skill>
-                    <offset>-12</offset>
-                </li>
-                <li>
-                    <skill>Artistic</skill>
-                    <offset>-12</offset>
-                </li>
-                 <li>
-                    <skill>Medicine</skill>
-                    <offset>-12</offset>
-                </li>
-                <li>
-                    <skill>Melee</skill>
-                    <offset>-12</offset>
-                </li>
-                  <li>
-                      <skill>Shooting</skill>
-                      <offset>8</offset>
-                  </li>
-                  <li>
-                      <skill>Cooking</skill>
-                      <offset>-12</offset>
-                  </li>
-
-
-
-            </skills>
-        </li>
-    <li Class="Seg.HediffCompProperties_GivesAbility">
-        <vanillaAbility>Seg_Servitors_MeltaBeam</vanillaAbility>
-    </li>
-</comps>
-<modExtensions>
-        <li Class="Seg.ArmTextureExtension">
-            <isArmTexture>true</isArmTexture>
-        </li>
-</modExtensions>
-  <stages>
-    <li>
-      <statOffsets>
-        <ShootingSkillOffset>8</ShootingSkillOffset>
-        <MiningSkillOffset>-12</MiningSkillOffset>
-        <AnimalsSkillOffset>-12</AnimalsSkillOffset>
-        <PlantsSkillOffset>-12</PlantsSkillOffset>
-        <ArtisticSkillOffset>-12</ArtisticSkillOffset>
-        <MedicineSkillOffset>-12</MedicineSkillOffset>
-        <MeleeSkillOffset>-12</MeleeSkillOffset>
-
-      </statOffsets>
-      <painOffset>0.03</painOffset>
-    </li>
-  </stages>
-</HediffDef>
-
- 
 
 </Defs>

@@ -1,174 +1,166 @@
 <Defs>
-<!--Heddifs-->
-<AbilityDef>
-    <defName>Seg_Servitors_PlasmaShot</defName>
-    <label>Servitor Plasma shot</label>
-    <description>Fire a burst of low-accuracy energy bolts.</description>
-    <writeCombatLog>True</writeCombatLog>
-    <iconPath>Things/Item/Health/UI/Icons/Seg_COTO_Plasma</iconPath>
-    <showPsycastEffects>False</showPsycastEffects>
-    <cooldownTicksRange>180~240</cooldownTicksRange> 
-    <verbProperties>
-      <verbClass>Verb_AbilityShoot</verbClass>
-      <defaultProjectile>SEG_COTO_Bullet_Plasma</defaultProjectile>
-      <range>24.9</range>
-      <soundCast>Seg_COTO_PlasmaSound</soundCast>
-      <muzzleFlashScale>9</muzzleFlashScale>
-      <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
-      <warmupTime>4</warmupTime>
-      <burstShotCount>3</burstShotCount>
-      <accuracyTouch>0.9</accuracyTouch>
-      <accuracyShort>0.8</accuracyShort>
-      <accuracyMedium>0.6</accuracyMedium>
-      <accuracyLong>0.5</accuracyLong>
-      <ai_IsWeapon>true</ai_IsWeapon>
-    </verbProperties>
-  </AbilityDef>
+    <!--Heddifs-->
+    <AbilityDef>
+        <defName>Seg_Servitors_PlasmaShot</defName>
+        <label>Servitor Plasma shot</label>
+        <description>Fire a burst of low-accuracy energy bolts.</description>
+        <writeCombatLog>True</writeCombatLog>
+        <iconPath>Things/Item/Health/UI/Icons/Seg_COTO_Plasma</iconPath>
+        <showPsycastEffects>False</showPsycastEffects>
+        <cooldownTicksRange>180~240</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_AbilityShoot</verbClass>
+            <defaultProjectile>SEG_COTO_Bullet_Plasma</defaultProjectile>
+            <range>24.9</range>
+            <soundCast>Seg_COTO_PlasmaSound</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+            <warmupTime>4</warmupTime>
+            <burstShotCount>3</burstShotCount>
+            <accuracyTouch>0.9</accuracyTouch>
+            <accuracyShort>0.8</accuracyShort>
+            <accuracyMedium>0.6</accuracyMedium>
+            <accuracyLong>0.5</accuracyLong>
+            <ai_IsWeapon>true</ai_IsWeapon>
+        </verbProperties>
+    </AbilityDef>
 
-  <HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_Servitors_PlasArm_Hediff</defName>
-  <label>servitor plasma-arm</label>
-  <labelNoun>a plasma-equipped servitor arm</labelNoun>
-  <description>A weapon attachment which has replaced the limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
-  <spawnThingOnRemoved>Seg_Servitors_PlasArm</spawnThingOnRemoved>
-  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1</partEfficiency>
-    <betterThanNatural>true</betterThanNatural>
-  </addedPartProps>
-  <comps>
-        <li Class="Seg.HediffCompProperties_SkillOffset">
-            <skills>
-                <li>
-                    <skill>Mining</skill>
-                    <offset>-4</offset>
-                </li>
-                <li>
-                    <skill>Animals</skill>
-                    <offset>-4</offset>
-                </li>
-                
-                <li>
-                    <skill>Plants</skill>
-                    <offset>-4</offset>
-                </li>
-                <li>
-                    <skill>Artistic</skill>
-                    <offset>-4</offset>
-                </li>
-                 <li>
-                    <skill>Medicine</skill>
-                    <offset>-4</offset>
-                </li>
-                <li>
-                    <skill>Melee</skill>
-                    <offset>-4</offset>
-                </li>
-                  <li>
-                      <skill>Shooting</skill>
-                      <offset>4</offset>
-                  </li>
-                  <li>
-                      <skill>Cooking</skill>
-                      <offset>-4</offset>
-                  </li>
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Seg_Servitors_PlasArm_Hediff</defName>
+        <label>servitor plasma-arm</label>
+        <labelNoun>a plasma-equipped servitor arm</labelNoun>
+        <description>A weapon attachment which has replaced the limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
+        <spawnThingOnRemoved>Seg_Servitors_PlasArm</spawnThingOnRemoved>
+        <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>Seg.PawnRenderNode_Arm</nodeClass>
+                <workerClass>Seg.PawnRenderNodeWorker_Arm</workerClass>
+                <texPath>Pawn/Wounds/Plasma/Seg_SERV_GunArmPlasma</texPath>
+                <drawSize>1</drawSize>
+                <parentTagDef>Body</parentTagDef>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <offset>(-.015,-.3,-.1)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <comps>
+            <li Class="Seg.HediffCompProperties_GivesAbility">
+                <vanillaAbility>Seg_Servitors_PlasmaShot</vanillaAbility>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingSkillOffset>4</ShootingSkillOffset>
+                    <MiningSkillOffset>-4</MiningSkillOffset>
+                    <AnimalsSkillOffset>-4</AnimalsSkillOffset>
+                    <PlantsSkillOffset>-4</PlantsSkillOffset>
+                    <ArtisticSkillOffset>-4</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-4</MedicineSkillOffset>
+                    <MeleeSkillOffset>-4</MeleeSkillOffset>
 
+                </statOffsets>
+                <painOffset>0.03</painOffset>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="Seg.DefModExtension_HediffSkillOffset">
+                <skills>
+                    <li>
+                        <skill>Mining</skill>
+                        <offset>-4</offset>
+                    </li>
+                    <li>
+                        <skill>Animals</skill>
+                        <offset>-4</offset>
+                    </li>
 
+                    <li>
+                        <skill>Plants</skill>
+                        <offset>-4</offset>
+                    </li>
+                    <li>
+                        <skill>Artistic</skill>
+                        <offset>-4</offset>
+                    </li>
+                    <li>
+                        <skill>Medicine</skill>
+                        <offset>-4</offset>
+                    </li>
+                    <li>
+                        <skill>Melee</skill>
+                        <offset>-4</offset>
+                    </li>
+                    <li>
+                        <skill>Shooting</skill>
+                        <offset>4</offset>
+                    </li>
+                    <li>
+                        <skill>Cooking</skill>
+                        <offset>-4</offset>
+                    </li>
+                </skills>
+            </li>
+        </modExtensions>
+    </HediffDef>
 
-            </skills>
-        </li>
-    <li Class="Seg.HediffCompProperties_GivesAbility">
-        <vanillaAbility>Seg_Servitors_PlasmaShot</vanillaAbility>
-    </li>
-</comps>
-  <stages>
-    <li>
-      <statOffsets>
-        <ShootingSkillOffset>4</ShootingSkillOffset>
-        <MiningSkillOffset>-4</MiningSkillOffset>
-        <AnimalsSkillOffset>-4</AnimalsSkillOffset>
-        <PlantsSkillOffset>-4</PlantsSkillOffset>
-        <ArtisticSkillOffset>-4</ArtisticSkillOffset>
-        <MedicineSkillOffset>-4</MedicineSkillOffset>
-        <MeleeSkillOffset>-4</MeleeSkillOffset>
+    <!--ThingDefs-->
 
-      </statOffsets>
-      <painOffset>0.03</painOffset>
-    </li>
-    </stages>
-    <renderNodeProperties>
-        <li>
-            <nodeClass>Seg.PawnRenderNode_Arm</nodeClass>
-            <workerClass>Seg.PawnRenderNodeWorker_Arm</workerClass>
-            <texPath>Pawn/Wounds/Plasma/Seg_SERV_GunArmPlasma</texPath>
-            <drawSize>1</drawSize>
-            <parentTagDef>Body</parentTagDef>
-            <side>Right</side>
-            <drawData>
-                <defaultData>
-                    <layer>998</layer>
-                    <offset>(-.015,-.3,-.1)</offset>
-                </defaultData>
-            </drawData>
-        </li>
-    </renderNodeProperties>
-    <modExtensions>
-        <li Class="Seg.ArmTextureExtension">
-            <isArmTexture>true</isArmTexture>
-        </li>
-</modExtensions>
-    
-</HediffDef>
+    <ThingDef ParentName="Seg_Servitors_ServitorBase">
+        <defName>Seg_Servitors_PlasArm</defName>
+        <label>servitor plasma-arm</label>
+        <description>A weapon attachment which replaces the existing limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
+        <statBases>
+            <MarketValue>2800</MarketValue>
+            <Mass>0.3</Mass>
+        </statBases>
+        <costList>
+            <Plasteel>20</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Seg_Ceramite>25</Seg_Ceramite>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>Seg_PlasmaInduction</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
 
-<!--ThingDefs-->
+    <!--RecipeDefs-->
 
-<ThingDef ParentName="Seg_Servitors_ServitorBase">
-	<defName>Seg_Servitors_PlasArm</defName>
-	<label>servitor plasma-arm</label>
-	<description>A weapon attachment which replaces the existing limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
-	<statBases>
-		<MarketValue>2800</MarketValue>
-		<Mass>0.3</Mass>
-	</statBases>
-	<costList>
-		<Plasteel>20</Plasteel>
-		<ComponentSpacer>4</ComponentSpacer>
-		<Seg_Ceramite>25</Seg_Ceramite>
-	</costList>
-    <recipeMaker>
-      <researchPrerequisites>
-      <li>Seg_PlasmaInduction</li>
-      </researchPrerequisites>
-	</recipeMaker>
-</ThingDef>
-
-<!--RecipeDefs-->
-
-<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-	<defName>InstallSeg_Servitors_PlasArm</defName>
-	<label>install servitor plasma-arm</label>
-	<description>Replaces the existing limb with a weapon attachment. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat</description>
-	<jobString>Installing servitor plasma-arm.</jobString>
-	<ingredients>
-		<li>
-		<filter>
-			<thingDefs>
-			<li>Seg_Servitors_PlasArm</li>
-			</thingDefs>
-		</filter>
-		<count>1</count>
-		</li>
-	</ingredients>
-	<fixedIngredientFilter>
-		<thingDefs>
-			<li>Seg_Servitors_PlasArm</li>
-		</thingDefs>
-	</fixedIngredientFilter>
-	<appliedOnFixedBodyParts>
-		<li>Arm</li>
-	</appliedOnFixedBodyParts>
-	<addsHediff>Seg_Servitors_PlasArm_Hediff</addsHediff>
-</RecipeDef>
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallSeg_Servitors_PlasArm</defName>
+        <label>install servitor plasma-arm</label>
+        <description>Replaces the existing limb with a weapon attachment. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat</description>
+        <jobString>Installing servitor plasma-arm.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Seg_Servitors_PlasArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Seg_Servitors_PlasArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Arm</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Seg_Servitors_PlasArm_Hediff</addsHediff>
+    </RecipeDef>
 
 </Defs>

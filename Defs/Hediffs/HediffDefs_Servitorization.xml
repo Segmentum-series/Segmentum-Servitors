@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- Servitor -->
-	<HediffDef ParentName = "ImplantHediffBase">
+	<HediffDef ParentName="ImplantHediffBase">
 		<defName>Seg_Servitors_ServitorizationHediff</defName>
 		<label>servitorization</label>
 		<labelNoun>a servitorization</labelNoun>
@@ -51,15 +51,15 @@
 					<li>
 						<capacity>Talking</capacity>
 						<offset>-1.0</offset>
-					</li>				
+					</li>
 				</capMods>
 			</li>
 		</stages>
 		<comps>
-			<li Class="ServitorMod.HediffCompProperties_Servitor"/>
+			<li Class="ServitorMod.HediffCompProperties_Servitor" />
 		</comps>
 	</HediffDef>
-	
+
 	<!-- Servitor-Lexomat -->
 	<HediffDef ParentName="ImplantHediffBase">
 		<defName>Seg_Servitors_LexomatServitorHediff</defName>
@@ -119,7 +119,7 @@
 			</li>
 		</stages>
 		<comps>
-			<li Class="ServitorMod.HediffCompProperties_Servitor"/>
+			<li Class="ServitorMod.HediffCompProperties_Servitor" />
 		</comps>
 	</HediffDef>
 
@@ -181,7 +181,7 @@
 			</li>
 		</stages>
 		<comps>
-			<li Class="ServitorMod.HediffCompProperties_Servitor"/>
+			<li Class="ServitorMod.HediffCompProperties_Servitor" />
 		</comps>
 	</HediffDef>
 
@@ -226,7 +226,7 @@
 					<PsychicSensitivity>-0.95</PsychicSensitivity>
 					<ShootingAccuracyPawn>.60</ShootingAccuracyPawn>
 					<SocialImpact>-1</SocialImpact>
-					<MeleeSkillOffset>6</MeleeSkillOffset>	
+					<MeleeSkillOffset>6</MeleeSkillOffset>
 					<ShootingSkillOffset>6</ShootingSkillOffset>
 				</statOffsets>
 				<statFactors>
@@ -245,21 +245,23 @@
 			</li>
 		</stages>
 		<comps>
-			<li Class="ServitorMod.HediffCompProperties_Servitor"/>
-        	<li Class="Seg.HediffCompProperties_SkillOffset">
-            <skills>
-				<li>
-					<skill>Melee</skill>
-					<offset>6</offset>
-				</li>
-				<li>
-					  <skill>Shooting</skill>
-					  <offset>6</offset>
-				</li>
-			</skills>
-		</li>
+			<li Class="ServitorMod.HediffCompProperties_Servitor" />
 		</comps>
+		<modExtensions>
+			<li Class="Seg.DefModExtension_HediffSkillOffset">
+				<skills>
+					<li>
+						<skill>Melee</skill>
+						<offset>6</offset>
+					</li>
+					<li>
+						<skill>Shooting</skill>
+						<offset>6</offset>
+					</li>
+				</skills>
+			</li>
+		</modExtensions>
 	</HediffDef>
-	
-	
+
+
 </Defs>
