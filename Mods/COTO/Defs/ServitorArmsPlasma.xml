@@ -60,14 +60,14 @@
         <stages>
             <li>
                 <statOffsets>
-                    <ShootingSkillOffset>4</ShootingSkillOffset>
-                    <MiningSkillOffset>-4</MiningSkillOffset>
-                    <AnimalsSkillOffset>-4</AnimalsSkillOffset>
-                    <PlantsSkillOffset>-4</PlantsSkillOffset>
-                    <ArtisticSkillOffset>-4</ArtisticSkillOffset>
-                    <MedicineSkillOffset>-4</MedicineSkillOffset>
-                    <MeleeSkillOffset>-4</MeleeSkillOffset>
-
+                    <ShootingSkillOffset>8</ShootingSkillOffset>
+                    <MiningSkillOffset>-12</MiningSkillOffset>
+                    <AnimalsSkillOffset>-12</AnimalsSkillOffset>
+                    <PlantsSkillOffset>-12</PlantsSkillOffset>
+                    <ArtisticSkillOffset>-12</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-12</MedicineSkillOffset>
+                    <MeleeSkillOffset>-12</MeleeSkillOffset>
+					<WorkSpeedGlobal>-0.45</WorkSpeedGlobal>
                 </statOffsets>
                 <painOffset>0.03</painOffset>
             </li>
@@ -77,36 +77,36 @@
                 <skills>
                     <li>
                         <skill>Mining</skill>
-                        <offset>-4</offset>
+                        <offset>-12</offset>
                     </li>
                     <li>
                         <skill>Animals</skill>
-                        <offset>-4</offset>
+                        <offset>-12</offset>
                     </li>
 
                     <li>
                         <skill>Plants</skill>
-                        <offset>-4</offset>
+                        <offset>-12</offset>
                     </li>
                     <li>
                         <skill>Artistic</skill>
-                        <offset>-4</offset>
+                        <offset>-12</offset>
                     </li>
                     <li>
                         <skill>Medicine</skill>
-                        <offset>-4</offset>
+                        <offset>-12</offset>
                     </li>
                     <li>
                         <skill>Melee</skill>
-                        <offset>-4</offset>
+                        <offset>-12</offset>
                     </li>
                     <li>
                         <skill>Shooting</skill>
-                        <offset>4</offset>
+                        <offset>8</offset>
                     </li>
                     <li>
                         <skill>Cooking</skill>
-                        <offset>-4</offset>
+                        <offset>-12</offset>
                     </li>
                 </skills>
             </li>

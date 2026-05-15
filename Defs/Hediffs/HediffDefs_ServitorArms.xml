@@ -314,6 +314,7 @@
                     <ArtisticSkillOffset>-12</ArtisticSkillOffset>
                     <MedicineSkillOffset>-12</MedicineSkillOffset>
                     <MeleeSkillOffset>-12</MeleeSkillOffset>
+					<WorkSpeedGlobal>-0.45</WorkSpeedGlobal>
                 </statOffsets>
                 <painOffset>0.03</painOffset>
             </li>
