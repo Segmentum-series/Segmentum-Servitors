@@ -21,8 +21,8 @@
 		<Seg_Ceramite>25</Seg_Ceramite>
 	</costList>
     <recipeMaker>
-      <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">
-	  <li>SpecializedLimbs</li>
+     <researchPrerequisites>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</li>
       </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
@@ -48,8 +48,8 @@
 		<Seg_Ceramite>25</Seg_Ceramite>
 	</costList>
     <recipeMaker>
-     <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">
-	  <li>SpecializedLimbs</li>
+     <researchPrerequisites>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</li>
       </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
@@ -75,8 +75,8 @@
 		<Seg_Ceramite>25</Seg_Ceramite>
 	</costList>
     <recipeMaker>
-     <researchPrerequisites MayRequire="Ludeon.RimWorld.Royalty">
-	  <li>SpecializedLimbs</li>
+     <researchPrerequisites>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</li>
       </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
