@@ -5,7 +5,7 @@
 	<ResearchProjectDef>
 		<defName>Seg_Servitors_ServitudeImperpituis</defName>
 		<label>Servitude Imperpituis</label>
-		<description>Be vested with the rites of the Machine Cult, authorizing the construction of Mechanicus forge altars capable of producing the majority of faction armaments, apparel, and sanctioned equipment.</description>
+		<description>Convert unfortunate beings into servitors - lobotomised cyborgs designed for specific tasks and roles and with no will or mind of their own.</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>0</researchViewX>
