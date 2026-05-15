@@ -208,7 +208,7 @@
     <AbilityDef>
         <defName>Seg_Servitors_MeltaBeam</defName>
         <label>Servitor Melta beam</label>
-        <description>Fire a beam of highly destructive fusion energy.</description>
+        <description>Take a moment to charge up and shoot a devsitating beam of fusion energy.</description>
         <writeCombatLog>True</writeCombatLog>
         <iconPath>Things/Item/Health/UI/Icons/Seg_Servitors_MultimeltaIconGW</iconPath>
         <showPsycastEffects>False</showPsycastEffects>
@@ -220,7 +220,7 @@
             <soundCast>BEWH_SFX_BolterShot</soundCast>
             <muzzleFlashScale>9</muzzleFlashScale>
             <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
-            <warmupTime>5</warmupTime>
+            <warmupTime>4</warmupTime>
             <burstShotCount>1</burstShotCount>
             <accuracyTouch>0.9</accuracyTouch>
             <accuracyShort>0.8</accuracyShort>
@@ -254,7 +254,7 @@
                 <side>Right</side>
                 <drawData>
                     <defaultData>
-                        <offset>(-.015,-.3,-.1)</offset>
+                        <offset>(.05,.15,-0.07)</offset>
                     </defaultData>
                 </drawData>
             </li>

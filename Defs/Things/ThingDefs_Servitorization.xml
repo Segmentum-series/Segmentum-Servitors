@@ -77,7 +77,7 @@
 			<HediffDef>Seg_Servitors_MedicaeServitorHediff</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/Health/Seg_Servitors_ServitorImplant</texPath>
+			<texPath>Things/Item/Health/Seg_Servitors_MedicaeServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costList>
@@ -97,7 +97,7 @@
 			<HediffDef>Seg_Servitors_CombatServitorHediff</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/Health/Seg_Servitors_ServitorImplant</texPath>
+			<texPath>Things/Item/Health/Seg_Servitors_CombatServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costList>

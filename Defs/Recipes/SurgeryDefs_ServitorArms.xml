@@ -20,7 +20,7 @@
     </thingDefs>
   </fixedIngredientFilter>
   <appliedOnFixedBodyParts>
-    <li>Arm</li>
+    <li>Shoulder</li>
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_Servitors_MiningArm_Hediff</addsHediff>
 </RecipeDef>
@@ -45,7 +45,7 @@
     </thingDefs>
   </fixedIngredientFilter>
   <appliedOnFixedBodyParts>
-    <li>Arm</li>
+    <li>Shoulder</li>
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_Servitors_AgriArm_Hediff</addsHediff>
 </RecipeDef>
@@ -70,7 +70,7 @@
     </thingDefs>
   </fixedIngredientFilter>
   <appliedOnFixedBodyParts>
-    <li>Arm</li>
+    <li>Shoulder</li>
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_Servitors_IndustrialArm_Hediff</addsHediff>
 </RecipeDef>
@@ -95,7 +95,7 @@
     </thingDefs>
   </fixedIngredientFilter>
   <appliedOnFixedBodyParts>
-    <li>Arm</li>
+    <li>Shoulder</li>
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_Servitors_MeltaArm_Hediff</addsHediff>
 </RecipeDef>

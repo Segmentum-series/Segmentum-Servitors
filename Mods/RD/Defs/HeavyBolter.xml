@@ -12,11 +12,11 @@
       <verbClass>Verb_AbilityShoot</verbClass>
       <defaultProjectile>BEWH_BolterRoundInferno</defaultProjectile>
       <range>24.9</range>
-      <soundCast>BEWH_SFX_BolterShot</soundCast>
+      <soundCast>Seg_Serv_BolterSound</soundCast>
       <muzzleFlashScale>9</muzzleFlashScale>
       <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
-      <warmupTime>4</warmupTime>
-      <burstShotCount>3</burstShotCount>
+      <warmupTime>2</warmupTime>
+      <burstShotCount>10</burstShotCount>
       <accuracyTouch>0.9</accuracyTouch>
       <accuracyShort>0.8</accuracyShort>
       <accuracyMedium>0.6</accuracyMedium>
@@ -48,6 +48,21 @@
       <partEfficiency>1</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
+    <renderNodeProperties>
+            <li>
+                <nodeClass>Seg.PawnRenderNode_Arm</nodeClass>
+                <workerClass>Seg.PawnRenderNodeWorker_Arm</workerClass>
+                <texPath>Pawn/Wounds/HeavyBolter/Seg_SERV_GunArmHBolter</texPath>
+                <drawSize>1</drawSize>
+                <parentTagDef>Body</parentTagDef>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <offset>(-.015,-.3,-.1)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
     <comps>
       <li Class="Seg.HediffCompProperties_GivesAbility">
         <vanillaAbility>Seg_Servitors_BolterShot</vanillaAbility>
@@ -126,7 +141,7 @@
     </costList>
     <recipeMaker>
       <researchPrerequisites>
-        <li>PrecisionRifling</li>
+        <li>BEWH_AstartesWeapons</li>
       </researchPrerequisites>
     </recipeMaker>
   </ThingDef>
@@ -154,9 +169,24 @@
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
-      <li>Arm</li>
+      <li>Shoulder</li>
     </appliedOnFixedBodyParts>
     <addsHediff>Seg_Servitors_BolterArm_Hediff</addsHediff>
   </RecipeDef>
-
+	<SoundDef>
+		<defName>Seg_Serv_BolterSound</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>20</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_COTO_Sound_Radium</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~90</volumeRange>
+				<pitchRange>.8~1.4</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 </Defs>
