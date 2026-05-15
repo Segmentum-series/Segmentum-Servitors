@@ -16,7 +16,7 @@
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<tab>Seg_SegmentumTab</tab>
 		<discoveredLetterTitle>About: Servitorization</discoveredLetterTitle>
-		<discoveredLetterText>Any person can be turned into a mindless cyborg servant by installing a servitor chip in their brain. Different types of chip exist for different purposes, such as lexomats for intellectual tasks, or medicae servitors for medical care. Servitors have no mind of their own and require significantly less nutrition than a standard human, but cannot learn or improve in the way a fully conscious person can. The process is irreversible.</discoveredLetterText>
+		<discoveredLetterText>Any person can be turned into a mindless cyborg servant by installing a servitor chip in their brain. Different types of chip exist for different purposes, such as lexomats for intellectual tasks, or medicae servitors for medical care. Servitors have no mind of their own and require significantly less nutrition than a standard human, but cannot learn or improve in the way a fully conscious person can.\n\nThe process is irreversible.</discoveredLetterText>
 	</ResearchProjectDef>
 	
 </Defs>
