@@ -91,7 +91,7 @@
 		<defName>Seg_Servitors_CombatChip</defName>
 		<label>combat servitor chip</label>
 		<tradeTags Inherit="False"></tradeTags>
-		<description>A specialized servitor brain implant used to create combat servitors. The subject undergoes extensive neurosurgical conditioning, turning them into a biological combatant capable of performing gladiatorial combat with mechanical precision. In service to the Omnissiah, we shall find absolution.</description>
+		<description>A specialized servitor brain implant used to create combat servitors. The subject undergoes extensive neurosurgical conditioning, turning them into an expendable combat unit perfect for wielding grafted heavy weaponry. In service to the Omnissiah, we shall find absolution.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSeg_Servitors_CombatChip</RecipeDef>
 			<HediffDef>Seg_Servitors_CombatServitorHediff</HediffDef>

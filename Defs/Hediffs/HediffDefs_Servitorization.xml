@@ -189,7 +189,7 @@
 		<defName>Seg_Servitors_CombatServitorHediff</defName>
 		<label>combat servitorization</label>
 		<labelNoun>a combat servitorization</labelNoun>
-		<description>The subject has been transformed into a combat servitor — a biological warrior designed to perform gladiatorial combat with mechanical precision. Higher cognition and emotional capacity have been suppressed, leaving only combat protocols and conditioned obedience.</description>
+		<description>The subject has been transformed into a combat servitor — a biological warrior designed to serve as an expendable combat unit. Higher cognition and emotional capacity have been suppressed, leaving only battle protocols and conditioned obedience.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Seg_Servitors_CombatChip</ThingDef>
 			<RecipeDef>InstallSeg_Servitors_CombatChip</RecipeDef>
