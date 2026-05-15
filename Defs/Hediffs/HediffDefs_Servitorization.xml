@@ -58,6 +58,24 @@
 		<comps>
 			<li Class="ServitorMod.HediffCompProperties_Servitor" />
 		</comps>
+		<renderNodeProperties>
+			<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Pawn/Wounds/Seg_SERV_ServitorHead</texPath>
+			<drawSize>1</drawSize>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>false</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			<defaultData>
+				<layer>69</layer>
+				<offset>(0,0,0)</offset>
+			</defaultData>
+			</drawData>
+		</li>
+    	</renderNodeProperties>
 	</HediffDef>
 
 	<!-- Servitor-Lexomat -->
@@ -118,6 +136,24 @@
 				</capMods>
 			</li>
 		</stages>
+		<renderNodeProperties>
+			<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Pawn/Wounds/Seg_SERV_CogitatorServitorHead</texPath>
+			<drawSize>1</drawSize>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>false</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			<defaultData>
+				<layer>69</layer>
+				<offset>(0,0,0)</offset>
+			</defaultData>
+			</drawData>
+		</li>
+    	</renderNodeProperties>
 		<comps>
 			<li Class="ServitorMod.HediffCompProperties_Servitor" />
 		</comps>
@@ -180,6 +216,24 @@
 				</capMods>
 			</li>
 		</stages>
+		<renderNodeProperties>
+			<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Pawn/Wounds/Seg_SERV_MedicaeServitorHead</texPath>
+			<drawSize>1</drawSize>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>false</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			<defaultData>
+				<layer>69</layer>
+				<offset>(0,0,0)</offset>
+			</defaultData>
+			</drawData>
+		</li>
+    	</renderNodeProperties>
 		<comps>
 			<li Class="ServitorMod.HediffCompProperties_Servitor" />
 		</comps>
@@ -261,6 +315,24 @@
 				</skills>
 			</li>
 		</modExtensions>
+		<renderNodeProperties>
+			<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Pawn/Wounds/Seg_SERV_CombatServitorHead</texPath>
+			<drawSize>1</drawSize>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>false</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			<defaultData>
+				<layer>69</layer>
+				<offset>(0,0,0)</offset>
+			</defaultData>
+			</drawData>
+		</li>
+    	</renderNodeProperties>
 	</HediffDef>
 
 
