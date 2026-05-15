@@ -31,6 +31,15 @@ namespace ServitorMod
         {
             Pawn pawn = Pawn;
             if (pawn == null || pawn.Dead) return;
+            /// Convert to player faction if not already
+            if (pawn.Faction != Faction.OfPlayer)
+                {
+                    pawn.SetFaction(Faction.OfPlayer);
+                }
+            if (pawn.guest != null && pawn.guest.GuestStatus == GuestStatus.Slave)
+                {
+                   pawn.guest.SetGuestStatus(null, GuestStatus.Guest);
+                }
 
             //Change name
             if (pawn.Name is NameTriple name)

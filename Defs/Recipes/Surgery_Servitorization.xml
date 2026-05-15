@@ -24,13 +24,6 @@
 				</filter>
 				<count>1</count>
 			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<categories>
@@ -68,13 +61,6 @@
 					</thingDefs>
 				</filter>
 				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -114,13 +100,6 @@
 				</filter>
 				<count>1</count>
 			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<categories>
@@ -158,13 +137,6 @@
 					</thingDefs>
 				</filter>
 				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
