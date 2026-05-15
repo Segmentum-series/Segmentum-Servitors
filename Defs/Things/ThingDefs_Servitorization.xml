@@ -35,9 +35,10 @@
 			<RecipeDef>InstallSeg_Servitors_ServitorChip</RecipeDef>
 			<HediffDef>Seg_Servitors_ServitorizationHediff</HediffDef>
 		</descriptionHyperlinks>
-		<graphicData>
+		<graphicData Inherit="False">
 			<texPath>Things/Item/Health/Seg_Servitors_ServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
 		</graphicData>
 		<costList>
 			<Plasteel>15</Plasteel>
@@ -55,9 +56,10 @@
 			<RecipeDef>InstallSeg_Servitors_LexomatChip</RecipeDef>
 			<HediffDef>Seg_Servitors_LexomatServitorHediff</HediffDef>
 		</descriptionHyperlinks>
-		<graphicData>
+		<graphicData Inherit="False">
 			<texPath>Things/Item/Health/Seg_Servitors_CogitatorServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
 		</graphicData>
 		<costList>
 			<Plasteel>15</Plasteel>
@@ -76,9 +78,10 @@
 			<RecipeDef>InstallSeg_Servitors_MedicaeChip</RecipeDef>
 			<HediffDef>Seg_Servitors_MedicaeServitorHediff</HediffDef>
 		</descriptionHyperlinks>
-		<graphicData>
+		<graphicData Inherit="False">
 			<texPath>Things/Item/Health/Seg_Servitors_MedicaeServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
 		</graphicData>
 		<costList>
 			<Plasteel>15</Plasteel>
@@ -96,9 +99,10 @@
 			<RecipeDef>InstallSeg_Servitors_CombatChip</RecipeDef>
 			<HediffDef>Seg_Servitors_CombatServitorHediff</HediffDef>
 		</descriptionHyperlinks>
-		<graphicData>
+		<graphicData Inherit="False">
 			<texPath>Things/Item/Health/Seg_Servitors_CombatServitorImplant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
 		</graphicData>
 		<costList>
 			<Plasteel>15</Plasteel>
