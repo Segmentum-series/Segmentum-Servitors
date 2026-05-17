@@ -11,7 +11,7 @@
 		<researchViewX>0</researchViewX>
 		<researchViewY>1.2</researchViewY>
 		<prerequisites>
-			<li>Bionics</li>
+			<li>Fabrication</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<tab>Seg_SegmentumTab</tab>
