@@ -142,7 +142,7 @@
     </costList>
     <recipeMaker>
       <researchPrerequisites>
-        <li>BEWH_AstartesWeapons</li>
+        <li>PrecisionRifling</li>
       </researchPrerequisites>
     </recipeMaker>
   </ThingDef>
