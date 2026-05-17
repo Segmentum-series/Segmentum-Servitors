@@ -105,6 +105,11 @@ namespace ServitorMod
                 SetSkillFloor(pawn, SkillDefOf.Crafting, 5);
                 SetSkillFloor(pawn, SkillDefOf.Intellectual, 5);
             }
+            if (type == "Seg_Servitors_CombatServitorHediff")
+            {
+                SetSkillFloor(pawn, SkillDefOf.Melee, 10);
+                SetSkillFloor(pawn, SkillDefOf.Shooting, 10);
+            }
         }
 
         private void SetSkillFloor(Pawn pawn, SkillDef skill, int level)

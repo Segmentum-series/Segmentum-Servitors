@@ -279,12 +279,13 @@
 					<MentalBreakThreshold>-0.80</MentalBreakThreshold>
 					<PsychicSensitivity>-0.95</PsychicSensitivity>
 					<ShootingAccuracyPawn>.60</ShootingAccuracyPawn>
+					<MeleeDodgeChance>-10</MeleeDodgeChance>
+         		 	<MeleeHitChance>3</MeleeHitChance>
 					<SocialImpact>-1</SocialImpact>
-					<MeleeSkillOffset>6</MeleeSkillOffset>
-					<ShootingSkillOffset>6</ShootingSkillOffset>
 				</statOffsets>
 				<statFactors>
 					<MarketValue>0.4</MarketValue>
+
 				</statFactors>
 				<capMods>
 					<li>
@@ -301,20 +302,6 @@
 		<comps>
 			<li Class="ServitorMod.HediffCompProperties_Servitor" />
 		</comps>
-		<modExtensions>
-			<li Class="Seg.DefModExtension_HediffSkillOffset">
-				<skills>
-					<li>
-						<skill>Melee</skill>
-						<offset>6</offset>
-					</li>
-					<li>
-						<skill>Shooting</skill>
-						<offset>6</offset>
-					</li>
-				</skills>
-			</li>
-		</modExtensions>
 		<renderNodeProperties>
 			<li>
 			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
