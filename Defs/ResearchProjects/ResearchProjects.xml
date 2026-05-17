@@ -6,7 +6,7 @@
 		<defName>Seg_Servitors_ServitudeImperpituis</defName>
 		<label>Servitude Imperpituis</label>
 		<description>Convert unfortunate beings into servitors - lobotomised cyborgs designed for specific tasks and roles and with no will or mind of their own.</description>
-		<baseCost>1000</baseCost>
+		<baseCost>2500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>1.2</researchViewY>
