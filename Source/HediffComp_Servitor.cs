@@ -101,7 +101,7 @@ namespace ServitorMod
 
             if (type == "Seg_Servitors_MedicaeServitorHediff")
             {
-                SetSkillFloor(pawn, SkillDefOf.Medicine, 5);
+                SetSkillFloor(pawn, SkillDefOf.Medicine, 10);
                 SetSkillFloor(pawn, SkillDefOf.Crafting, 5);
                 SetSkillFloor(pawn, SkillDefOf.Intellectual, 5);
             }
@@ -109,6 +109,12 @@ namespace ServitorMod
             {
                 SetSkillFloor(pawn, SkillDefOf.Melee, 10);
                 SetSkillFloor(pawn, SkillDefOf.Shooting, 10);
+            }
+            if (type == "Seg_Servitors_ServitorizationHediff")
+            {
+                SetSkillFloor(pawn, SkillDefOf.Plants, 5);
+                SetSkillFloor(pawn, SkillDefOf.Mining, 5);
+                SetSkillFloor(pawn, SkillDefOf.Construction, 5);
             }
         }
 
