@@ -22,7 +22,7 @@
 	</costList>
     <recipeMaker>
      <researchPrerequisites>
-	  <li MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</li>
+	  <li>Bionics</li>
       </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
@@ -49,7 +49,7 @@
 	</costList>
     <recipeMaker>
      <researchPrerequisites>
-	  <li MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</li>
+	  <li>Bionics</li>
       </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
@@ -76,7 +76,7 @@
 	</costList>
     <recipeMaker>
      <researchPrerequisites>
-	  <li MayRequire="Ludeon.RimWorld.Royalty">SpecializedLimbs</li>
+	  <li>Bionics</li>
       </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
