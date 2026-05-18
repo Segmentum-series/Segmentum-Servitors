@@ -10,17 +10,17 @@
     <cooldownTicksRange>180~240</cooldownTicksRange>
     <verbProperties>
       <verbClass>Verb_AbilityShoot</verbClass>
-      <defaultProjectile>BEWH_BolterRoundInferno</defaultProjectile>
+      <defaultProjectile>BEWH_BolterRound</defaultProjectile>
       <range>24.9</range>
       <soundCast>Seg_Serv_BolterSound</soundCast>
       <muzzleFlashScale>9</muzzleFlashScale>
-      <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+      <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
       <warmupTime>2</warmupTime>
-      <burstShotCount>10</burstShotCount>
-      <accuracyTouch>0.9</accuracyTouch>
-      <accuracyShort>0.8</accuracyShort>
-      <accuracyMedium>0.6</accuracyMedium>
-      <accuracyLong>0.5</accuracyLong>
+      <burstShotCount>6</burstShotCount>
+      <accuracyTouch>0.3</accuracyTouch>
+      <accuracyShort>0.2</accuracyShort>
+      <accuracyMedium>0.1</accuracyMedium>
+      <accuracyLong>0.01</accuracyLong>
       <ai_IsWeapon>true</ai_IsWeapon>
     </verbProperties>
     <!--<comps>
