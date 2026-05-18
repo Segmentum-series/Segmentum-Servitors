@@ -43,6 +43,7 @@
 				<statFactors>
 					<MarketValue>0.2</MarketValue>
 				</statFactors>
+				<painFactor>0</painFactor>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -124,6 +125,7 @@
 				<statFactors>
 					<MarketValue>0.5</MarketValue>
 				</statFactors>
+				<painFactor>0</painFactor>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -204,6 +206,7 @@
 				<statFactors>
 					<MarketValue>0.4</MarketValue>
 				</statFactors>
+				<painFactor>0</painFactor>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -285,8 +288,8 @@
 				</statOffsets>
 				<statFactors>
 					<MarketValue>0.4</MarketValue>
-
 				</statFactors>
+				<painFactor>0</painFactor>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
