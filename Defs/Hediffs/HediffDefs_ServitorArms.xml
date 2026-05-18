@@ -36,6 +36,22 @@
                 </capMods>
             </li>
         </stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+				<li>
+					<label>drill bit</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>26</power>
+					<cooldownTime>4.5</cooldownTime>
+					<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+					<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+				</li>
+				</tools>
+			</li>
+		</comps>
         <modExtensions>
             <li Class="Seg.DefModExtension_HediffSkillOffset">
                 <skills>
@@ -115,6 +131,22 @@
                 </capMods>
             </li>
         </stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+				<li>
+					<label>manipulator claw</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>10</power>
+					<cooldownTime>0.9</cooldownTime>
+					<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+					<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+				</li>
+				</tools>
+			</li>
+		</comps>
         <modExtensions>
             <li Class="Seg.DefModExtension_HediffSkillOffset">
                 <skills>
@@ -178,6 +210,22 @@
                 <painOffset>0.30</painOffset>
             </li>
         </stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+				<li>
+					<label>mechascythe</label>
+					<capacities>
+						<li>Slash</li>
+					</capacities>
+					<power>16</power>
+					<cooldownTime>2.7</cooldownTime>
+					<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+					<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+				</li>
+				</tools>
+			</li>
+		</comps>
         <modExtensions>
             <li Class="Seg.DefModExtension_HediffSkillOffset">
                 <skills>
