@@ -71,16 +71,17 @@
     <stages>
       <li>
         <statOffsets>
-          <ShootingSkillOffset>8</ShootingSkillOffset>
-          <MiningSkillOffset>-12</MiningSkillOffset>
-          <AnimalsSkillOffset>-12</AnimalsSkillOffset>
-          <PlantsSkillOffset>-12</PlantsSkillOffset>
-          <ArtisticSkillOffset>-12</ArtisticSkillOffset>
-          <MedicineSkillOffset>-12</MedicineSkillOffset>
-          <MeleeSkillOffset>-12</MeleeSkillOffset>
+          <ShootingSkillOffset>2</ShootingSkillOffset>
+          <MiningSkillOffset>-8</MiningSkillOffset>
+          <AnimalsSkillOffset>-8</AnimalsSkillOffset>
+          <PlantsSkillOffset>-8</PlantsSkillOffset>
+          <ArtisticSkillOffset>-8</ArtisticSkillOffset>
+          <MedicineSkillOffset>-8</MedicineSkillOffset>
+          <MeleeSkillOffset>-8</MeleeSkillOffset>
+          <CookingSkillOffset>-8</CookingSkillOffset>
 		  <WorkSpeedGlobal>-0.45</WorkSpeedGlobal>
         </statOffsets>
-        <painOffset>0.03</painOffset>
+        <painOffset>0.30</painOffset>
       </li>
     </stages>
     <modExtensions>
@@ -88,36 +89,36 @@
         <skills>
           <li>
             <skill>Mining</skill>
-            <offset>-12</offset>
+            <offset>-8</offset>
           </li>
           <li>
             <skill>Animals</skill>
-            <offset>-12</offset>
+            <offset>-8</offset>
           </li>
 
           <li>
             <skill>Plants</skill>
-            <offset>-12</offset>
+            <offset>-8</offset>
           </li>
           <li>
             <skill>Artistic</skill>
-            <offset>-12</offset>
+            <offset>-8</offset>
           </li>
           <li>
             <skill>Medicine</skill>
-            <offset>-12</offset>
+            <offset>-8</offset>
           </li>
           <li>
             <skill>Melee</skill>
-            <offset>-12</offset>
+            <offset>-8</offset>
           </li>
           <li>
             <skill>Shooting</skill>
-            <offset>8</offset>
+            <offset>2</offset>
           </li>
           <li>
             <skill>Cooking</skill>
-            <offset>-12</offset>
+            <offset>-8</offset>
           </li>
         </skills>
       </li>

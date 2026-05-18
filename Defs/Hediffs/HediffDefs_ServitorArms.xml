@@ -17,17 +17,17 @@
                     <DeepDrillingSpeed>.50</DeepDrillingSpeed>
                     <MiningSpeed>.20</MiningSpeed>
                     <MiningYield>.50</MiningYield>
-                    <MiningSkillOffset>2</MiningSkillOffset>
-                    <MeleeSkillOffset>4</MeleeSkillOffset>
-                    <CookingSkillOffset>-6</CookingSkillOffset>
-                    <PlantsSkillOffset>-12</PlantsSkillOffset>
-                    <AnimalsSkillOffset>-12</AnimalsSkillOffset>
-                    <CraftingSkillOffset>-12</CraftingSkillOffset>
-                    <ArtisticSkillOffset>-12</ArtisticSkillOffset>
-                    <MedicineSkillOffset>-12</MedicineSkillOffset>
+                    <MiningSkillOffset>4</MiningSkillOffset>
+                    <MeleeSkillOffset>2</MeleeSkillOffset>
+                    <CookingSkillOffset>-8</CookingSkillOffset>
+                    <PlantsSkillOffset>-8</PlantsSkillOffset>
+                    <AnimalsSkillOffset>-8</AnimalsSkillOffset>
+                    <CraftingSkillOffset>-8</CraftingSkillOffset>
+                    <ArtisticSkillOffset>-8</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-8</MedicineSkillOffset>
 
                 </statOffsets>
-                <painOffset>0.01</painOffset>
+                <painOffset>0.30</painOffset>
                 <capMods>
                     <li>
                         <capacity>Manipulation</capacity>
@@ -41,39 +41,39 @@
                 <skills>
                     <li>
                         <skill>Mining</skill>
-                        <offset>2</offset>
-                    </li>
-                    <li>
-                        <skill>Melee</skill>
                         <offset>4</offset>
                     </li>
                     <li>
+                        <skill>Melee</skill>
+                        <offset>2</offset>
+                    </li>
+                    <li>
                         <skill>Shooting</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Cooking</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Plants</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Animals</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Crafting</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Artistic</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Medicine</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                 </skills>
             </li>
@@ -98,14 +98,15 @@
 
                     <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
                     <SmeltingSpeed>0.20</SmeltingSpeed>
-                    <PlantsSkillOffset>-6</PlantsSkillOffset>
+                    <PlantsSkillOffset>-8</PlantsSkillOffset>
                     <ConstructionSkillOffset>4</ConstructionSkillOffset>
-                    <CraftingSkillOffset>4</CraftingSkillOffset>
-                    <ArtisticSkillOffset>-6</ArtisticSkillOffset>
-                    <MedicineSkillOffset>-6</MedicineSkillOffset>
+                    <CraftingSkillOffset>3</CraftingSkillOffset>
+                    <ArtisticSkillOffset>-8</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-8</MedicineSkillOffset>
+                    <CookingSkillOffset>-8</CookingSkillOffset>
 
                 </statOffsets>
-                <painOffset>0.03</painOffset>
+                <painOffset>0.30</painOffset>
                 <capMods>
                     <li>
                         <capacity>Manipulation</capacity>
@@ -123,20 +124,24 @@
                     </li>
                     <li>
                         <skill>Crafting</skill>
-                        <offset>4</offset>
+                        <offset>3</offset>
+                    </li>
+                    <li>
+                        <skill>Cooking</skill>
+                        <offset>-8</offset>
                     </li>
 
                     <li>
                         <skill>Plants</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Artistic</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Medicine</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                 </skills>
             </li>
@@ -161,15 +166,16 @@
 
                     <PlantWorkSpeed>0.50</PlantWorkSpeed>
                     <PlantHarvestYield>-0.1</PlantHarvestYield>
-                    <MiningSkillOffset>-12</MiningSkillOffset>
+                    <MiningSkillOffset>-8</MiningSkillOffset>
                     <AnimalsSkillOffset>5</AnimalsSkillOffset>
                     <PlantsSkillOffset>3</PlantsSkillOffset>
-                    <ArtisticSkillOffset>-12</ArtisticSkillOffset>
-                    <MedicineSkillOffset>-12</MedicineSkillOffset>
-                    <MeleeSkillOffset>5</MeleeSkillOffset>
+                    <ArtisticSkillOffset>-8</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-8</MedicineSkillOffset>
+                    <MeleeSkillOffset>4</MeleeSkillOffset>
+                    <CookingSkillOffset>-8</CookingSkillOffset>
 
                 </statOffsets>
-                <painOffset>0.03</painOffset>
+                <painOffset>0.30</painOffset>
             </li>
         </stages>
         <modExtensions>
@@ -177,7 +183,7 @@
                 <skills>
                     <li>
                         <skill>Mining</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Animals</skill>
@@ -190,15 +196,19 @@
                     </li>
                     <li>
                         <skill>Artistic</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Cooking</skill>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Medicine</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Melee</skill>
-                        <offset>5</offset>
+                        <offset>4</offset>
                     </li>
                 </skills>
             </li>
@@ -270,36 +280,36 @@
                 <skills>
                     <li>
                         <skill>Mining</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Animals</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
 
                     <li>
                         <skill>Plants</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Artistic</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Medicine</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Melee</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                     <li>
                         <skill>Shooting</skill>
-                        <offset>8</offset>
+                        <offset>2</offset>
                     </li>
                     <li>
                         <skill>Cooking</skill>
-                        <offset>-12</offset>
+                        <offset>-8</offset>
                     </li>
                 </skills>
             </li>
@@ -307,16 +317,17 @@
         <stages>
             <li>
                 <statOffsets>
-                    <ShootingSkillOffset>8</ShootingSkillOffset>
-                    <MiningSkillOffset>-12</MiningSkillOffset>
-                    <AnimalsSkillOffset>-12</AnimalsSkillOffset>
-                    <PlantsSkillOffset>-12</PlantsSkillOffset>
-                    <ArtisticSkillOffset>-12</ArtisticSkillOffset>
-                    <MedicineSkillOffset>-12</MedicineSkillOffset>
-                    <MeleeSkillOffset>-12</MeleeSkillOffset>
+                    <ShootingSkillOffset>2</ShootingSkillOffset>
+                    <MiningSkillOffset>-8</MiningSkillOffset>
+                    <AnimalsSkillOffset>-8</AnimalsSkillOffset>
+                    <PlantsSkillOffset>-8</PlantsSkillOffset>
+                    <ArtisticSkillOffset>-8</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-8</MedicineSkillOffset>
+                    <MeleeSkillOffset>-8</MeleeSkillOffset>
+                    <CookingSkillOffset>-8</CookingSkillOffset>
 					<WorkSpeedGlobal>-0.45</WorkSpeedGlobal>
                 </statOffsets>
-                <painOffset>0.03</painOffset>
+                <painOffset>0.30</painOffset>
             </li>
         </stages>
     </HediffDef>
