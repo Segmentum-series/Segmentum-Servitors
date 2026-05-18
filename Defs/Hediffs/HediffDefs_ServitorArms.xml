@@ -310,9 +310,10 @@
                 <drawSize>1</drawSize>
                 <parentTagDef>Body</parentTagDef>
                 <side>Right</side>
-                <drawData>
+                 <drawData>
                     <defaultData>
-                        <offset>(.05,.15,-0.07)</offset>
+                        <offset>(-.015,0,-.1)</offset>
+                        <layer>500</layer>
                     </defaultData>
                 </drawData>
             </li>
