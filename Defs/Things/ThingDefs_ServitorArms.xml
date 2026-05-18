@@ -84,7 +84,7 @@
 <ThingDef ParentName="Seg_Servitors_ServitorBase">
 	<defName>Seg_Servitors_MeltaArm</defName>
 	<label>servitor melta-arm</label>
-	<description>A weapon attachment which replaces the existing limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.</description>
+	<description>A weapon attachment which replaces the existing limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
 	<statBases>
 		<MarketValue>3000</MarketValue>
 		<Mass>0.3</Mass>
