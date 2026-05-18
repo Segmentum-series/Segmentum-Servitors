@@ -218,7 +218,7 @@
     <AbilityDef>
         <defName>Seg_Servitors_MeltaBeam</defName>
         <label>Servitor Melta beam</label>
-        <description>Take a moment to charge up and shoot a devsitating beam of fusion energy.</description>
+        <description>Take a moment to charge up and shoot a devastating beam of fusion energy.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
         <writeCombatLog>True</writeCombatLog>
         <iconPath>Things/Item/Health/UI/Icons/Seg_Servitors_MultimeltaIconGW</iconPath>
         <showPsycastEffects>False</showPsycastEffects>
@@ -246,7 +246,7 @@
         <defName>Seg_Servitors_MeltaArm_Hediff</defName>
         <label>servitor melta-arm</label>
         <labelNoun>a melta-equipped servitor arm</labelNoun>
-        <description>A weapon attachment which has replaced the limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.</description>
+        <description>A weapon attachment which has replaced the limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
         <spawnThingOnRemoved>Seg_Servitors_MeltaArm</spawnThingOnRemoved>
         <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
         <addedPartProps>
