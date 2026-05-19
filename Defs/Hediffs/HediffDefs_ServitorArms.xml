@@ -315,6 +315,10 @@
                         <offset>(-.015,0,-.1)</offset>
                         <layer>500</layer>
                     </defaultData>
+                    <dataWest>
+                        <offset>(-.015,0,-.1)</offset>
+                        <layer>0</layer>
+                    </dataWest>
                 </drawData>
             </li>
         </renderNodeProperties>
