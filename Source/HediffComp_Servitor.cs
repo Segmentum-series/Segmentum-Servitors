@@ -78,6 +78,15 @@ namespace ServitorMod
             TraitDef servitor = TraitDef.Named("Seg_Servitors_Servitor");
             pawn.story.traits.GainTrait(new Trait(servitor));
             pawn.story.traits.GainTrait(new Trait(TraitDefOf.Asexual));
+           //if ideology is active, set to player ideology
+            if (ModsConfig.IdeologyActive && pawn.ideo != null)
+                    {
+                        Ideo playerIdeo = Faction.OfPlayer.ideos?.PrimaryIdeo;
+                        if (playerIdeo != null)
+                        {
+                            pawn.ideo.SetIdeo(playerIdeo);
+                        }
+                    }
 
             //Remove anesthetic
             var anesthetic = pawn.health.hediffSet
