@@ -122,7 +122,7 @@
         <label>servitor plasma-arm</label>
         <description>A weapon attachment which replaces the existing limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
         <statBases>
-            <MarketValue>2800</MarketValue>
+            <MarketValue>2600</MarketValue>
             <Mass>0.3</Mass>
         </statBases>
         <costList>

@@ -5,7 +5,7 @@
 	<label>servitor mining arm</label>
 	<description>An augmetic replacement arm designed for mining servitors. The arm is composed of industrial micro-las emitters, several drill bits, scoops, and filters to sieve rare minerals from less valuable rock.</description>
 	<statBases>
-		<MarketValue>2800</MarketValue>
+		<MarketValue>1600</MarketValue>
 		<Mass>0.3</Mass>
 	</statBases>
 	<tradeTags Inherit="False">
@@ -32,7 +32,7 @@
 	<label>servitor industrial arm</label>
 	<description>An augmetic replacement arm designed for manufactorum and construction servitors. The industrial version of the servitor arm has a clamp, a built in fusion welder and robust secondary manipulators to allow for better construction and crafting.</description>
 	<statBases>
-		<MarketValue>2800</MarketValue>
+		<MarketValue>1600</MarketValue>
 		<Mass>0.3</Mass>
 	</statBases>
 	<tradeTags Inherit="False">
@@ -59,7 +59,7 @@
 	<label>servitor agri-arm</label>
 	<description>An augmetic replacement arm designed for agricultural servitors. The servitor agri-arm has a built in seed planter and fertilizer spreader to make farming easier. The fingers are replaced with multiple mechascythes that greatly speed up gathering work, but destroy a small amount of the harvest.</description>
   	<statBases>
-    <MarketValue>2800</MarketValue>
+    <MarketValue>1600</MarketValue>
     <Mass>0.3</Mass>
 	</statBases>
 	<tradeTags Inherit="False">
@@ -86,7 +86,7 @@
 	<label>servitor melta-arm</label>
 	<description>A weapon attachment which replaces the existing limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
 	<statBases>
-		<MarketValue>3000</MarketValue>
+		<MarketValue>2800</MarketValue>
 		<Mass>0.3</Mass>
 	</statBases>
 	<tradeTags Inherit="False">
