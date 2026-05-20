@@ -275,7 +275,7 @@
             <verbClass>Verb_AbilityShoot</verbClass>
             <defaultProjectile>Seg_MeltaBeam</defaultProjectile>
             <range>14.9</range>
-            <soundCast>BEWH_SFX_BolterShot</soundCast>
+            <soundCast>ChargeLance_Fire</soundCast>
             <muzzleFlashScale>9</muzzleFlashScale>
             <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
             <warmupTime>4</warmupTime>
@@ -287,6 +287,9 @@
             <ai_IsWeapon>true</ai_IsWeapon>
             <targetParams>
                 <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetAnimals>true</canTargetAnimals>
             </targetParams>
         </verbProperties>
     </AbilityDef>
