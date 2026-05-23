@@ -6,7 +6,7 @@
 		<defName>InstallSeg_Servitors_ServitorChip</defName>
 		<label>install servitor chip</label>
 		<workerClass>ServitorMod.RecipeWorker_Servitor</workerClass>
-		<description>Conduct servitorization procedure. Involves invasive neurosurgery, implantation of a control chip, and the irreversible suppression of higher brain functions. The subject is stripped of identity and autonomy, reduced to conditioned obedience.</description>
+		<description>Conduct servitorization procedure. Involves invasive neurosurgery, implantation of a control chip, and the irreversible suppression of higher brain functions. The subject is stripped of identity and autonomy, reduced to conditioned obedience.\n\n&lt;color=#40cbde&gt;Note:&lt;/color&gt; Prisoners who undergo servitorization will be automatically recruited and converted to the dominant ideoligion of the colony (if applicable).</description>
 		<descriptionHyperlinks>
 			<ThingDef>Seg_Servitors_ServitorChip</ThingDef>
 			<HediffDef>Seg_Servitors_ServitorizationHediff</HediffDef>
@@ -44,7 +44,7 @@
 		<defName>InstallSeg_Servitors_LexomatChip</defName>
 		<label>install lexomat chip</label>
 		<workerClass>ServitorMod.RecipeWorker_Servitor</workerClass>
-		<description>Conduct lexomat servitorization procedure. The subject is transformed into a biological computation engine capable of performing complex intellectual tasks while most voluntary behavior and social function are suppressed.</description>
+		<description>Conduct lexomat servitorization procedure. The subject is transformed into a biological computation engine capable of performing complex intellectual tasks while most voluntary behavior and social function are suppressed.\n\n&lt;color=#40cbde&gt;Note:&lt;/color&gt; Prisoners who undergo servitorization will be automatically recruited and converted to the dominant ideoligion of the colony (if applicable).</description>
 		<descriptionHyperlinks>
 			<ThingDef>Seg_Servitors_LexomatChip</ThingDef>
 			<HediffDef>Seg_Servitors_LexomatServitorHediff</HediffDef>
@@ -82,7 +82,7 @@
 		<defName>InstallSeg_Servitors_MedicaeChip</defName>
 		<label>install medicae servitor chip</label>
 		<workerClass>ServitorMod.RecipeWorker_Servitor</workerClass>
-		<description>Conduct medicae servitorization procedure. The subject is transformed into a surgical assistant servitor capable of performing medical procedures with mechanical precision.</description>
+		<description>Conduct medicae servitorization procedure. The subject is transformed into a surgical assistant servitor capable of performing medical procedures with mechanical precision.\n\n&lt;color=#40cbde&gt;Note:&lt;/color&gt; Prisoners who undergo servitorization will be automatically recruited and converted to the dominant ideoligion of the colony (if applicable).</description>
 		<descriptionHyperlinks>
 			<ThingDef>Seg_Servitors_MedicaeChip</ThingDef>
 			<HediffDef>Seg_Servitors_MedicaeServitorHediff</HediffDef>
@@ -120,7 +120,7 @@
 		<defName>InstallSeg_Servitors_CombatChip</defName>
 		<label>install combat servitor chip</label>
 		<workerClass>ServitorMod.RecipeWorker_Servitor</workerClass>
-		<description>Conduct combat servitorization procedure. The subject is transformed into a combat-ready servitor capable of engaging in tactical operations.</description>
+		<description>Conduct combat servitorization procedure. The subject is transformed into a combat-ready servitor capable of engaging in tactical operations.\n\n&lt;color=#40cbde&gt;Note:&lt;/color&gt; Prisoners who undergo servitorization will be automatically recruited and converted to the dominant ideoligion of the colony (if applicable).</description>
 		<descriptionHyperlinks>
 			<ThingDef>Seg_Servitors_CombatChip</ThingDef>
 			<HediffDef>Seg_Servitors_CombatServitorHediff</HediffDef>
