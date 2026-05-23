@@ -160,7 +160,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
-            <li>Arm</li>
+            <li>Shoulder</li>
         </appliedOnFixedBodyParts>
         <addsHediff>Seg_Servitors_PlasArm_Hediff</addsHediff>
     </RecipeDef>
