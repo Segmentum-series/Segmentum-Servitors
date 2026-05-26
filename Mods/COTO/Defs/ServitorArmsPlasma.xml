@@ -11,7 +11,7 @@
         <verbProperties>
             <verbClass>Verb_AbilityShoot</verbClass>
             <defaultProjectile>SEG_COTO_Bullet_Plasma</defaultProjectile>
-            <range>24.9</range>
+            <range>27.9</range>
             <soundCast>Seg_COTO_PlasmaSound</soundCast>
             <muzzleFlashScale>9</muzzleFlashScale>
             <ticksBetweenBurstShots>120</ticksBetweenBurstShots>

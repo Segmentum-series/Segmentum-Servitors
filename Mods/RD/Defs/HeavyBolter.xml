@@ -11,7 +11,7 @@
     <verbProperties>
       <verbClass>Verb_AbilityShoot</verbClass>
       <defaultProjectile>BEWH_BolterRound</defaultProjectile>
-      <range>24.9</range>
+      <range>31.9</range>
       <soundCast>Seg_Serv_BolterSound</soundCast>
       <muzzleFlashScale>9</muzzleFlashScale>
       <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
