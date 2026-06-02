@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- Servitor -->
-	<HediffDef ParentName="ImplantHediffBase">
+	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>Seg_Servitors_ServitorizationHediff</defName>
 		<label>servitorization</label>
 		<labelNoun>a servitorization</labelNoun>
@@ -11,6 +11,11 @@
 			<RecipeDef>InstallSeg_Servitors_ServitorChip</RecipeDef>
 		</descriptionHyperlinks>
 		<isBad>true</isBad>
+		<addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
 		<stages>
 			<li>
 				<disablesNeeds>
@@ -80,7 +85,7 @@
 	</HediffDef>
 
 	<!-- Servitor-Lexomat -->
-	<HediffDef ParentName="ImplantHediffBase">
+	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>Seg_Servitors_LexomatServitorHediff</defName>
 		<label>lexomat servitorization</label>
 		<labelNoun>a lexomat servitorization</labelNoun>
@@ -90,6 +95,11 @@
 			<RecipeDef>InstallSeg_Servitors_LexomatChip</RecipeDef>
 		</descriptionHyperlinks>
 		<isBad>true</isBad>
+			<addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
 		<stages>
 			<li>
 				<disablesNeeds>
@@ -162,7 +172,7 @@
 	</HediffDef>
 
 	<!-- Servitor-Medicae -->
-	<HediffDef ParentName="ImplantHediffBase">
+	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>Seg_Servitors_MedicaeServitorHediff</defName>
 		<label>medicae servitorization</label>
 		<labelNoun>a medicae servitorization</labelNoun>
@@ -172,6 +182,11 @@
 			<RecipeDef>InstallSeg_Servitors_MedicaeChip</RecipeDef>
 		</descriptionHyperlinks>
 		<isBad>true</isBad>
+		<addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
 		<stages>
 			<li>
 				<disablesNeeds>
@@ -242,7 +257,7 @@
 		</comps>
 	</HediffDef>
 
-	<HediffDef ParentName="ImplantHediffBase">
+	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>Seg_Servitors_CombatServitorHediff</defName>
 		<label>combat servitorization</label>
 		<labelNoun>a combat servitorization</labelNoun>
@@ -252,6 +267,11 @@
 			<RecipeDef>InstallSeg_Servitors_CombatChip</RecipeDef>
 		</descriptionHyperlinks>
 		<isBad>true</isBad>
+			<addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
 		<stages>
 			<li>
 				<disablesNeeds>
