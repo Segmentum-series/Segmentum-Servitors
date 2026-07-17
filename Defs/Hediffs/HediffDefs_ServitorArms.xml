@@ -51,6 +51,9 @@
 				</li>
 				</tools>
 			</li>
+            <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
 		</comps>
         <modExtensions>
             <li Class="Seg.DefModExtension_HediffSkillOffset">
@@ -146,6 +149,9 @@
 				</li>
 				</tools>
 			</li>
+             <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
 		</comps>
         <modExtensions>
             <li Class="Seg.DefModExtension_HediffSkillOffset">
@@ -225,6 +231,9 @@
 				</li>
 				</tools>
 			</li>
+             <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
 		</comps>
         <modExtensions>
             <li Class="Seg.DefModExtension_HediffSkillOffset">
@@ -328,6 +337,9 @@
         <comps>
             <li Class="Seg.HediffCompProperties_GivesAbility">
                 <vanillaAbility>Seg_Servitors_MeltaBeam</vanillaAbility>
+            </li>
+             <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
             </li>
         </comps>
         <modExtensions>

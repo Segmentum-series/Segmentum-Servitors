@@ -6,6 +6,7 @@
 		<label>servitorization</label>
 		<labelNoun>a servitorization</labelNoun>
 		<description>Once a thinking and feeling being, this subject has undergone irreversible servitorization. Higher brain functions have been permanently suppressed, leaving only conditioned responses and mechanical obedience. The body remains functional. The person does not.</description>
+		<spawnThingOnRemoved>Seg_Servitors_ServitorChip</spawnThingOnRemoved>
 		<descriptionHyperlinks>
 			<ThingDef>Seg_Servitors_ServitorChip</ThingDef>
 			<RecipeDef>InstallSeg_Servitors_ServitorChip</RecipeDef>
@@ -63,6 +64,9 @@
 		</stages>
 		<comps>
 			<li Class="ServitorMod.HediffCompProperties_Servitor" />
+			  <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
 		</comps>
 		<renderNodeProperties>
 			<li>
@@ -89,6 +93,7 @@
 		<defName>Seg_Servitors_LexomatServitorHediff</defName>
 		<label>lexomat servitorization</label>
 		<labelNoun>a lexomat servitorization</labelNoun>
+		<spawnThingOnRemoved>Seg_Servitors_LexomatChip</spawnThingOnRemoved>
 		<description>The subject has been transformed into a lexomat — a biological computation servitor optimized for analysis, calculation, and research. Emotional, social, and motor functions are heavily suppressed. Only analytical cognition remains intact.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Seg_Servitors_LexomatChip</ThingDef>
@@ -168,6 +173,9 @@
     	</renderNodeProperties>
 		<comps>
 			<li Class="ServitorMod.HediffCompProperties_Servitor" />
+			  <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
 		</comps>
 	</HediffDef>
 
@@ -175,6 +183,7 @@
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>Seg_Servitors_MedicaeServitorHediff</defName>
 		<label>medicae servitorization</label>
+		<spawnThingOnRemoved>Seg_Servitors_MedicaeChip</spawnThingOnRemoved>
 		<labelNoun>a medicae servitorization</labelNoun>
 		<description>The subject has been transformed into a medicae servitor — a biological surgical assistant designed to perform medical procedures with tireless precision. Higher cognition and emotional capacity have been suppressed, leaving only medical protocols and conditioned obedience.</description>
 		<descriptionHyperlinks>
@@ -254,6 +263,9 @@
     	</renderNodeProperties>
 		<comps>
 			<li Class="ServitorMod.HediffCompProperties_Servitor" />
+			  <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
 		</comps>
 	</HediffDef>
 
@@ -261,6 +273,7 @@
 		<defName>Seg_Servitors_CombatServitorHediff</defName>
 		<label>combat servitorization</label>
 		<labelNoun>a combat servitorization</labelNoun>
+		<spawnThingOnRemoved>Seg_Servitors_CombatChip</spawnThingOnRemoved>
 		<description>The subject has been transformed into a combat servitor — a biological warrior designed to serve as an expendable combat unit. Higher cognition and emotional capacity have been suppressed, leaving only battle protocols and conditioned obedience.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Seg_Servitors_CombatChip</ThingDef>
@@ -324,6 +337,9 @@
 		</stages>
 		<comps>
 			<li Class="ServitorMod.HediffCompProperties_Servitor" />
+			  <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
 		</comps>
 		<renderNodeProperties>
 			<li>

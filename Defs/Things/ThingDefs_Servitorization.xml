@@ -13,6 +13,9 @@
     <statBases>
       <WorkToMake>17000</WorkToMake>
     </statBases>
+	<graphicData>
+		<color>(160, 112, 160)</color>
+	</graphicData>
     <recipeMaker>
       <researchPrerequisite>Seg_Servitors_ServitudeImperpituis</researchPrerequisite>
       <recipeUsers>
