@@ -400,5 +400,95 @@
         </stages>
     </HediffDef>
 
+<!-- ===Flame Arm=== -->
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Seg_SERV_FlameArm_Hediff</defName>
+        <label>servitor flame arm</label>
+        <labelNoun>a flamer eqipped servitor arm</labelNoun>
+        <description>A weapon attachment which has replaced the limb. The servitor plasma-arm consists of a large arc emitter for combat but greatly impairs any functions other than combat.</description>
+        <spawnThingOnRemoved>Seg_Servitors_FlameArm</spawnThingOnRemoved>
+        <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>Seg.PawnRenderNode_Arm</nodeClass>
+                <workerClass>Seg.PawnRenderNodeWorker_Arm</workerClass>
+                <texPath>Pawn/Wounds/IncendineIgniter/Seg_SERV_GunArmIncendineIgniter</texPath>
+                <drawSize>1</drawSize>
+                <parentTagDef>Body</parentTagDef>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <offset>(-.015,0,-.1)</offset>
+                        <layer>500</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <comps>
+            <li Class="Seg.HediffCompProperties_GivesAbility">
+                <vanillaAbility>Seg_SERV_FlameShot</vanillaAbility>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingSkillOffset>2</ShootingSkillOffset>
+                    <MiningSkillOffset>-8</MiningSkillOffset>
+                    <AnimalsSkillOffset>-8</AnimalsSkillOffset>
+                    <PlantsSkillOffset>-8</PlantsSkillOffset>
+                    <ArtisticSkillOffset>-8</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-8</MedicineSkillOffset>
+                    <MeleeSkillOffset>-8</MeleeSkillOffset>
+                    <CookingSkillOffset>-8</CookingSkillOffset>
+					<WorkSpeedGlobal>-0.45</WorkSpeedGlobal>
+                </statOffsets>
+                <painOffset>0.30</painOffset>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="Seg.DefModExtension_HediffSkillOffset">
+                <skills>
+                    <li>
+                        <skill>Mining</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Animals</skill>
+                        <offset>-8</offset>
+                    </li>
+
+                    <li>
+                        <skill>Plants</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Artistic</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Medicine</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Melee</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Shooting</skill>
+                        <offset>2</offset>
+                    </li>
+                    <li>
+                        <skill>Cooking</skill>
+                        <offset>-8</offset>
+                    </li>
+                </skills>
+            </li>
+        </modExtensions>
+    </HediffDef>
 
 </Defs>

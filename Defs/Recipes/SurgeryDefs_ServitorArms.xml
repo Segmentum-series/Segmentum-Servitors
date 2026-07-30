@@ -99,5 +99,32 @@
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_Servitors_MeltaArm_Hediff</addsHediff>
 </RecipeDef>
+<!-- ===Flame Arm=== -->
+    <!--RecipeDefs-->
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallSeg_Servitors_FlameArm</defName>
+        <label>install servitor heavy flame-arm</label>
+        <description>Replaces the existing limb with a weapon attachment. The servitor arc arm consists of a large arc projector for combat but greatly impairs any functions other than combat</description>
+        <jobString>Installing servitor plasma-arm.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Seg_Servitors_FlameArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Seg_Servitors_FlameArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Shoulder</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Seg_SERV_FlameArm_Hediff</addsHediff>
+    </RecipeDef>
 
 </Defs>

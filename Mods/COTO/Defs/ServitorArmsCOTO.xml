@@ -1,0 +1,606 @@
+<Defs>
+<!--  ==Plasma Arm== -->
+    <!--Ability-->
+    <AbilityDef>
+        <defName>Seg_Servitors_PlasmaShot</defName>
+        <label>Servitor Plasma shot</label>
+        <description>Fire a powerful blast of incandescent plasma.</description>
+        <writeCombatLog>True</writeCombatLog>
+        <iconPath>Things/Item/Health/UI/Icons/Seg_COTO_Plasma</iconPath>
+        <showPsycastEffects>False</showPsycastEffects>
+        <cooldownTicksRange>180~240</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_AbilityShoot</verbClass>
+            <defaultProjectile>SEG_COTO_Bullet_Plasma</defaultProjectile>
+            <range>27.9</range>
+            <soundCast>Seg_COTO_PlasmaSound</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+            <warmupTime>4</warmupTime>
+            <burstShotCount>3</burstShotCount>
+            <accuracyTouch>0.9</accuracyTouch>
+            <accuracyShort>0.8</accuracyShort>
+            <accuracyMedium>0.6</accuracyMedium>
+            <accuracyLong>0.5</accuracyLong>
+            <ai_IsWeapon>true</ai_IsWeapon>
+        </verbProperties>
+    </AbilityDef>
+    <!--Hediifs-->
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Seg_Servitors_PlasArm_Hediff</defName>
+        <label>servitor plasma-arm</label>
+        <labelNoun>a plasma-equipped servitor arm</labelNoun>
+        <description>A weapon attachment which has replaced the limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
+        <spawnThingOnRemoved>Seg_Servitors_PlasArm</spawnThingOnRemoved>
+        <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>Seg.PawnRenderNode_Arm</nodeClass>
+                <workerClass>Seg.PawnRenderNodeWorker_Arm</workerClass>
+                <texPath>Pawn/Wounds/Plasma/Seg_SERV_GunArmPlasma</texPath>
+                <drawSize>1</drawSize>
+                <parentTagDef>Body</parentTagDef>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <offset>(-.015,0,-.1)</offset>
+                        <layer>500</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <comps>
+            <li Class="Seg.HediffCompProperties_GivesAbility">
+                <vanillaAbility>Seg_Servitors_PlasmaShot</vanillaAbility>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingSkillOffset>2</ShootingSkillOffset>
+                    <MiningSkillOffset>-8</MiningSkillOffset>
+                    <AnimalsSkillOffset>-8</AnimalsSkillOffset>
+                    <PlantsSkillOffset>-8</PlantsSkillOffset>
+                    <ArtisticSkillOffset>-8</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-8</MedicineSkillOffset>
+                    <MeleeSkillOffset>-8</MeleeSkillOffset>
+                    <CookingSkillOffset>-8</CookingSkillOffset>
+					<WorkSpeedGlobal>-0.45</WorkSpeedGlobal>
+                </statOffsets>
+                <painOffset>0.30</painOffset>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="Seg.DefModExtension_HediffSkillOffset">
+                <skills>
+                    <li>
+                        <skill>Mining</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Animals</skill>
+                        <offset>-8</offset>
+                    </li>
+
+                    <li>
+                        <skill>Plants</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Artistic</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Medicine</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Melee</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Shooting</skill>
+                        <offset>2</offset>
+                    </li>
+                    <li>
+                        <skill>Cooking</skill>
+                        <offset>-8</offset>
+                    </li>
+                </skills>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+    <!--ThingDefs-->
+
+    <ThingDef ParentName="Seg_Servitors_ServitorBase">
+        <defName>Seg_Servitors_PlasArm</defName>
+        <label>servitor plasma-arm</label>
+        <description>A weapon attachment which replaces the existing limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
+        <statBases>
+            <MarketValue>2600</MarketValue>
+            <Mass>0.3</Mass>
+        </statBases>
+        <costList>
+            <Plasteel>20</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Seg_Ceramite>25</Seg_Ceramite>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>Seg_PlasmaInduction</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
+
+    <!--RecipeDefs-->
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallSeg_Servitors_PlasArm</defName>
+        <label>install servitor plasma-arm</label>
+        <description>Replaces the existing limb with a weapon attachment. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat</description>
+        <jobString>Installing servitor plasma-arm.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Seg_Servitors_PlasArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Seg_Servitors_PlasArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Shoulder</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Seg_Servitors_PlasArm_Hediff</addsHediff>
+    </RecipeDef>
+<!-- ===Arc Arm=== -->
+    <!--Ability-->
+    <AbilityDef>
+        <defName>Seg_SERV_ArcBeam</defName>
+        <label>Servitor Arc beam</label>
+        <description>Take a moment to charge up and shoot a devastating beam of fusion energy.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
+        <writeCombatLog>True</writeCombatLog>
+        <iconPath>Pawn/Wounds/HeavyArc/Seg_SERV_GunArmHArc_east</iconPath>
+        <showPsycastEffects>False</showPsycastEffects>
+        <cooldownTicksRange>240~360</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_Shoot</verbClass>
+            <defaultProjectile>Seg_SERV_ArcBeam</defaultProjectile>
+            <range>24.9</range>
+            <soundCast>ChargeLance_Fire</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <ticksBetweenBurstShots>80</ticksBetweenBurstShots>
+            <warmupTime>2</warmupTime>
+            <burstShotCount>1</burstShotCount>
+            <accuracyTouch>0.9</accuracyTouch>
+            <accuracyShort>0.8</accuracyShort>
+            <accuracyMedium>0.6</accuracyMedium>
+            <accuracyLong>0.5</accuracyLong>
+            <ai_IsWeapon>true</ai_IsWeapon>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetAnimals>true</canTargetAnimals>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+    <!--Projectile-->
+        <ThingDef ParentName="BaseBullet">
+            <defName>Seg_SERV_ArcBeam</defName>
+            <label>overcharged arc beam</label>
+            <description>Maximum-power projection of the Motive Force at a target which can arc to numerous other targets over a wider area. Can overheat the arc coils and burn the shooter. Added leathality, both to the shooter and the enemy, as an adaptation to be used on a servitor.</description>
+            <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+            <category>Projectile</category>
+            <drawOffscreen>true</drawOffscreen>
+            <seeThroughFog>true</seeThroughFog>
+
+            <graphicData>
+                <graphicClass>Graphic_Single</graphicClass>
+                <texPath>Things/Projectile/Seg_COTO_Arc</texPath>
+                <shaderType>TransparentPostLight</shaderType>
+                <drawSize>2</drawSize>
+            </graphicData>
+
+            <projectile>
+                <damageDef>Seg_COTO_ArcDamage</damageDef>
+                <damageAmountBase>10</damageAmountBase>
+                <armorPenetrationBase>2.00</armorPenetrationBase>
+                <stoppingPower>1</stoppingPower>
+                <speed>999</speed>
+            </projectile>
+
+            <modExtensions>
+                <li Class="taranchuk_lasers.LaserProperties">
+                    <damageTickRate>10</damageTickRate>
+                    <lifetimeTicks>30</lifetimeTicks>
+
+                    <beamWidth>0.95</beamWidth>
+                    <beamWidthDrawScale>3</beamWidthDrawScale>
+
+                    <sweepRatePerTick>0</sweepRatePerTick>
+                    <maxSweepAngle>0</maxSweepAngle>
+
+                    <damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+                    <debugCells>false</debugCells>
+
+                    <textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+                    <lockOnTarget>false</lockOnTarget>
+
+                    <maxChainTargets>2</maxChainTargets>
+                    <chainDamageFalloff>0.80</chainDamageFalloff>
+                    <branchChance>2</branchChance>
+                    <maxBranches>6</maxBranches>
+                    <branchToSameTargets>false</branchToSameTargets>
+                    <chainAllowFriendlyFire>true</chainAllowFriendlyFire>
+                    <chainToAnything>False</chainToAnything>
+                    <chainRange>7</chainRange>
+                    <chainDelayTicks>1</chainDelayTicks>
+                    
+                    <sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
+                    <trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
+                </li>
+            </modExtensions>
+            <comps>
+        <!--<li Class="seg.CompProperties_ProjectileOverheat">
+            <overheatChance>0.05</overheatChance>
+            <blastRadius>0.3</blastRadius>
+            <damageDef>Seg_COTO_ArcDamage</damageDef>
+            <damageAmount>7</damageAmount>
+            <fleckDefName>Seg_BlastEMPLong</fleckDefName> broken, always causes an overheat 
+        </li>-->
+    </comps>
+	</ThingDef>
+    <!--Hediifs-->
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Seg_SERV_ArcArm_Hediff</defName>
+        <label>servitor Heavy Arc-arm</label>
+        <labelNoun>a arc-projector eqipped servitor arm</labelNoun>
+        <description>A weapon attachment which has replaced the limb. The servitor plasma-arm consists of a large arc emitter for combat but greatly impairs any functions other than combat.</description>
+        <spawnThingOnRemoved>Seg_Servitors_HArcArm</spawnThingOnRemoved>
+        <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>Seg.PawnRenderNode_Arm</nodeClass>
+                <workerClass>Seg.PawnRenderNodeWorker_Arm</workerClass>
+                <texPath>Pawn/Wounds/HeavyArc/Seg_SERV_GunArmHArc</texPath>
+                <drawSize>1</drawSize>
+                <parentTagDef>Body</parentTagDef>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <offset>(-.015,0,-.1)</offset>
+                        <layer>500</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <comps>
+            <li Class="Seg.HediffCompProperties_GivesAbility">
+                <vanillaAbility>Seg_SERV_ArcBeam</vanillaAbility>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingSkillOffset>2</ShootingSkillOffset>
+                    <MiningSkillOffset>-8</MiningSkillOffset>
+                    <AnimalsSkillOffset>-8</AnimalsSkillOffset>
+                    <PlantsSkillOffset>-8</PlantsSkillOffset>
+                    <ArtisticSkillOffset>-8</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-8</MedicineSkillOffset>
+                    <MeleeSkillOffset>-8</MeleeSkillOffset>
+                    <CookingSkillOffset>-8</CookingSkillOffset>
+					<WorkSpeedGlobal>-0.45</WorkSpeedGlobal>
+                </statOffsets>
+                <painOffset>0.30</painOffset>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="Seg.DefModExtension_HediffSkillOffset">
+                <skills>
+                    <li>
+                        <skill>Mining</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Animals</skill>
+                        <offset>-8</offset>
+                    </li>
+
+                    <li>
+                        <skill>Plants</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Artistic</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Medicine</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Melee</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Shooting</skill>
+                        <offset>2</offset>
+                    </li>
+                    <li>
+                        <skill>Cooking</skill>
+                        <offset>-8</offset>
+                    </li>
+                </skills>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+    <!--ThingDefs-->
+
+    <ThingDef ParentName="Seg_Servitors_ServitorBase">
+        <defName>Seg_Servitors_HArcArm</defName>
+        <label>servitor Heavy arc-arm</label>
+        <description>A weapon attachment which replaces the existing limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
+        <statBases>
+            <MarketValue>2600</MarketValue>
+            <Mass>0.3</Mass>
+        </statBases>
+        <costList>
+            <Plasteel>20</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Seg_Ceramite>25</Seg_Ceramite>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>Seg_COTO_ArcPermacapacitors</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
+
+    <!--RecipeDefs-->
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallSeg_Servitors_HArcArm</defName>
+        <label>install servitor heavy arc-arm</label>
+        <description>Replaces the existing limb with a weapon attachment. The servitor arc arm consists of a large arc projector for combat but greatly impairs any functions other than combat</description>
+        <jobString>Installing servitor plasma-arm.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Seg_Servitors_HArcArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Seg_Servitors_HArcArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Shoulder</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Seg_SERV_ArcArm_Hediff</addsHediff>
+    </RecipeDef>
+<!-- ===Phosphor Arm=== -->
+  <!--Ability-->
+    <AbilityDef>
+        <defName>Seg_SERV_PhosphorShot</defName>
+        <label>Servitor Phosphor shot</label>
+        <description>Take a moment to charge up and shoot an inferno.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause very hard to fight fires. Using this weapon is considered a war-crime by several groups on the rim.</description>
+        <writeCombatLog>True</writeCombatLog>
+        <iconPath>Pawn/Wounds/PhosphorBlaster/Seg_SERV_GunArmPhosphorBlaster_east</iconPath>
+        <showPsycastEffects>False</showPsycastEffects>
+        <cooldownTicksRange>240~360</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_Shoot</verbClass>
+            <defaultProjectile>Seg_SERV_PhosphorBlast</defaultProjectile>
+            <range>34.9</range>
+            <soundCast>ChargeLance_Fire</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+            <warmupTime>4</warmupTime>
+            <burstShotCount>8</burstShotCount>
+            <accuracyTouch>0.6</accuracyTouch>
+            <accuracyShort>0.5</accuracyShort>
+            <accuracyMedium>0.3</accuracyMedium>
+            <accuracyLong>0.1</accuracyLong>
+            <ai_IsWeapon>true</ai_IsWeapon>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetAnimals>true</canTargetAnimals>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+    <!--Projectile-->
+        <ThingDef ParentName="BaseBullet">
+            <defName>Seg_SERV_PhosphorBlast</defName>
+            <label>phosphor bolt</label>
+            <thingClass>Seg.COTO.Projectile_Phosphor</thingClass>
+
+            <graphicData>
+                <texPath>Things/Projectile/Seg_COTO_Phospor</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>1.2</drawSize>
+            </graphicData>
+
+            <projectile>
+                <damageDef>Flame</damageDef>
+                <damageAmountBase>10</damageAmountBase>
+                <speed>70</speed>
+
+                <explosionRadius>1.85</explosionRadius>
+
+                <preExplosionSpawnThingDef>PhosphorFire</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+            </projectile>
+
+	</ThingDef>
+    <!--Hediifs-->
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Seg_SERV_PhosphorArm_Hediff</defName>
+        <label>servitor phosphor arm</label>
+        <labelNoun>a phosphor blaster eqipped servitor arm</labelNoun>
+        <description>A weapon attachment which has replaced the limb. The servitor plasma-arm consists for combat but greatly impairs any functions other than combat.</description>
+        <spawnThingOnRemoved>Seg_Servitors_PhosphorArm</spawnThingOnRemoved>
+        <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>Seg.PawnRenderNode_Arm</nodeClass>
+                <workerClass>Seg.PawnRenderNodeWorker_Arm</workerClass>
+                <texPath>Pawn/Wounds/PhosphorBlaster/Seg_SERV_GunArmPhosphorBlaster</texPath>
+                <drawSize>1</drawSize>
+                <parentTagDef>Body</parentTagDef>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <offset>(-.015,0,-.1)</offset>
+                        <layer>500</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <comps>
+            <li Class="Seg.HediffCompProperties_GivesAbility">
+                <vanillaAbility>Seg_SERV_PhosphorShot</vanillaAbility>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingSkillOffset>2</ShootingSkillOffset>
+                    <MiningSkillOffset>-8</MiningSkillOffset>
+                    <AnimalsSkillOffset>-8</AnimalsSkillOffset>
+                    <PlantsSkillOffset>-8</PlantsSkillOffset>
+                    <ArtisticSkillOffset>-8</ArtisticSkillOffset>
+                    <MedicineSkillOffset>-8</MedicineSkillOffset>
+                    <MeleeSkillOffset>-8</MeleeSkillOffset>
+                    <CookingSkillOffset>-8</CookingSkillOffset>
+					<WorkSpeedGlobal>-0.45</WorkSpeedGlobal>
+                </statOffsets>
+                <painOffset>0.30</painOffset>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="Seg.DefModExtension_HediffSkillOffset">
+                <skills>
+                    <li>
+                        <skill>Mining</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Animals</skill>
+                        <offset>-8</offset>
+                    </li>
+
+                    <li>
+                        <skill>Plants</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Artistic</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Medicine</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Melee</skill>
+                        <offset>-8</offset>
+                    </li>
+                    <li>
+                        <skill>Shooting</skill>
+                        <offset>2</offset>
+                    </li>
+                    <li>
+                        <skill>Cooking</skill>
+                        <offset>-8</offset>
+                    </li>
+                </skills>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+    <!--ThingDefs-->
+
+    <ThingDef ParentName="Seg_Servitors_ServitorBase">
+        <defName>Seg_Servitors_PhosphorArm</defName>
+        <label>servitor phosphor Arm</label>
+        <description>A weapon attachment which replaces the existing limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
+        <statBases>
+            <MarketValue>2600</MarketValue>
+            <Mass>0.3</Mass>
+        </statBases>
+        <costList>
+            <Uranium>60</Uranium>
+            <ComponentSpacer>8</ComponentSpacer>
+            <Seg_Ceramite>30</Seg_Ceramite>
+            <Chemfuel>100</Chemfuel>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>Seg_COTO_PhosphexMunitions</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
+
+    <!--RecipeDefs-->
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallSeg_Servitors_PhosphorArm</defName>
+        <label>install servitor heavy arc-arm</label>
+        <description>Replaces the existing limb with a weapon attachment. The servitor arc arm consists of a large arc projector for combat but greatly impairs any functions other than combat</description>
+        <jobString>Installing servitor plasma-arm.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Seg_Servitors_PhosphorArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Seg_Servitors_PhosphorArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Shoulder</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Seg_SERV_PhosphorArm_Hediff</addsHediff>
+    </RecipeDef>
+
+
+</Defs>
