@@ -433,6 +433,9 @@
             <li Class="Seg.HediffCompProperties_GivesAbility">
                 <vanillaAbility>Seg_SERV_FlameShot</vanillaAbility>
             </li>
+             <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
         </comps>
         <stages>
             <li>

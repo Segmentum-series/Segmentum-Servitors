@@ -296,6 +296,9 @@
             <li Class="Seg.HediffCompProperties_GivesAbility">
                 <vanillaAbility>Seg_SERV_ArcBeam</vanillaAbility>
             </li>
+             <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
         </comps>
         <stages>
             <li>
@@ -492,6 +495,9 @@
         <comps>
             <li Class="Seg.HediffCompProperties_GivesAbility">
                 <vanillaAbility>Seg_SERV_PhosphorShot</vanillaAbility>
+            </li>
+             <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
             </li>
         </comps>
         <stages>

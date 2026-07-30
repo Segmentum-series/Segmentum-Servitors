@@ -31,6 +31,11 @@
 			<displayName>Segmentum-Core</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/Workshop/FillThisShitInLater</steamWorkshopUrl>
 		</li>
+		<li>
+			<packageId>phonicmas.rimdark.mankindsfinest</packageId>
+			<displayName>RimDark 40k-Mankind's Finest</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3505068525</steamWorkshopUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
