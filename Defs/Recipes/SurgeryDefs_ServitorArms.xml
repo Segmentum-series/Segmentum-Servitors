@@ -76,8 +76,8 @@
 </RecipeDef>
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_Servitors_MeltaArm</defName>
-  <label>install servitor multi-melta-arm</label>
-  <description>Replaces the existing limb with a weapon attachment. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat</description>
+  <label>install servitor melta-arm</label>
+  <description>Replaces the existing limb with a weapon attachment. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.</description>
   <jobString>Installing servitor melta-arm.</jobString>
   <ingredients>
     <li>
@@ -103,8 +103,8 @@
     <!--RecipeDefs-->
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
         <defName>InstallSeg_Servitors_FlameArm</defName>
-        <label>install servitor heavy flame-arm</label>
-        <description>Replaces the existing limb with a weapon attachment. The servitor arc arm consists of a large arc projector for combat but greatly impairs any functions other than combat</description>
+        <label>install servitor heavy flamer arm</label>
+        <description>Replaces the existing limb with  weapon attachment. The servitor flamer arm consists of a high-capacity flame projector but greatly impairs any functions other than combat.</description>
         <jobString>Installing servitor plasma-arm.</jobString>
         <ingredients>
             <li>

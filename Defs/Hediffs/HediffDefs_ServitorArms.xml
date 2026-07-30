@@ -274,7 +274,7 @@
 
     <AbilityDef>
         <defName>Seg_Servitors_MeltaBeam</defName>
-        <label>Servitor Melta beam</label>
+        <label>servitor melta beam</label>
         <description>Take a moment to charge up and shoot a devastating beam of fusion energy.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
         <writeCombatLog>True</writeCombatLog>
         <iconPath>Things/Item/Health/UI/Icons/Seg_Servitors_MultimeltaIconGW</iconPath>
@@ -403,9 +403,9 @@
 <!-- ===Flame Arm=== -->
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>Seg_SERV_FlameArm_Hediff</defName>
-        <label>servitor flame arm</label>
-        <labelNoun>a flamer eqipped servitor arm</labelNoun>
-        <description>A weapon attachment which has replaced the limb. The servitor plasma-arm consists of a large arc emitter for combat but greatly impairs any functions other than combat.</description>
+        <label>servitor heavy flamer arm</label>
+        <labelNoun>a heavy flamer eqipped servitor arm</labelNoun>
+        <description>A weapon attachment which has replaced the limb. The servitor flamer arm consists of a high-capacity flame projector but greatly impairs any functions other than combat.</description>
         <spawnThingOnRemoved>Seg_Servitors_FlameArm</spawnThingOnRemoved>
         <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
         <addedPartProps>

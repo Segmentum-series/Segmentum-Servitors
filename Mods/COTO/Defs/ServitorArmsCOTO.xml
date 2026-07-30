@@ -169,8 +169,8 @@
     <!--Ability-->
     <AbilityDef>
         <defName>Seg_SERV_ArcBeam</defName>
-        <label>Servitor Arc beam</label>
-        <description>Take a moment to charge up and shoot a devastating beam of fusion energy.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
+        <label>servitor heavy arc beam</label>
+        <description>Projects the Motive Force at a target with lethal effect.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will arc to other targets near the original. Causes electric damage.</description>
         <writeCombatLog>True</writeCombatLog>
         <iconPath>Pawn/Wounds/HeavyArc/Seg_SERV_GunArmHArc_east</iconPath>
         <showPsycastEffects>False</showPsycastEffects>
@@ -200,8 +200,8 @@
     <!--Projectile-->
         <ThingDef ParentName="BaseBullet">
             <defName>Seg_SERV_ArcBeam</defName>
-            <label>overcharged arc beam</label>
-            <description>Maximum-power projection of the Motive Force at a target which can arc to numerous other targets over a wider area. Can overheat the arc coils and burn the shooter. Added leathality, both to the shooter and the enemy, as an adaptation to be used on a servitor.</description>
+            <label>overcharged heavy arc beam</label>
+            <description>Maximum-power projection of the Motive Force at a target and anything nearby.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will arc to numerous other targets over a wide area. Causes electric damage.</description>
             <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
             <category>Projectile</category>
             <drawOffscreen>true</drawOffscreen>
@@ -266,9 +266,9 @@
     <!--Hediifs-->
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>Seg_SERV_ArcArm_Hediff</defName>
-        <label>servitor Heavy Arc-arm</label>
-        <labelNoun>a arc-projector eqipped servitor arm</labelNoun>
-        <description>A weapon attachment which has replaced the limb. The servitor plasma-arm consists of a large arc emitter for combat but greatly impairs any functions other than combat.</description>
+        <label>servitor heavy arc rifle arm</label>
+        <labelNoun>a heavy arc rifle servitor arm</labelNoun>
+        <description>A weapon attachment which has replaced the limb. The servitor heavy arc rifle arm discharges directed energy blasts that can fry anything, but greatly impairs any functions other than combat.</description>
         <spawnThingOnRemoved>Seg_Servitors_HArcArm</spawnThingOnRemoved>
         <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
         <addedPartProps>
@@ -361,8 +361,8 @@
 
     <ThingDef ParentName="Seg_Servitors_ServitorBase">
         <defName>Seg_Servitors_HArcArm</defName>
-        <label>servitor Heavy arc-arm</label>
-        <description>A weapon attachment which replaces the existing limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
+        <label>servitor heavy arc rifle arm</label>
+        <description>A weapon attachment which replaces the existing limb. The servitor heavy arc rifle arm discharges directed energy blasts that can fry anything, but greatly impairs any functions other than combat.</description>
         <statBases>
             <MarketValue>2600</MarketValue>
             <Mass>0.3</Mass>
@@ -383,9 +383,9 @@
 
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
         <defName>InstallSeg_Servitors_HArcArm</defName>
-        <label>install servitor heavy arc-arm</label>
-        <description>Replaces the existing limb with a weapon attachment. The servitor arc arm consists of a large arc projector for combat but greatly impairs any functions other than combat</description>
-        <jobString>Installing servitor plasma-arm.</jobString>
+        <label>install servitor heavy arc rifle arm</label>
+        <description>Replaces the existing limb with a weapon attachment. The servitor heavy arc rifle arm discharges directed energy blasts that can fry anything, but greatly impairs any functions other than combat.</description>
+        <jobString>Installing servitor heavy arc rifle arm.</jobString>
         <ingredients>
             <li>
                 <filter>
@@ -410,8 +410,8 @@
   <!--Ability-->
     <AbilityDef>
         <defName>Seg_SERV_PhosphorShot</defName>
-        <label>Servitor Phosphor shot</label>
-        <description>Take a moment to charge up and shoot an inferno.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause very hard to fight fires. Using this weapon is considered a war-crime by several groups on the rim.</description>
+        <label>servitor phosphor blast</label>
+        <description>Project a blinding and burning phosphor discharge.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits.</description>
         <writeCombatLog>True</writeCombatLog>
         <iconPath>Pawn/Wounds/PhosphorBlaster/Seg_SERV_GunArmPhosphorBlaster_east</iconPath>
         <showPsycastEffects>False</showPsycastEffects>
@@ -466,9 +466,9 @@
     <!--Hediifs-->
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>Seg_SERV_PhosphorArm_Hediff</defName>
-        <label>servitor phosphor arm</label>
-        <labelNoun>a phosphor blaster eqipped servitor arm</labelNoun>
-        <description>A weapon attachment which has replaced the limb. The servitor plasma-arm consists for combat but greatly impairs any functions other than combat.</description>
+        <label>servitor phosphor blaster arm</label>
+        <labelNoun>a phosphor blaster equipped servitor arm</labelNoun>
+        <description>A weapon attachment which has replaced the limb. The servitor phosphor blaster arm can project blinding and burning phosphor but greatly impairs any functions other than combat.</description>
         <spawnThingOnRemoved>Seg_Servitors_PhosphorArm</spawnThingOnRemoved>
         <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
         <addedPartProps>
@@ -561,8 +561,8 @@
 
     <ThingDef ParentName="Seg_Servitors_ServitorBase">
         <defName>Seg_Servitors_PhosphorArm</defName>
-        <label>servitor phosphor Arm</label>
-        <description>A weapon attachment which replaces the existing limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
+        <label>servitor phosphor blaster arm</label>
+        <description>A weapon attachment which replaces the existing limb. The servitor phosphor blaster arm can project blinding and burning phosphor but greatly impairs any functions other than combat</description>
         <statBases>
             <MarketValue>2600</MarketValue>
             <Mass>0.3</Mass>
@@ -584,9 +584,9 @@
 
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
         <defName>InstallSeg_Servitors_PhosphorArm</defName>
-        <label>install servitor heavy arc-arm</label>
-        <description>Replaces the existing limb with a weapon attachment. The servitor arc arm consists of a large arc projector for combat but greatly impairs any functions other than combat</description>
-        <jobString>Installing servitor plasma-arm.</jobString>
+        <label>install servitor phosphor blaster arm</label>
+        <description>Replaces the existing limb with a weapon attachment. The servitor phosphor blaster arm can project blinding and burning phosphor but greatly impairs any functions other than combat</description>
+        <jobString>Installing servitor phosphor blaster arm.</jobString>
         <ingredients>
             <li>
                 <filter>
