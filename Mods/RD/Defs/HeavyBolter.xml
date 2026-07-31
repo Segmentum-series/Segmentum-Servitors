@@ -2,7 +2,7 @@
   <!--Heddifs-->
   <AbilityDef>
     <defName>Seg_Servitors_BolterShot</defName>
-    <label>Servitor Bolter shot</label>
+    <label>servitor bolter shot</label>
     <description>Fire a burst of low-accuracy mass reactive bolts.</description>
     <writeCombatLog>True</writeCombatLog>
     <iconPath>Things/Projectiles/BEWH_BolterRound</iconPath>
@@ -38,9 +38,9 @@
   </AbilityDef>
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>Seg_Servitors_BolterArm_Hediff</defName>
-    <label>servitor bolter-arm</label>
+    <label>servitor bolter arm</label>
     <labelNoun>a bolter-equipped servitor arm</labelNoun>
-    <description>A weapon attachment which has replaced the limb. The servitor bolter-arm consists of a large bolter for combat but greatly impairs any functions other than combat.</description>
+    <description>A weapon attachment which has replaced the limb. The servitor bolter arm consists of a large bolter for combat but greatly impairs any functions other than combat.</description>
     <spawnThingOnRemoved>Seg_Servitors_BolterArm</spawnThingOnRemoved>
     <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
     <addedPartProps>
@@ -138,8 +138,8 @@
 
   <ThingDef ParentName="Seg_Servitors_ServitorBase">
     <defName>Seg_Servitors_BolterArm</defName>
-    <label>servitor bolter-arm</label>
-    <description>A weapon attachment which replaces the existing limb. The servitor bolter-arm consists of a large bolter for combat but greatly impairs any functions other than combat.</description>
+    <label>servitor bolter arm</label>
+    <description>A weapon attachment which replaces the existing limb. The servitor bolter arm consists of a large bolter for combat but greatly impairs any functions other than combat.</description>
     <statBases>
       <MarketValue>2000</MarketValue>
       <Mass>0.3</Mass>
@@ -161,8 +161,8 @@
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
     <defName>InstallSeg_Servitors_BolterArm</defName>
-    <label>install servitor bolter-arm</label>
-    <description>Replaces the existing limb with a weapon attachment. The servitor bolter-arm consists of a large bolter for combat but greatly impairs any functions other than combat</description>
+    <label>install servitor bolter arm</label>
+    <description>Replaces the existing limb with a weapon attachment. The servitor bolter arm consists of a large bolter for combat but greatly impairs any functions other than combat</description>
     <jobString>Installing servitor bolter-arm.</jobString>
     <ingredients>
       <li>

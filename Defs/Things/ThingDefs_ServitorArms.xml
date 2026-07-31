@@ -1,5 +1,113 @@
 <Defs>
 
+<!-- ===Flame Arm=== -->
+  <!--Ability-->
+    <AbilityDef>
+        <defName>Seg_SERV_FlameShot</defName>
+        <label>Servitor flamer blast</label>
+        <description>Fires a stream of promethium flame.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon is dangerous to anything in front of it and can set things - and people - on fire.</description>
+        <writeCombatLog>True</writeCombatLog>
+        <iconPath>Pawn/Wounds/IncendineIgniter/Seg_SERV_GunArmIncendineIgniter_east</iconPath>
+        <showPsycastEffects>False</showPsycastEffects>
+        <cooldownTicksRange>240~360</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_Shoot</verbClass>
+            <defaultProjectile>Seg_SERV_FlameShot</defaultProjectile>
+            <range>14.9</range>
+            <soundCast>ChargeLance_Fire</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+            <warmupTime>4</warmupTime>
+            <burstShotCount>1</burstShotCount>
+            <accuracyTouch>0.9</accuracyTouch>
+            <accuracyShort>0.8</accuracyShort>
+            <accuracyMedium>0.6</accuracyMedium>
+            <accuracyLong>0.5</accuracyLong>
+            <ai_IsWeapon>true</ai_IsWeapon>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetAnimals>true</canTargetAnimals>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+    <!--Projectile-->
+        <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Seg_SERV_FlameShot</defName>
+		<label>flamer blast</label>
+		<thingClass>VEF.Weapons.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Flamer_Flame</texPath>
+			<texPathFadeOut>Things/Projectile/Flamer_End</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<speed>45</speed>
+			<damageAmountBase>14</damageAmountBase>
+		</projectile>
+
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>55</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.15</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>false</dealsDamageOnce>
+		<minDistanceToAffect>1</minDistanceToAffect>
+	</VEF.Weapons.ExpandableProjectileDef>
+    <!--ThingDefs-->
+    <ThingDef ParentName="Seg_Servitors_ServitorBase">
+        <defName>Seg_Servitors_FlameArm</defName>
+        <label>servitor heavy flamer arm</label>
+        <description>A weapon attachment which replaces the existing limb. The servitor flamer arm consists of a high-capacity flame projector but greatly impairs any functions other than combat.</description>
+        <statBases>
+            <MarketValue>2600</MarketValue>
+            <Mass>0.3</Mass>
+        </statBases>
+        <costList>
+            <Steel>60</Steel>
+            <ComponentIndustrial>8</ComponentIndustrial>
+            <Seg_Ceramite>30</Seg_Ceramite>
+            <Chemfuel>100</Chemfuel>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>BiofuelRefining</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
+
+<ThingDef ParentName="Seg_Servitors_ServitorBase">
+	<defName>Seg_Servitors_MeltaArm</defName>
+	<label>servitor melta arm</label>
+	<description>A weapon attachment which replaces the existing limb. The servitor melta arm consists of a large melta gun for combat but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
+	<statBases>
+		<MarketValue>2800</MarketValue>
+		<Mass>0.3</Mass>
+	</statBases>
+	<tradeTags Inherit="False">
+		<li>Seg_Servitors_Arms</li>
+	</tradeTags>
+    <techHediffsTags Inherit="False">
+		<li>Seg_Servitors_Arms</li>
+	</techHediffsTags>
+	<costList>
+		<Plasteel>30</Plasteel>
+		<ComponentSpacer>4</ComponentSpacer>
+		<Seg_Ceramite>25</Seg_Ceramite>
+	</costList>
+    <recipeMaker>
+      <researchPrerequisites>
+	  <li>Seg_PlasmaInduction</li>
+      </researchPrerequisites>
+	</recipeMaker>
+</ThingDef>
+
 <ThingDef ParentName="Seg_Servitors_ServitorBase">
 	<defName>Seg_Servitors_MiningArm</defName>
 	<label>servitor mining arm</label>
@@ -80,115 +188,5 @@
       </researchPrerequisites>
 	</recipeMaker>
 </ThingDef>
-
-<ThingDef ParentName="Seg_Servitors_ServitorBase">
-	<defName>Seg_Servitors_MeltaArm</defName>
-	<label>servitor melta-arm</label>
-	<description>A weapon attachment which replaces the existing limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
-	<statBases>
-		<MarketValue>2800</MarketValue>
-		<Mass>0.3</Mass>
-	</statBases>
-	<tradeTags Inherit="False">
-		<li>Seg_Servitors_Arms</li>
-	</tradeTags>
-    <techHediffsTags Inherit="False">
-		<li>Seg_Servitors_Arms</li>
-	</techHediffsTags>
-	<costList>
-		<Plasteel>30</Plasteel>
-		<ComponentSpacer>4</ComponentSpacer>
-		<Seg_Ceramite>25</Seg_Ceramite>
-	</costList>
-    <recipeMaker>
-      <researchPrerequisites>
-	  <li>Seg_PlasmaInduction</li>
-      </researchPrerequisites>
-	</recipeMaker>
-</ThingDef>
-
-
-
-<!-- ===Flame Arm=== -->
-  <!--Ability-->
-    <AbilityDef>
-        <defName>Seg_SERV_FlameShot</defName>
-        <label>Servitor flamer blast</label>
-        <description>Fires a stream of promethium flame.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon is dangerous to anything in front of it and can set things - and people - on fire.</description>
-        <writeCombatLog>True</writeCombatLog>
-        <iconPath>Pawn/Wounds/IncendineIgniter/Seg_SERV_GunArmIncendineIgniter_east</iconPath>
-        <showPsycastEffects>False</showPsycastEffects>
-        <cooldownTicksRange>240~360</cooldownTicksRange>
-        <verbProperties>
-            <verbClass>Verb_Shoot</verbClass>
-            <defaultProjectile>Seg_SERV_FlameShot</defaultProjectile>
-            <range>14.9</range>
-            <soundCast>ChargeLance_Fire</soundCast>
-            <muzzleFlashScale>9</muzzleFlashScale>
-            <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
-            <warmupTime>4</warmupTime>
-            <burstShotCount>1</burstShotCount>
-            <accuracyTouch>0.9</accuracyTouch>
-            <accuracyShort>0.8</accuracyShort>
-            <accuracyMedium>0.6</accuracyMedium>
-            <accuracyLong>0.5</accuracyLong>
-            <ai_IsWeapon>true</ai_IsWeapon>
-            <targetParams>
-                <canTargetLocations>true</canTargetLocations>
-                <canTargetPawns>true</canTargetPawns>
-                <canTargetHumans>true</canTargetHumans>
-                <canTargetAnimals>true</canTargetAnimals>
-            </targetParams>
-        </verbProperties>
-    </AbilityDef>
-    <!--Projectile-->
-        <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
-		<defName>Seg_SERV_FlameShot</defName>
-		<label>flamer blast</label>
-		<thingClass>VEF.Weapons.FlamethrowProjectile</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/Flamer_Flame</texPath>
-			<texPathFadeOut>Things/Projectile/Flamer_End</texPathFadeOut>
-			<shaderType>MoteGlow</shaderType>
-		</graphicData>
-		<projectile>
-			<damageDef>Flame</damageDef>
-			<speed>45</speed>
-			<damageAmountBase>14</damageAmountBase>
-		</projectile>
-
-		<drawOffscreen>true</drawOffscreen>
-		<lifeTimeDuration>55</lifeTimeDuration>
-		<widthScaleFactor>0.65</widthScaleFactor>
-		<heightScaleFactor>1</heightScaleFactor>
-		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
-		<totalSizeScale>1.15</totalSizeScale>
-		<tickFrameRate>2</tickFrameRate>
-		<finalTickFrameRate>5</finalTickFrameRate>
-		<tickDamageRate>20</tickDamageRate>
-		<dealsDamageOnce>false</dealsDamageOnce>
-		<minDistanceToAffect>1</minDistanceToAffect>
-	</VEF.Weapons.ExpandableProjectileDef>
-    <!--ThingDefs-->
-    <ThingDef ParentName="Seg_Servitors_ServitorBase">
-        <defName>Seg_Servitors_FlameArm</defName>
-        <label>servitor heavy flamer Arm</label>
-        <description>A weapon attachment which replaces the existing limb. The servitor flamer arm consists of a high-capacity flame projector but greatly impairs any functions other than combat.</description>
-        <statBases>
-            <MarketValue>2600</MarketValue>
-            <Mass>0.3</Mass>
-        </statBases>
-        <costList>
-            <Steel>60</Steel>
-            <ComponentIndustrial>8</ComponentIndustrial>
-            <Seg_Ceramite>30</Seg_Ceramite>
-            <Chemfuel>100</Chemfuel>
-        </costList>
-        <recipeMaker>
-            <researchPrerequisites>
-                <li>BiofuelRefining</li>
-            </researchPrerequisites>
-        </recipeMaker>
-    </ThingDef>
 
 </Defs>

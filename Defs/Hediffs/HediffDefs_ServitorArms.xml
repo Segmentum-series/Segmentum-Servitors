@@ -304,9 +304,9 @@
     </AbilityDef>
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>Seg_Servitors_MeltaArm_Hediff</defName>
-        <label>servitor melta-arm</label>
+        <label>servitor melta arm</label>
         <labelNoun>a melta-equipped servitor arm</labelNoun>
-        <description>A weapon attachment which has replaced the limb. The servitor melta-arm consists of a large melta gun for combat but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
+        <description>A weapon attachment which has replaced the limb. The servitor melta arm consists of a large melta gun for combat but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
         <spawnThingOnRemoved>Seg_Servitors_MeltaArm</spawnThingOnRemoved>
         <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
         <addedPartProps>

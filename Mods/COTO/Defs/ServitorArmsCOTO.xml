@@ -3,7 +3,7 @@
     <!--Ability-->
     <AbilityDef>
         <defName>Seg_Servitors_PlasmaShot</defName>
-        <label>Servitor Plasma shot</label>
+        <label>servitor plasma shot</label>
         <description>Fire a powerful blast of incandescent plasma.</description>
         <writeCombatLog>True</writeCombatLog>
         <iconPath>Things/Item/Health/UI/Icons/Seg_COTO_Plasma</iconPath>
@@ -28,9 +28,9 @@
     <!--Hediifs-->
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>Seg_Servitors_PlasArm_Hediff</defName>
-        <label>servitor plasma-arm</label>
+        <label>servitor plasma arm</label>
         <labelNoun>a plasma-equipped servitor arm</labelNoun>
-        <description>A weapon attachment which has replaced the limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
+        <description>A weapon attachment which has replaced the limb. The servitor plasma arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
         <spawnThingOnRemoved>Seg_Servitors_PlasArm</spawnThingOnRemoved>
         <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
         <addedPartProps>
@@ -120,8 +120,8 @@
 
     <ThingDef ParentName="Seg_Servitors_ServitorBase">
         <defName>Seg_Servitors_PlasArm</defName>
-        <label>servitor plasma-arm</label>
-        <description>A weapon attachment which replaces the existing limb. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
+        <label>servitor plasma arm</label>
+        <description>A weapon attachment which replaces the existing limb. The servitor plasma arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
         <statBases>
             <MarketValue>2600</MarketValue>
             <Mass>0.3</Mass>
@@ -142,8 +142,8 @@
 
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
         <defName>InstallSeg_Servitors_PlasArm</defName>
-        <label>install servitor plasma-arm</label>
-        <description>Replaces the existing limb with a weapon attachment. The servitor plasma-arm consists of a large plasma gun for combat but greatly impairs any functions other than combat</description>
+        <label>install servitor plasma arm</label>
+        <description>Replaces the existing limb with a weapon attachment. The servitor plasma arm consists of a large plasma gun for combat but greatly impairs any functions other than combat</description>
         <jobString>Installing servitor plasma-arm.</jobString>
         <ingredients>
             <li>
