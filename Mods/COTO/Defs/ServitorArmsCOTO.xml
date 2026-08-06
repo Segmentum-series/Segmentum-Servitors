@@ -419,12 +419,12 @@
         <verbProperties>
             <verbClass>Verb_Shoot</verbClass>
             <defaultProjectile>Seg_SERV_PhosphorBlast</defaultProjectile>
-            <range>34.9</range>
+            <range>27.9</range>
             <soundCast>ChargeLance_Fire</soundCast>
             <muzzleFlashScale>9</muzzleFlashScale>
             <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
             <warmupTime>4</warmupTime>
-            <burstShotCount>8</burstShotCount>
+            <burstShotCount>2</burstShotCount>
             <accuracyTouch>0.6</accuracyTouch>
             <accuracyShort>0.5</accuracyShort>
             <accuracyMedium>0.3</accuracyMedium>
