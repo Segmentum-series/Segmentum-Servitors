@@ -38,8 +38,8 @@
 		<label>flamer blast</label>
 		<thingClass>VEF.Weapons.FlamethrowProjectile</thingClass>
 		<graphicData>
-			<texPath>Things/Projectile/Flamer_Flame</texPath>
-			<texPathFadeOut>Things/Projectile/Flamer_End</texPathFadeOut>
+			<texPath>Things/Projectile/Flame/FlameSpew</texPath>
+			<texPathFadeOut>Things/Projectile/Flame/FlameExit</texPathFadeOut>
 			<shaderType>MoteGlow</shaderType>
 		</graphicData>
 		<projectile>
