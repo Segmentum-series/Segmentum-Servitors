@@ -405,7 +405,7 @@
         <defName>Seg_SERV_FlameArm_Hediff</defName>
         <label>servitor heavy flamer arm</label>
         <labelNoun>a heavy flamer eqipped servitor arm</labelNoun>
-        <description>A weapon attachment which has replaced the limb. The servitor flamer arm consists of a high-capacity flame projector but greatly impairs any functions other than combat.</description>
+        <description>A weapon attachment which has replaced the limb. The servitor flamer arm consists of a high-capacity flame projector but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon is dangerous to anything in front of it and can set things - and people - on fire.</description>
         <spawnThingOnRemoved>Seg_Servitors_FlameArm</spawnThingOnRemoved>
         <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
         <addedPartProps>

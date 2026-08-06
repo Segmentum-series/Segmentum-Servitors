@@ -143,7 +143,7 @@
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
         <defName>InstallSeg_Servitors_PlasArm</defName>
         <label>install servitor plasma arm</label>
-        <description>Replaces the existing limb with a weapon attachment. The servitor plasma arm consists of a large plasma gun for combat but greatly impairs any functions other than combat</description>
+        <description>Replaces the existing limb with a weapon attachment. The servitor plasma arm consists of a large plasma gun for combat but greatly impairs any functions other than combat.</description>
         <jobString>Installing servitor plasma-arm.</jobString>
         <ingredients>
             <li>
@@ -268,7 +268,7 @@
         <defName>Seg_SERV_ArcArm_Hediff</defName>
         <label>servitor heavy arc rifle arm</label>
         <labelNoun>a heavy arc rifle servitor arm</labelNoun>
-        <description>A weapon attachment which has replaced the limb. The servitor heavy arc rifle arm discharges directed energy blasts that can fry anything, but greatly impairs any functions other than combat.</description>
+        <description>A weapon attachment which has replaced the limb. The servitor heavy arc rifle arm discharges directed energy blasts that can fry anything, but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will arc to other targets near the original. Causes electric damage.</description>
         <spawnThingOnRemoved>Seg_Servitors_HArcArm</spawnThingOnRemoved>
         <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
         <addedPartProps>
@@ -362,7 +362,7 @@
     <ThingDef ParentName="Seg_Servitors_ServitorBase">
         <defName>Seg_Servitors_HArcArm</defName>
         <label>servitor heavy arc rifle arm</label>
-        <description>A weapon attachment which replaces the existing limb. The servitor heavy arc rifle arm discharges directed energy blasts that can fry anything, but greatly impairs any functions other than combat.</description>
+        <description>A weapon attachment which replaces the existing limb. The servitor heavy arc rifle arm discharges directed energy blasts that can fry anything, but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will arc to other targets near the original. Causes electric damage.</description>
         <statBases>
             <MarketValue>2600</MarketValue>
             <Mass>0.3</Mass>
@@ -411,7 +411,7 @@
     <AbilityDef>
         <defName>Seg_SERV_PhosphorShot</defName>
         <label>servitor phosphor blast</label>
-        <description>Project a blinding and burning phosphor discharge.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits.</description>
+        <description>Project a blinding and burning phosphor discharge.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits, and the blazing fires can cause temporary blindness.</description>
         <writeCombatLog>True</writeCombatLog>
         <iconPath>Pawn/Wounds/PhosphorBlaster/Seg_SERV_GunArmPhosphorBlaster_east</iconPath>
         <showPsycastEffects>False</showPsycastEffects>
@@ -468,7 +468,7 @@
         <defName>Seg_SERV_PhosphorArm_Hediff</defName>
         <label>servitor phosphor blaster arm</label>
         <labelNoun>a phosphor blaster equipped servitor arm</labelNoun>
-        <description>A weapon attachment which has replaced the limb. The servitor phosphor blaster arm can project blinding and burning phosphor but greatly impairs any functions other than combat.</description>
+        <description>A weapon attachment which has replaced the limb. The servitor phosphor blaster arm can project blinding and burning phosphor but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits, and the blazing fires can cause temporary blindness.</description>
         <spawnThingOnRemoved>Seg_Servitors_PhosphorArm</spawnThingOnRemoved>
         <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
         <addedPartProps>
@@ -562,7 +562,7 @@
     <ThingDef ParentName="Seg_Servitors_ServitorBase">
         <defName>Seg_Servitors_PhosphorArm</defName>
         <label>servitor phosphor blaster arm</label>
-        <description>A weapon attachment which replaces the existing limb. The servitor phosphor blaster arm can project blinding and burning phosphor but greatly impairs any functions other than combat</description>
+        <description>A weapon attachment which replaces the existing limb. The servitor phosphor blaster arm can project blinding and burning phosphor but greatly impairs any functions other than combat.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits, and the blazing fires can cause temporary blindness.</description>
         <statBases>
             <MarketValue>2600</MarketValue>
             <Mass>0.3</Mass>
@@ -585,7 +585,7 @@
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
         <defName>InstallSeg_Servitors_PhosphorArm</defName>
         <label>install servitor phosphor blaster arm</label>
-        <description>Replaces the existing limb with a weapon attachment. The servitor phosphor blaster arm can project blinding and burning phosphor but greatly impairs any functions other than combat</description>
+        <description>Replaces the existing limb with a weapon attachment. The servitor phosphor blaster arm can project blinding and burning phosphor but greatly impairs any functions other than combat.</description>
         <jobString>Installing servitor phosphor blaster arm.</jobString>
         <ingredients>
             <li>
