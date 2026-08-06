@@ -455,7 +455,7 @@
                 <damageAmountBase>10</damageAmountBase>
                 <speed>70</speed>
 
-                <explosionRadius>1.85</explosionRadius>
+                <explosionRadius>2.2</explosionRadius>
 
                 <preExplosionSpawnThingDef>PhosphorFire</preExplosionSpawnThingDef>
                 <preExplosionSpawnChance>1</preExplosionSpawnChance>
