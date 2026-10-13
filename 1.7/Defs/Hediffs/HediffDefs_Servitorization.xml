@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Servitor -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_Servitors_ServitorizationHediff</defName>
+		<label>servitorization</label>
+		<labelNoun>a servitorization</labelNoun>
+		<description>Once a thinking and feeling being, this subject has undergone irreversible servitorization. Higher brain functions have been permanently suppressed, leaving only conditioned responses and mechanical obedience. The body remains functional. The person does not.</description>
+		<spawnThingOnRemoved>Seg_Servitors_ServitorChip</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>Seg_Servitors_ServitorChip</ThingDef>
+			<RecipeDef>InstallSeg_Servitors_ServitorChip</RecipeDef>
+		</descriptionHyperlinks>
+		<isBad>true</isBad>
+		<addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+		<stages>
+			<li>
+				<disablesNeeds>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+					<li>Rest</li>
+					<li>Comfort</li>
+					<li>Beauty</li>
+					<li>Joy</li>
+					<li>Mood</li>
+				</disablesNeeds>
+				<disabledWorkTags>
+					<li>Firefighting</li>
+					<li>Intellectual</li>
+					<li>Social</li>
+					<li>Artistic</li>
+					<li>Caring</li>
+					<li>Animals</li>
+					<li>Hunting</li>
+				</disabledWorkTags>
+				<hungerRateFactor>0.25</hungerRateFactor>
+				<statOffsets>
+					<Beauty>-1</Beauty>
+					<GlobalLearningFactor>-1</GlobalLearningFactor>
+					<MentalBreakThreshold>-0.80</MentalBreakThreshold>
+					<PsychicSensitivity>-0.95</PsychicSensitivity>
+					<ShootingAccuracyPawn>-0.5</ShootingAccuracyPawn>
+					<SocialImpact>-1</SocialImpact>
+				</statOffsets>
+				<statFactors>
+					<MarketValue>0.2</MarketValue>
+				</statFactors>
+				<painFactor>0</painFactor>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.6</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-1.0</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="ServitorMod.HediffCompProperties_Servitor" />
+			  <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
+		</comps>
+		<renderNodeProperties>
+			<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Pawn/Wounds/Seg_SERV_ServitorHead</texPath>
+			<drawSize>1</drawSize>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>false</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			<defaultData>
+				<layer>69</layer>
+				<offset>(0,0,0)</offset>
+			</defaultData>
+			</drawData>
+		</li>
+    	</renderNodeProperties>
+	</HediffDef>
+
+	<!-- Servitor-Lexomat -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_Servitors_LexomatServitorHediff</defName>
+		<label>lexomat servitorization</label>
+		<labelNoun>a lexomat servitorization</labelNoun>
+		<spawnThingOnRemoved>Seg_Servitors_LexomatChip</spawnThingOnRemoved>
+		<description>The subject has been transformed into a lexomat — a biological computation servitor optimized for analysis, calculation, and research. Emotional, social, and motor functions are heavily suppressed. Only analytical cognition remains intact.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Seg_Servitors_LexomatChip</ThingDef>
+			<RecipeDef>InstallSeg_Servitors_LexomatChip</RecipeDef>
+		</descriptionHyperlinks>
+		<isBad>true</isBad>
+			<addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+		<stages>
+			<li>
+				<disablesNeeds>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+					<li>Rest</li>
+					<li>Comfort</li>
+					<li>Beauty</li>
+					<li>Joy</li>
+					<li>Mood</li>
+				</disablesNeeds>
+				<disabledWorkTags>
+					<li>Firefighting</li>
+					<li>Social</li>
+					<li>Artistic</li>
+					<li>Caring</li>
+					<li>Animals</li>
+					<li>Hunting</li>
+					<li>Cooking</li>
+					<li>PlantWork</li>
+					<li>Crafting</li>
+					<li>Mining</li>
+				</disabledWorkTags>
+				<hungerRateFactor>0.25</hungerRateFactor>
+				<statOffsets>
+					<Beauty>-1</Beauty>
+					<GlobalLearningFactor>0.5</GlobalLearningFactor>
+					<MentalBreakThreshold>-0.80</MentalBreakThreshold>
+					<PsychicSensitivity>-0.95</PsychicSensitivity>
+					<ShootingAccuracyPawn>-0.8</ShootingAccuracyPawn>
+					<SocialImpact>-1</SocialImpact>
+				</statOffsets>
+				<statFactors>
+					<MarketValue>0.5</MarketValue>
+				</statFactors>
+				<painFactor>0</painFactor>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.6</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-1.0</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Pawn/Wounds/Seg_SERV_CogitatorServitorHead</texPath>
+			<drawSize>1</drawSize>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>false</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			<defaultData>
+				<layer>69</layer>
+				<offset>(0,0,0)</offset>
+			</defaultData>
+			</drawData>
+		</li>
+    	</renderNodeProperties>
+		<comps>
+			<li Class="ServitorMod.HediffCompProperties_Servitor" />
+			  <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
+		</comps>
+	</HediffDef>
+
+	<!-- Servitor-Medicae -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_Servitors_MedicaeServitorHediff</defName>
+		<label>medicae servitorization</label>
+		<spawnThingOnRemoved>Seg_Servitors_MedicaeChip</spawnThingOnRemoved>
+		<labelNoun>a medicae servitorization</labelNoun>
+		<description>The subject has been transformed into a medicae servitor — a biological surgical assistant designed to perform medical procedures with tireless precision. Higher cognition and emotional capacity have been suppressed, leaving only medical protocols and conditioned obedience.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Seg_Servitors_MedicaeChip</ThingDef>
+			<RecipeDef>InstallSeg_Servitors_MedicaeChip</RecipeDef>
+		</descriptionHyperlinks>
+		<isBad>true</isBad>
+		<addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+		<stages>
+			<li>
+				<disablesNeeds>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+					<li>Rest</li>
+					<li>Comfort</li>
+					<li>Beauty</li>
+					<li>Joy</li>
+					<li>Mood</li>
+				</disablesNeeds>
+				<disabledWorkTags>
+					<li>Firefighting</li>
+					<li>Social</li>
+					<li>Artistic</li>
+					<li>Animals</li>
+					<li>Hunting</li>
+					<li>Cooking</li>
+					<li>PlantWork</li>
+					<li>Mining</li>
+				</disabledWorkTags>
+				<hungerRateFactor>0.25</hungerRateFactor>
+				<statOffsets>
+					<Beauty>-1</Beauty>
+					<MentalBreakThreshold>-0.80</MentalBreakThreshold>
+					<PsychicSensitivity>-0.95</PsychicSensitivity>
+					<ShootingAccuracyPawn>-0.8</ShootingAccuracyPawn>
+					<SocialImpact>-1</SocialImpact>
+					<MedicalTendQuality>0.25</MedicalTendQuality>
+					<ResearchSpeed>-0.5</ResearchSpeed>
+				</statOffsets>
+				<statFactors>
+					<MarketValue>0.4</MarketValue>
+				</statFactors>
+				<painFactor>0</painFactor>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.6</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-1.0</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Pawn/Wounds/Seg_SERV_MedicaeServitorHead</texPath>
+			<drawSize>1</drawSize>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>false</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			<defaultData>
+				<layer>69</layer>
+				<offset>(0,0,0)</offset>
+			</defaultData>
+			</drawData>
+		</li>
+    	</renderNodeProperties>
+		<comps>
+			<li Class="ServitorMod.HediffCompProperties_Servitor" />
+			  <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_Servitors_CombatServitorHediff</defName>
+		<label>combat servitorization</label>
+		<labelNoun>a combat servitorization</labelNoun>
+		<spawnThingOnRemoved>Seg_Servitors_CombatChip</spawnThingOnRemoved>
+		<description>The subject has been transformed into a combat servitor — a biological warrior designed to serve as an expendable combat unit. Higher cognition and emotional capacity have been suppressed, leaving only battle protocols and conditioned obedience.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Seg_Servitors_CombatChip</ThingDef>
+			<RecipeDef>InstallSeg_Servitors_CombatChip</RecipeDef>
+		</descriptionHyperlinks>
+		<isBad>true</isBad>
+			<addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+		<stages>
+			<li>
+				<disablesNeeds>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+					<li>Rest</li>
+					<li>Comfort</li>
+					<li>Beauty</li>
+					<li>Joy</li>
+					<li>Mood</li>
+				</disablesNeeds>
+				<disabledWorkTags>
+					<li>Firefighting</li>
+					<li>Social</li>
+					<li>Artistic</li>
+					<li>Animals</li>
+					<li>Hunting</li>
+					<li>Cooking</li>
+					<li>PlantWork</li>
+					<li>Mining</li>
+					<li>ManualSkilled</li>
+					<li>Caring</li>
+					<li>Intellectual</li>
+				</disabledWorkTags>
+				<hungerRateFactor>0.25</hungerRateFactor>
+				<statOffsets>
+					<Beauty>-1</Beauty>
+					<MentalBreakThreshold>-0.80</MentalBreakThreshold>
+					<PsychicSensitivity>-0.95</PsychicSensitivity>
+					<ShootingAccuracyPawn>.15</ShootingAccuracyPawn>
+					<MeleeDodgeChance>-10</MeleeDodgeChance>
+         		 	<MeleeHitChance>3</MeleeHitChance>
+					<SocialImpact>-1</SocialImpact>
+				</statOffsets>
+				<statFactors>
+					<MarketValue>0.4</MarketValue>
+				</statFactors>
+				<painFactor>0</painFactor>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-1.0</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="ServitorMod.HediffCompProperties_Servitor" />
+			  <li Class="seg.CompProperties_RemovableAfterDeath">
+                <removableAfterDeath>true</removableAfterDeath>
+            </li>
+		</comps>
+		<renderNodeProperties>
+			<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Pawn/Wounds/Seg_SERV_CombatServitorHead</texPath>
+			<drawSize>1</drawSize>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>false</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			<defaultData>
+				<layer>69</layer>
+				<offset>(0,0,0)</offset>
+			</defaultData>
+			</drawData>
+		</li>
+    	</renderNodeProperties>
+	</HediffDef>
+
+
+</Defs>

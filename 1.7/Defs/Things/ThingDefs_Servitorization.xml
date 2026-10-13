@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--ServitorBase-->
+  <ThingDef ParentName="BodyPartBionicBase" Abstract="True" Name="Seg_Servitors_ServitorBase">
+	<defName>Seg_Servitors_ServitorBase</defName>
+    <techLevel>Spacer</techLevel>
+	<tradeTags Inherit="False">
+		<li>Seg_Servitors_Chips</li>
+	</tradeTags>
+    <techHediffsTags Inherit="False">
+		<li>Seg_Servitors_Chips</li>
+	</techHediffsTags>
+    <statBases>
+      <WorkToMake>17000</WorkToMake>
+    </statBases>
+	<graphicData>
+		<color>(160, 112, 160)</color>
+	</graphicData>
+    <recipeMaker>
+      <researchPrerequisite>Seg_Servitors_ServitudeImperpituis</researchPrerequisite>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+      <displayPriority>350</displayPriority>
+    </recipeMaker>
+	<thingSetMakerTags>
+		<li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+	
+	<!--Servitor-->
+	<ThingDef ParentName="Seg_Servitors_ServitorBase">
+		<defName>Seg_Servitors_ServitorChip</defName>
+		<label>servitor chip</label>
+		<description>A neural implant used in servitorization procedures, designed to create an unthinking and unfeeling servant that can perform ceaseless labour. It suppresses higher brain functions as part of extensive psychoconditioning and invasive cybernetic integration. In service to the Omnissiah, we shall find absolution.\n\n&lt;color=#40cbde&gt;Note:&lt;/color&gt; Prisoners who undergo servitorization will be automatically recruited and converted to the dominant ideoligion of the colony (if applicable).\n\n&lt;color=#bb8f04&gt;If the subject's Mining, Construction, and Plants skills are below 5, they will be increased to this level.&lt;/color&gt;</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSeg_Servitors_ServitorChip</RecipeDef>
+			<HediffDef>Seg_Servitors_ServitorizationHediff</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData Inherit="False">
+			<texPath>Things/Item/Health/Seg_Servitors_ServitorImplant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>1</Steel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+	</ThingDef>
+
+	<!--Servitor-Lexomat-->
+	<ThingDef ParentName="Seg_Servitors_ServitorBase">
+		<defName>Seg_Servitors_LexomatChip</defName>
+		<label>lexomat chip</label>
+		<description>A specialized servitor brain implant designed to produce lexomats — biological cogitators dedicated to pure calculation and analysis. Higher emotional and social cognition is permanently suppressed while analytical and memory centers are reinforced through invasive cybernetic implantation. In service to the Omnissiah, we shall find absolution.\n\n&lt;color=#40cbde&gt;Note:&lt;/color&gt; Prisoners who undergo servitorization will be automatically recruited and converted to the dominant ideoligion of the colony (if applicable).\n\n&lt;color=#bb8f04&gt;If the subject's Intellectual skill is below 10, it will be increased to this level.&lt;/color&gt;</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSeg_Servitors_LexomatChip</RecipeDef>
+			<HediffDef>Seg_Servitors_LexomatServitorHediff</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData Inherit="False">
+			<texPath>Things/Item/Health/Seg_Servitors_CogitatorServitorImplant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>1</Steel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	
+	<!--Servitor-Medicae-->
+	<ThingDef ParentName="Seg_Servitors_ServitorBase">
+		<defName>Seg_Servitors_MedicaeChip</defName>
+		<label>medicae servitor chip</label>
+		<tradeTags Inherit="False"></tradeTags>
+		<description>A specialized servitor brain implant used to create medicae servitors. The subject undergoes extensive neurosurgical conditioning, turning them into a biological surgical assistant capable of performing medical procedures with mechanical precision. In service to the Omnissiah, we shall find absolution.\n\n&lt;color=#40cbde&gt;Note:&lt;/color&gt; Prisoners who undergo servitorization will be automatically recruited and converted to the dominant ideoligion of the colony (if applicable).\n\n&lt;color=#bb8f04&gt;If the subject's Medical skill is below 10, it will be increased to this level. If Crafting and Intellectual skills are below 5, they will also be increased.&lt;/color&gt;</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSeg_Servitors_MedicaeChip</RecipeDef>
+			<HediffDef>Seg_Servitors_MedicaeServitorHediff</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData Inherit="False">
+			<texPath>Things/Item/Health/Seg_Servitors_MedicaeServitorImplant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>1</Steel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	<!--Servitor-Combat-->
+	<ThingDef ParentName="Seg_Servitors_ServitorBase">
+		<defName>Seg_Servitors_CombatChip</defName>
+		<label>combat servitor chip</label>
+		<tradeTags Inherit="False"></tradeTags>
+		<description>A specialized servitor brain implant used to create combat servitors. The subject undergoes extensive neurosurgical conditioning, turning them into an expendable combat unit perfect for wielding grafted heavy weaponry. In service to the Omnissiah, we shall find absolution.\n\n&lt;color=#40cbde&gt;Note:&lt;/color&gt; Prisoners who undergo servitorization will be automatically recruited and converted to the dominant ideoligion of the colony (if applicable).\n\n&lt;color=#bb8f04&gt;If the subject's Shooting and Melee skills are below 10, they will be increased to this level.&lt;/color&gt;</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSeg_Servitors_CombatChip</RecipeDef>
+			<HediffDef>Seg_Servitors_CombatServitorHediff</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData Inherit="False">
+			<texPath>Things/Item/Health/Seg_Servitors_CombatServitorImplant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>1</Steel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	
+</Defs>
