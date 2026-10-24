@@ -47,8 +47,8 @@
 					<SocialImpact>-1</SocialImpact>
 				</statOffsets>
 				<statFactors>
+					<MoveSpeed>.4</MoveSpeed>
 					<MarketValue>0.2</MarketValue>
-					<MoveSpeed>.6</MoveSpeed>
 				</statFactors>
 				<painFactor>0</painFactor>
 				<capMods>
@@ -135,14 +135,11 @@
 					<SocialImpact>-1</SocialImpact>
 				</statOffsets>
 				<statFactors>
+					<MoveSpeed>.4</MoveSpeed>
 					<MarketValue>0.5</MarketValue>
 				</statFactors>
 				<painFactor>0</painFactor>
 				<capMods>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>-0.6</offset>
-					</li>
 					<li>
 						<capacity>Talking</capacity>
 						<offset>-1.0</offset>
@@ -225,14 +222,11 @@
 					<ResearchSpeed>-0.5</ResearchSpeed>
 				</statOffsets>
 				<statFactors>
+					<MoveSpeed>.4</MoveSpeed>
 					<MarketValue>0.4</MarketValue>
 				</statFactors>
 				<painFactor>0</painFactor>
 				<capMods>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>-0.6</offset>
-					</li>
 					<li>
 						<capacity>Talking</capacity>
 						<offset>-1.0</offset>
@@ -317,14 +311,11 @@
 					<SocialImpact>-1</SocialImpact>
 				</statOffsets>
 				<statFactors>
+					<MoveSpeed>.8</MoveSpeed>
 					<MarketValue>0.4</MarketValue>
 				</statFactors>
 				<painFactor>0</painFactor>
 				<capMods>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>-0.2</offset>
-					</li>
 					<li>
 						<capacity>Talking</capacity>
 						<offset>-1.0</offset>
